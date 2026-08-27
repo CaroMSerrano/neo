@@ -23,17 +23,17 @@
     ====================================================== -->
 
     <title>
-        NEO | IA para gestiones legales, notariales y administrativas
+        NEO | IA para automatizar gestiones legales, notariales y administrativas
     </title>
 
     <meta
         name="description"
-        content="NEO es un motor de inteligencia artificial especializado en gestiones legales, notariales y administrativas. Automatiza trámites, procesos, poderes, compraventas, gestiones de gestorías y tareas de RRHH mediante una conversación."
+        content="NEO es inteligencia artificial especializada para automatizar trámites, procesos y gestiones legales, notariales, administrativas y de RRHH. Simplifica poderes, compraventas, documentación y tareas repetitivas mediante una conversación."
     >
 
     <meta
         name="keywords"
-        content="IA legal, inteligencia artificial legal, IA jurídica, IA notarial, inteligencia artificial notarial, IA para notarías, IA para abogados, IA para estudios jurídicos, IA gestorías, IA para gestorías, IA RRHH, inteligencia artificial recursos humanos, IA poderes, automatización de poderes, IA compraventas, automatización de compraventas, trámites con IA, procesos con IA, gestiones con IA, automatización de gestiones, automatización documental, automatización administrativa, motor IA, inteligencia artificial empresas, NEO inteligencia artificial"
+        content="IA legal, inteligencia artificial legal, IA jurídica, IA notarial, inteligencia artificial notarial, IA para notarías, IA para abogados, IA estudios jurídicos, IA gestorías, inteligencia artificial gestorías, IA RRHH, inteligencia artificial recursos humanos, IA poderes, automatización de poderes, IA compraventas, automatización de compraventas, trámites con IA, procesos con IA, gestiones con IA, automatización de gestiones, automatización documental, automatización administrativa, motor IA, inteligencia artificial empresas, NEO inteligencia artificial"
     >
 
 
@@ -43,12 +43,12 @@
 
     <meta
         property="og:title"
-        content="NEO | IA para gestiones legales, notariales y administrativas"
+        content="NEO | IA para automatizar gestiones complejas"
     >
 
     <meta
         property="og:description"
-        content="Automatiza trámites, procesos y gestiones complejas con un motor de IA especializado."
+        content="Automatiza trámites, procesos y gestiones legales, notariales y administrativas con inteligencia artificial especializada."
     >
 
     <meta
@@ -83,12 +83,12 @@
 
     <meta
         name="twitter:title"
-        content="NEO | Inteligencia Artificial para gestiones complejas"
+        content="NEO | IA para automatizar gestiones complejas"
     >
 
     <meta
         name="twitter:description"
-        content="IA especializada para trámites, procesos legales, notariales, administrativos, RRHH, poderes y compraventas."
+        content="Inteligencia artificial especializada para trámites, procesos legales, notariales, administrativos, RRHH, poderes y compraventas."
     >
 
 
@@ -142,24 +142,19 @@
         :root {
 
             --bg-main: #0f172a;
-
             --bg-secondary: #111c32;
-
             --bg-card: #1e293b;
-
             --bg-header: #080f20;
 
             --text-main: #ffffff;
-
             --text-secondary: #cbd5e1;
-
             --text-muted: #94a3b8;
 
             --neo: #67e8f9;
-
             --neo-light: #a5f3fc;
-
             --neo-dark: #082f49;
+
+            --blue: #2563eb;
 
             --border:
                 rgba(148, 163, 184, 0.12);
@@ -252,8 +247,6 @@
         }
 
 
-        /* LOGO */
-
         .logo {
 
             color:
@@ -281,8 +274,6 @@
 
         }
 
-
-        /* NAV */
 
         .nav {
 
@@ -424,14 +415,6 @@
         }
 
 
-        .neon {
-
-            color:
-                var(--neo);
-
-        }
-
-
         /* =====================================================
            BOTÓN NEO
         ====================================================== */
@@ -543,8 +526,6 @@
         }
 
 
-        /* CAJA HERO */
-
         .hero-box {
 
             width:
@@ -585,8 +566,6 @@
         }
 
 
-        /* IMAGEN */
-
         .hero-image {
 
             display:
@@ -620,8 +599,6 @@
 
         }
 
-
-        /* TEXTO */
 
         .hero-content {
 
@@ -796,7 +773,7 @@
                 50%;
 
             background:
-                #2563eb;
+                var(--blue);
 
             display:
                 flex;
@@ -896,7 +873,7 @@
                 center;
 
             justify-content:
-                center;
+                flex-start;
 
             text-align:
                 center;
@@ -905,21 +882,25 @@
                 14px;
 
             min-height:
-                145px;
+                220px;
 
             padding:
-                20px 12px;
+                25px 15px;
 
         }
 
 
+        /* =====================================================
+           ICONOS DE NICHOS
+        ====================================================== */
+
         .niche-icon {
 
             width:
-                55px;
+                60px;
 
             height:
-                55px;
+                60px;
 
             flex-shrink:
                 0;
@@ -934,17 +915,43 @@
                 center;
 
             background:
-                rgba(103, 232, 249, 0.12);
+                rgba(103, 232, 249, 0.10);
 
             border:
                 1px solid
                 rgba(103, 232, 249, 0.25);
 
             border-radius:
-                15px;
+                16px;
 
-            font-size:
-                28px;
+            color:
+                var(--neo);
+
+        }
+
+
+        .niche-icon svg {
+
+            width:
+                32px;
+
+            height:
+                32px;
+
+            stroke:
+                currentColor;
+
+            fill:
+                none;
+
+            stroke-width:
+                1.8;
+
+            stroke-linecap:
+                round;
+
+            stroke-linejoin:
+                round;
 
         }
 
@@ -955,7 +962,35 @@
                 0;
 
             font-size:
-                1rem;
+                1.05rem;
+
+        }
+
+
+        .niche-card p {
+
+            font-size:
+                0.9rem;
+
+            line-height:
+                1.45;
+
+            color:
+                var(--text-muted);
+
+        }
+
+
+        .niche-example {
+
+            display:
+                block;
+
+            margin-top:
+                5px;
+
+            color:
+                var(--text-secondary);
 
         }
 
@@ -970,6 +1005,11 @@
                 center;
 
             background:
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(103, 232, 249, 0.10),
+                    transparent 45%
+                ),
                 linear-gradient(
                     135deg,
                     #111c32,
@@ -978,11 +1018,11 @@
 
             border-top:
                 1px solid
-                rgba(103, 232, 249, 0.10);
+                rgba(103, 232, 249, 0.12);
 
             border-bottom:
                 1px solid
-                rgba(103, 232, 249, 0.10);
+                rgba(103, 232, 249, 0.12);
 
         }
 
@@ -1081,14 +1121,6 @@
 
             text-decoration:
                 none;
-
-        }
-
-
-        footer .brand:hover {
-
-            color:
-                var(--neo-light);
 
         }
 
@@ -1292,10 +1324,10 @@
             .niche-card {
 
                 min-height:
-                    125px;
+                    235px;
 
                 padding:
-                    18px 8px;
+                    20px 10px;
 
             }
 
@@ -1304,6 +1336,14 @@
 
                 font-size:
                     0.9rem;
+
+            }
+
+
+            .niche-card p {
+
+                font-size:
+                    0.82rem;
 
             }
 
@@ -1382,9 +1422,6 @@
 
             <div class="hero-box">
 
-
-                <!-- IMAGEN -->
-
                 <div class="hero-image">
 
                     <img
@@ -1395,8 +1432,6 @@
                 </div>
 
 
-                <!-- TEXTO -->
-
                 <div class="hero-content">
 
                     <h1>
@@ -1404,9 +1439,11 @@
                     </h1>
 
                     <p>
-                        La forma más simple de gestionar tu operación.
-                        Un motor de IA especializado que guía cada proceso
-                        mediante una conversación.
+                        NEO transforma procesos que hoy requieren horas
+                        de trabajo en una conversación simple.
+                        Inteligencia artificial especializada que entiende
+                        tu proceso, guía cada paso y te ayuda a obtener
+                        el resultado que necesitas.
                     </p>
 
                     <a
@@ -1415,12 +1452,11 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Solicitar demo
+                        Descubre cómo funciona
                         <span>→</span>
                     </a>
 
                 </div>
-
 
             </div>
 
@@ -1439,8 +1475,14 @@
         <div class="container">
 
             <h2>
-                1. ¿Cuánto tiempo pierde tu equipo?
+                ¿Cuánto tiempo pierde tu equipo en tareas que podrían automatizarse?
             </h2>
+
+            <p style="max-width:760px; font-size:1.15rem; margin-bottom:35px;">
+                Buscar información, revisar requisitos, completar documentos
+                y corregir errores consume tiempo que tu equipo podría dedicar
+                a tareas de mayor valor.
+            </p>
 
 
             <div class="cards">
@@ -1449,12 +1491,12 @@
                 <div class="card">
 
                     <h3>
-                        Buscar información
+                        🔎 Buscar información
                     </h3>
 
                     <p>
-                        Horas dedicadas a interpretar
-                        requisitos, normativas y documentación.
+                        Horas interpretando requisitos, normativas,
+                        documentación y criterios que cambian según cada gestión.
                     </p>
 
                 </div>
@@ -1463,12 +1505,12 @@
                 <div class="card">
 
                     <h3>
-                        Completar documentos
+                        📄 Completar documentos
                     </h3>
 
                     <p>
-                        Formularios, contratos y documentación
-                        cargados manualmente.
+                        Formularios, contratos, solicitudes y documentación
+                        que deben completarse manualmente una y otra vez.
                     </p>
 
                 </div>
@@ -1477,12 +1519,12 @@
                 <div class="card">
 
                     <h3>
-                        Corregir errores
+                        ✓ Corregir errores
                     </h3>
 
                     <p>
-                        Repetición de tareas por datos
-                        faltantes o inconsistentes.
+                        Datos faltantes, inconsistencias y tareas repetidas
+                        que retrasan los procesos y consumen recursos.
                     </p>
 
                 </div>
@@ -1505,9 +1547,14 @@
         <div class="container">
 
             <h2>
-                2. ¿Quieres cambiar horas de trabajo
-                por una conversación?
+                De un proceso complejo a una conversación sencilla
             </h2>
+
+            <p style="max-width:760px; font-size:1.15rem;">
+                NEO acompaña a tu equipo durante todo el proceso,
+                haciendo las preguntas necesarias y ayudando a convertir
+                información dispersa en una gestión lista para avanzar.
+            </p>
 
 
             <div class="steps">
@@ -1520,8 +1567,12 @@
                     </div>
 
                     <h3>
-                        Contá qué necesitás
+                        Cuéntale qué necesitas
                     </h3>
+
+                    <p>
+                        Inicia la gestión explicando qué quieres resolver.
+                    </p>
 
                 </div>
 
@@ -1533,8 +1584,12 @@
                     </div>
 
                     <h3>
-                        Respondé preguntas
+                        Responde las preguntas
                     </h3>
+
+                    <p>
+                        NEO solicita la información necesaria.
+                    </p>
 
                 </div>
 
@@ -1546,8 +1601,12 @@
                     </div>
 
                     <h3>
-                        El motor procesa
+                        NEO procesa la gestión
                     </h3>
+
+                    <p>
+                        Organiza información y aplica los criterios definidos.
+                    </p>
 
                 </div>
 
@@ -1559,8 +1618,12 @@
                     </div>
 
                     <h3>
-                        Obtené el resultado
+                        Obtén el resultado
                     </h3>
+
+                    <p>
+                        Avanza con documentación y resultados estructurados.
+                    </p>
 
                 </div>
 
@@ -1582,9 +1645,14 @@
         <div class="container">
 
             <h2>
-                Con NEO lograrás menos trabajo repetitivo.
-                Más trabajo de valor.
+                Menos tareas repetitivas. Más capacidad para crecer.
             </h2>
+
+            <p style="max-width:760px; font-size:1.15rem; margin-bottom:35px;">
+                NEO ayuda a transformar horas de trabajo operativo
+                en tiempo disponible para tus clientes, tu equipo
+                y las tareas que realmente hacen crecer tu organización.
+            </p>
 
 
             <div class="benefits">
@@ -1593,12 +1661,12 @@
                 <div class="benefit">
 
                     <h3>
-                        Reducí horas
+                        ⏱ Reduce horas de trabajo
                     </h3>
 
                     <p>
-                        Menos tiempo dedicado a tareas
-                        administrativas.
+                        Automatiza pasos repetitivos y libera tiempo
+                        para tareas de mayor valor.
                     </p>
 
                 </div>
@@ -1607,12 +1675,12 @@
                 <div class="benefit">
 
                     <h3>
-                        Reducí errores
+                        ✓ Reduce errores
                     </h3>
 
                     <p>
-                        Validación automática y aplicación
-                        de criterios.
+                        Ayuda a detectar información faltante,
+                        inconsistencias y errores antes de avanzar.
                     </p>
 
                 </div>
@@ -1621,12 +1689,12 @@
                 <div class="benefit">
 
                     <h3>
-                        Aumentá productividad
+                        ↑ Aumenta productividad
                     </h3>
 
                     <p>
-                        Más gestiones realizadas con
-                        el mismo equipo.
+                        Permite gestionar más procesos sin aumentar
+                        proporcionalmente la carga de trabajo.
                     </p>
 
                 </div>
@@ -1635,12 +1703,12 @@
                 <div class="benefit">
 
                     <h3>
-                        Estandarizá resultados
+                        ⚙ Estandariza procesos
                     </h3>
 
                     <p>
-                        Toda la organización trabaja
-                        con las mismas reglas.
+                        Convierte conocimiento y criterios internos
+                        en procesos más consistentes y repetibles.
                     </p>
 
                 </div>
@@ -1663,99 +1731,207 @@
         <div class="container">
 
             <h2>
-                NEO: Un motor. Cualquier gestión
+                Una IA especializada para las gestiones que más importan
             </h2>
+
+            <p style="max-width:800px; font-size:1.15rem;">
+                NEO puede adaptarse a distintos tipos de organizaciones
+                y procesos. Descubre algunos ejemplos de gestiones
+                que pueden simplificarse.
+            </p>
 
 
             <div class="niche-grid">
 
 
-                <!-- NOTARÍAS -->
+                <!-- =================================================
+                     NOTARÍAS
+                ================================================== -->
 
                 <div class="card niche-card">
 
-                    <span
-                        class="niche-icon"
-                        aria-hidden="true"
-                    >
-                        🏛️
+                    <span class="niche-icon" aria-hidden="true">
+
+                        <svg viewBox="0 0 24 24">
+
+                            <path d="M4 21h16"></path>
+
+                            <path d="M6 21V7l6-4 6 4v14"></path>
+
+                            <path d="M9 21v-8h6v8"></path>
+
+                            <path d="M9 9h.01"></path>
+
+                            <path d="M12 9h.01"></path>
+
+                            <path d="M15 9h.01"></path>
+
+                        </svg>
+
                     </span>
 
                     <h3>
                         Notarías
                     </h3>
 
+                    <p>
+                        <strong>Ejemplos:</strong>
+                        <span class="niche-example">
+                            poderes, compraventas, escrituras y revisión documental.
+                        </span>
+                    </p>
+
                 </div>
 
 
-                <!-- ESTUDIOS JURÍDICOS -->
+                <!-- =================================================
+                     ESTUDIOS JURÍDICOS
+                ================================================== -->
 
                 <div class="card niche-card">
 
-                    <span
-                        class="niche-icon"
-                        aria-hidden="true"
-                    >
-                        ⚖️
+                    <span class="niche-icon" aria-hidden="true">
+
+                        <svg viewBox="0 0 24 24">
+
+                            <path d="M12 3v18"></path>
+
+                            <path d="M5 7h14"></path>
+
+                            <path d="M7 7l-4 7h8l-4-7z"></path>
+
+                            <path d="M17 7l-4 7h8l-4-7z"></path>
+
+                            <path d="M8 21h8"></path>
+
+                        </svg>
+
                     </span>
 
                     <h3>
                         Estudios Jurídicos
                     </h3>
 
+                    <p>
+                        <strong>Ejemplos:</strong>
+                        <span class="niche-example">
+                            recopilación de antecedentes, contratos,
+                            poderes y documentación legal.
+                        </span>
+                    </p>
+
                 </div>
 
 
-                <!-- GESTORÍAS -->
+                <!-- =================================================
+                     GESTORÍAS
+                ================================================== -->
 
                 <div class="card niche-card">
 
-                    <span
-                        class="niche-icon"
-                        aria-hidden="true"
-                    >
-                        📋
+                    <span class="niche-icon" aria-hidden="true">
+
+                        <svg viewBox="0 0 24 24">
+
+                            <path d="M5 3h10l4 4v14H5z"></path>
+
+                            <path d="M15 3v5h4"></path>
+
+                            <path d="M8 13h8"></path>
+
+                            <path d="M8 17h6"></path>
+
+                            <path d="M8 9h3"></path>
+
+                        </svg>
+
                     </span>
 
                     <h3>
                         Gestorías
                     </h3>
 
+                    <p>
+                        <strong>Ejemplos:</strong>
+                        <span class="niche-example">
+                            trámites administrativos, documentación,
+                            solicitudes y seguimiento de expedientes.
+                        </span>
+                    </p>
+
                 </div>
 
 
-                <!-- RRHH -->
+                <!-- =================================================
+                     RRHH
+                ================================================== -->
 
                 <div class="card niche-card">
 
-                    <span
-                        class="niche-icon"
-                        aria-hidden="true"
-                    >
-                        👥
+                    <span class="niche-icon" aria-hidden="true">
+
+                        <svg viewBox="0 0 24 24">
+
+                            <circle cx="9" cy="8" r="3"></circle>
+
+                            <circle cx="17" cy="9" r="2.5"></circle>
+
+                            <path d="M3 20c0-3.2 2.7-5 6-5s6 1.8 6 5"></path>
+
+                            <path d="M14 15c3 0 6 1.5 6 5"></path>
+
+                        </svg>
+
                     </span>
 
                     <h3>
                         Recursos Humanos
                     </h3>
 
+                    <p>
+                        <strong>Ejemplos:</strong>
+                        <span class="niche-example">
+                            altas, bajas, documentación de empleados,
+                            solicitudes y procesos internos.
+                        </span>
+                    </p>
+
                 </div>
 
 
-                <!-- ADMINISTRACIÓN -->
+                <!-- =================================================
+                     ADMINISTRACIÓN
+                ================================================== -->
 
                 <div class="card niche-card">
 
-                    <span
-                        class="niche-icon"
-                        aria-hidden="true"
-                    >
-                        🗂️
+                    <span class="niche-icon" aria-hidden="true">
+
+                        <svg viewBox="0 0 24 24">
+
+                            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+
+                            <path d="M8 8h8"></path>
+
+                            <path d="M8 12h8"></path>
+
+                            <path d="M8 16h5"></path>
+
+                        </svg>
+
                     </span>
 
                     <h3>
                         Áreas Administrativas
                     </h3>
+
+                    <p>
+                        <strong>Ejemplos:</strong>
+                        <span class="niche-example">
+                            solicitudes internas, documentación,
+                            validaciones y procesos administrativos.
+                        </span>
+                    </p>
 
                 </div>
 
@@ -1780,14 +1956,13 @@
         <div class="container">
 
             <h2>
-                ¿Cuántas horas podrías recuperar?
+                Descubre cuánto tiempo puede recuperar tu equipo
             </h2>
 
-
             <p>
-                Descubrí qué gestiones de tu organización
-                pueden simplificarse y cuánto tiempo
-                podrías ahorrar.
+                Cuéntanos qué gestiones realizas hoy de forma manual
+                y descubre cómo NEO puede ayudarte a simplificarlas,
+                automatizarlas y hacerlas más eficientes.
             </p>
 
 
@@ -1797,7 +1972,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Solicitar una demo
+                Agenda una demo con NEO
                 <span>→</span>
             </a>
 
