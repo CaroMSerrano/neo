@@ -10,46 +10,65 @@
     <meta name="author" content="Neomynd">
     <meta name="language" content="Spanish">
 
-    <title>NEO | Motores de IA para potenciar tu negocio</title>
+    <!-- =====================================================
+         SEO
+    ====================================================== -->
+
+    <title>NEO. | Inteligencia artificial para gestionar mejor</title>
 
     <meta
         name="description"
-        content="NEO es la plataforma de inteligencia artificial de Neomynd que potencia la atención, gestión, seguimiento y automatización de funciones clave de tu organización."
+        content="NEO. es el motor de inteligencia artificial de Neomynd para automatizar y simplificar gestiones de negocio en áreas legales, notariales, financieras, administrativas y de atención."
     >
 
     <meta
         name="keywords"
-        content="NEO IA, inteligencia artificial empresarial, IA legal, IA notarial, IA financiera, IA para empresas, automatización inteligente, atención al cliente con IA, seguimiento con IA, gestión inteligente, IA RRHH, inteligencia artificial para notarías, inteligencia artificial para estudios jurídicos"
+        content="NEO inteligencia artificial, IA legal, IA notarial, IA financiera, inteligencia artificial empresas, IA para abogados, IA para notarías, IA gestorías, IA atención al cliente, IA seguimiento, automatización documental, IA administrativa, IA poderes, IA compraventas, inteligencia artificial para empresas"
     >
 
-    <meta property="og:title" content="NEO | Motores de IA para potenciar tu negocio">
+    <meta
+        property="og:title"
+        content="NEO. | Inteligencia artificial para gestionar mejor"
+    >
 
     <meta
         property="og:description"
-        content="Motores de inteligencia artificial diseñados para potenciar distintas funciones de tu organización."
+        content="Un motor de inteligencia artificial especializado para simplificar gestiones, atención, seguimiento y tareas de negocio."
     >
 
-    <meta property="og:type" content="website">
+    <meta
+        property="og:type"
+        content="website"
+    >
 
     <meta
         property="og:url"
         content="https://neo.neomynd.tech/"
     >
 
-    <meta property="og:site_name" content="Neomynd">
+    <meta
+        property="og:site_name"
+        content="NEO. by Neomynd"
+    >
 
-    <meta property="og:locale" content="es_ES">
+    <meta
+        property="og:locale"
+        content="es_ES"
+    >
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
 
     <meta
         name="twitter:title"
-        content="NEO | Motores de IA para potenciar tu negocio"
+        content="NEO. | Inteligencia artificial para gestionar mejor"
     >
 
     <meta
         name="twitter:description"
-        content="Inteligencia artificial aplicada a la atención, gestión, seguimiento y funciones clave de tu organización."
+        content="Inteligencia artificial especializada para simplificar gestiones y tareas de negocio."
     >
 
     <link
@@ -57,15 +76,25 @@
         href="https://neo.neomynd.tech/"
     >
 
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="shortcut icon" href="favicon.ico">
+    <!-- FAVICON -->
 
+    <link
+        rel="icon"
+        type="image/png"
+        href="favicon.png"
+    >
+
+    <link
+        rel="shortcut icon"
+        href="favicon.ico"
+    >
+
+
+    <!-- =====================================================
+         ESTILOS
+    ====================================================== -->
 
     <style>
-
-        /* =====================================================
-           RESET
-        ===================================================== */
 
         * {
             margin: 0;
@@ -74,50 +103,43 @@
         }
 
 
-        /* =====================================================
-           VARIABLES
-        ===================================================== */
-
         :root {
 
-            --bg-main: #08111f;
-            --bg-secondary: #0d192b;
-            --bg-card: #122137;
+            --bg: #07111f;
+            --bg-soft: #0b1728;
+            --bg-card: #101e31;
 
-            --text-main: #ffffff;
-            --text-secondary: #b8c7d9;
-            --text-muted: #7f91a8;
+            --text: #ffffff;
+            --text-soft: #b8c5d6;
+            --text-muted: #8291a6;
 
             --neo: #67e8f9;
             --neo-light: #a5f3fc;
-            --neo-dark: #062f40;
+            --neo-dark: #062c3d;
 
-            --blue: #2563eb;
+            --blue: #1d4ed8;
 
-            --border: rgba(148, 163, 184, 0.13);
+            --border: rgba(148,163,184,.13);
 
         }
 
-
-        /* =====================================================
-           GENERAL
-        ===================================================== */
 
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
 
             font-family:
-                'Inter',
+                Inter,
                 Arial,
                 Helvetica,
                 sans-serif;
 
-            background: var(--bg-main);
+            background: var(--bg);
 
-            color: var(--text-main);
+            color: var(--text);
 
             line-height: 1.6;
 
@@ -125,19 +147,27 @@
 
         }
 
+
+        a {
+            color: inherit;
+        }
+
+
         .container {
 
             width: min(1180px, 90%);
 
-            margin: auto;
+            margin: 0 auto;
 
         }
+
 
         section {
 
             padding: 100px 0;
 
         }
+
 
         h1,
         h2,
@@ -147,31 +177,26 @@
 
         }
 
-        h1,
-        h2 {
-
-            letter-spacing: -1.5px;
-
-        }
 
         h2 {
 
             font-size: clamp(2rem, 4vw, 3rem);
 
+            letter-spacing: -1px;
+
             margin-bottom: 18px;
 
         }
 
+
         p {
-
-            color: var(--text-secondary);
-
+            color: var(--text-soft);
         }
 
 
         /* =====================================================
            HEADER
-        ===================================================== */
+        ====================================================== */
 
         header {
 
@@ -184,28 +209,31 @@
 
             height: 72px;
 
-            z-index: 1000;
-
             display: flex;
 
             align-items: center;
 
+            z-index: 1000;
+
             background:
-                rgba(8, 17, 31, 0.92);
+                rgba(7,17,31,.88);
 
-            backdrop-filter: blur(14px);
+            backdrop-filter:
+                blur(16px);
 
-            -webkit-backdrop-filter: blur(14px);
+            -webkit-backdrop-filter:
+                blur(16px);
 
             border-bottom:
                 1px solid
-                rgba(103, 232, 249, 0.08);
+                rgba(103,232,249,.08);
 
         }
 
+
         .header-container {
 
-            width: min(1180px, 90%);
+            width: min(1180px,90%);
 
             margin: auto;
 
@@ -218,21 +246,22 @@
         }
 
 
-        /* LOGO */
+        /* LOGO NEO */
 
         .logo {
 
             text-decoration: none;
 
-            color: #ffffff;
-
             font-size: 1.55rem;
 
-            font-weight: 800;
+            font-weight: 850;
 
-            letter-spacing: -0.7px;
+            letter-spacing: -1px;
+
+            color: #ffffff;
 
         }
+
 
         .logo-dot {
 
@@ -240,8 +269,6 @@
 
         }
 
-
-        /* NAV */
 
         .nav {
 
@@ -253,19 +280,19 @@
 
         }
 
-        .nav a {
 
-            color: #b9c6d7;
+        .nav a {
 
             text-decoration: none;
 
-            font-size: 0.94rem;
+            color: #c5d0df;
 
-            font-weight: 500;
+            font-size: .94rem;
 
-            transition: color .2s ease;
+            transition: .2s ease;
 
         }
+
 
         .nav a:hover {
 
@@ -274,9 +301,31 @@
         }
 
 
+        .nav-cta {
+
+            padding: 10px 18px;
+
+            border-radius: 9px;
+
+            background: var(--neo);
+
+            color: var(--neo-dark) !important;
+
+            font-weight: 800;
+
+        }
+
+
+        .nav-cta:hover {
+
+            background: var(--neo-light);
+
+        }
+
+
         /* =====================================================
-           BOTÓN NEO
-        ===================================================== */
+           BOTONES
+        ====================================================== */
 
         .btn-neo {
 
@@ -286,27 +335,32 @@
 
             justify-content: center;
 
-            gap: 10px;
+            gap: 12px;
 
-            padding: 14px 25px;
+            padding: 15px 27px;
+
+            border-radius: 10px;
 
             background: var(--neo);
 
             color: var(--neo-dark);
 
-            border: 1px solid var(--neo);
-
-            border-radius: 10px;
-
             text-decoration: none;
 
-            font-weight: 800;
+            font-weight: 850;
 
-            font-size: .98rem;
+            font-size: 1rem;
 
-            transition: all .25s ease;
+            border: 1px solid var(--neo);
+
+            transition: .25s ease;
+
+            box-shadow:
+                0 8px 25px
+                rgba(103,232,249,.10);
 
         }
+
 
         .btn-neo:hover {
 
@@ -317,128 +371,119 @@
             transform: translateY(-2px);
 
             box-shadow:
-                0 12px 30px
-                rgba(103,232,249,.20);
+                0 15px 35px
+                rgba(103,232,249,.18);
 
         }
 
-        .btn-neo span {
+
+        .btn-arrow {
 
             font-size: 1.15rem;
 
         }
 
 
-        .nav-button {
-
-            padding: 9px 17px !important;
-
-        }
-
-
         /* =====================================================
            HERO
-        ===================================================== */
+        ====================================================== */
 
         .hero {
 
             min-height: 100vh;
 
+            padding:
+                150px 0 90px;
+
+            position: relative;
+
             display: flex;
 
             align-items: center;
-
-            padding:
-                130px 0 90px;
-
-            position: relative;
 
             overflow: hidden;
 
             background:
 
                 radial-gradient(
-                    circle at 12% 30%,
-                    rgba(37,99,235,.16),
-                    transparent 34%
-                ),
-
-                radial-gradient(
-                    circle at 88% 80%,
-                    rgba(103,232,249,.07),
+                    circle at 85% 15%,
+                    rgba(37,99,235,.18),
                     transparent 30%
                 ),
 
-                var(--bg-main);
+                linear-gradient(
+                    135deg,
+                    #07111f 0%,
+                    #0a1930 55%,
+                    #07111f 100%
+                );
 
         }
 
 
         /* SEMICÍRCULO */
 
-        .hero-orbit {
+        .hero-circle {
 
             position: absolute;
 
-            width: 620px;
+            width: 650px;
 
-            height: 620px;
+            height: 650px;
 
-            right: -280px;
+            right: -310px;
 
-            top: 50%;
+            top: 100px;
 
-            transform: translateY(-50%);
+            border-radius: 50%;
 
             border:
                 1px solid
-                rgba(103,232,249,.18);
+                rgba(103,232,249,.13);
 
-            border-radius: 50%;
+            box-shadow:
+                0 0 80px
+                rgba(37,99,235,.08);
 
             pointer-events: none;
 
         }
 
-        .hero-orbit::before {
+
+        .hero-circle::before {
 
             content: "";
 
             position: absolute;
 
-            inset: 55px;
+            inset: 65px;
+
+            border-radius: 50%;
 
             border:
                 1px solid
-                rgba(103,232,249,.08);
-
-            border-radius: 50%;
+                rgba(103,232,249,.07);
 
         }
 
 
-        /* HERO GRID */
-
         .hero-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                1.05fr
-                .95fr;
-
-            align-items: center;
-
-            gap: 70px;
 
             position: relative;
 
             z-index: 2;
 
+            display: grid;
+
+            grid-template-columns:
+                48% 52%;
+
+            gap: 55px;
+
+            align-items: center;
+
         }
 
-
-        /* HERO TEXTO */
 
         .hero-eyebrow {
 
@@ -448,25 +493,26 @@
 
             gap: 9px;
 
-            color: var(--neo);
+            margin-bottom: 22px;
 
-            font-size: .85rem;
+            font-size: .78rem;
 
-            font-weight: 700;
+            font-weight: 800;
+
+            letter-spacing: 1.8px;
 
             text-transform: uppercase;
 
-            letter-spacing: 1.5px;
-
-            margin-bottom: 20px;
+            color: var(--neo);
 
         }
+
 
         .hero-eyebrow::before {
 
             content: "";
 
-            width: 28px;
+            width: 26px;
 
             height: 1px;
 
@@ -474,44 +520,52 @@
 
         }
 
-        .hero-content h1 {
+
+        .hero h1 {
 
             font-size:
                 clamp(
                     3rem,
-                    5.5vw,
+                    5.4vw,
                     5.2rem
                 );
 
             line-height: 1.02;
 
-            font-weight: 800;
+            letter-spacing: -3px;
 
-            max-width: 720px;
+            font-weight: 850;
 
-            margin-bottom: 25px;
+            max-width: 670px;
+
+            margin-bottom: 28px;
 
         }
 
-        .hero-content h1 strong {
+
+        .hero h1 strong {
 
             color: var(--neo);
 
-            font-weight: 800;
+            font-weight: inherit;
 
         }
 
-        .hero-content p {
 
-            max-width: 650px;
+        .hero-description {
 
             font-size: 1.25rem;
 
             line-height: 1.7;
 
-            margin-bottom: 32px;
+            max-width: 620px;
+
+            margin-bottom: 34px;
+
+            color: #b9c6d7;
 
         }
+
 
         .hero-actions {
 
@@ -525,24 +579,23 @@
 
         }
 
+
         .hero-note {
 
             color: var(--text-muted);
 
-            font-size: .85rem;
+            font-size: .88rem;
 
         }
 
 
-        /* =====================================================
-           HERO VISUAL
-        ===================================================== */
+        /* IMAGEN REAL */
 
         .hero-visual {
 
             position: relative;
 
-            min-height: 500px;
+            min-height: 470px;
 
             display: flex;
 
@@ -552,271 +605,230 @@
 
         }
 
-        .visual-frame {
 
-            position: relative;
+        .hero-photo-frame {
 
             width: 100%;
 
-            max-width: 500px;
+            max-width: 550px;
 
-            aspect-ratio: 1 / 1;
+            height: 470px;
 
-            border-radius: 35px;
-
-            background:
-
-                linear-gradient(
-                    145deg,
-                    rgba(18,33,55,.95),
-                    rgba(8,17,31,.75)
-                );
-
-            border:
-                1px solid
-                rgba(103,232,249,.14);
-
-            box-shadow:
-                0 35px 90px
-                rgba(0,0,0,.35);
+            border-radius: 28px;
 
             overflow: hidden;
 
-        }
-
-
-        /* VISUAL TECNOLÓGICO */
-
-        .visual-frame::before {
-
-            content: "";
-
-            position: absolute;
-
-            width: 360px;
-
-            height: 360px;
-
-            border-radius: 50%;
+            position: relative;
 
             border:
                 1px solid
-                rgba(103,232,249,.20);
-
-            top: 50%;
-
-            left: 50%;
-
-            transform:
-                translate(-50%,-50%);
-
-        }
-
-        .visual-frame::after {
-
-            content: "";
-
-            position: absolute;
-
-            width: 240px;
-
-            height: 240px;
-
-            border-radius: 50%;
-
-            border:
-                1px solid
-                rgba(37,99,235,.28);
-
-            top: 50%;
-
-            left: 50%;
-
-            transform:
-                translate(-50%,-50%);
-
-        }
-
-        .visual-core {
-
-            position: absolute;
-
-            width: 145px;
-
-            height: 145px;
-
-            border-radius: 50%;
-
-            top: 50%;
-
-            left: 50%;
-
-            transform:
-                translate(-50%,-50%);
-
-            background:
-
-                radial-gradient(
-                    circle at 35% 30%,
-                    #a5f3fc,
-                    #67e8f9 30%,
-                    #087b99 70%,
-                    #062f40
-                );
+                rgba(103,232,249,.18);
 
             box-shadow:
-
-                0 0 45px
-                rgba(103,232,249,.35),
-
-                inset 0 0 35px
-                rgba(255,255,255,.18);
+                0 35px 90px
+                rgba(0,0,0,.38);
 
         }
 
-        .visual-core::after {
 
-            content: "NEO";
+        .hero-photo-frame::after {
+
+            content: "";
 
             position: absolute;
 
             inset: 0;
 
-            display: flex;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(4,16,31,.05),
+                    rgba(4,16,31,.35)
+                );
 
-            align-items: center;
-
-            justify-content: center;
-
-            color: #062f40;
-
-            font-size: 1.5rem;
-
-            font-weight: 900;
-
-            letter-spacing: -1px;
+            pointer-events: none;
 
         }
 
 
-        /* NODOS */
+        .hero-photo {
 
-        .node {
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+        }
+
+
+        .hero-badge {
 
             position: absolute;
 
-            display: flex;
+            left: -25px;
 
-            align-items: center;
+            bottom: 35px;
 
-            gap: 9px;
+            z-index: 5;
 
-            padding: 10px 14px;
+            padding: 17px 22px;
 
             background:
-                rgba(13,25,43,.92);
+                rgba(8,18,32,.92);
+
+            backdrop-filter: blur(12px);
 
             border:
                 1px solid
-                rgba(103,232,249,.15);
+                rgba(103,232,249,.18);
 
-            border-radius: 10px;
+            border-radius: 14px;
 
-            color: #dce9f5;
+            box-shadow:
+                0 15px 45px
+                rgba(0,0,0,.3);
+
+        }
+
+
+        .hero-badge strong {
+
+            display: block;
+
+            color: var(--neo);
+
+            font-size: .95rem;
+
+            margin-bottom: 2px;
+
+        }
+
+
+        .hero-badge span {
+
+            color: #c5d0df;
 
             font-size: .78rem;
-
-            font-weight: 600;
-
-            box-shadow:
-                0 12px 25px
-                rgba(0,0,0,.2);
-
-        }
-
-        .node::before {
-
-            content: "";
-
-            width: 7px;
-
-            height: 7px;
-
-            border-radius: 50%;
-
-            background: var(--neo);
-
-            box-shadow:
-                0 0 10px
-                rgba(103,232,249,.6);
-
-        }
-
-        .node-1 {
-
-            top: 22%;
-
-            left: 9%;
-
-        }
-
-        .node-2 {
-
-            top: 18%;
-
-            right: 8%;
-
-        }
-
-        .node-3 {
-
-            bottom: 20%;
-
-            left: 7%;
-
-        }
-
-        .node-4 {
-
-            bottom: 17%;
-
-            right: 8%;
 
         }
 
 
         /* =====================================================
-           SECCIONES
-        ===================================================== */
+           BLOQUE DE VALOR
+        ====================================================== */
 
-        .section-intro {
+        .intro {
 
-            max-width: 780px;
+            background: var(--bg-soft);
 
-            margin-bottom: 45px;
+            border-top:
+                1px solid var(--border);
+
+            border-bottom:
+                1px solid var(--border);
 
         }
 
-        .section-intro p {
 
-            font-size: 1.15rem;
+        .intro-grid {
 
-            max-width: 760px;
+            display: grid;
 
-            line-height: 1.7;
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: end;
+
+        }
+
+
+        .section-label {
+
+            color: var(--neo);
+
+            font-size: .78rem;
+
+            font-weight: 800;
+
+            letter-spacing: 1.8px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .intro-copy {
+
+            max-width: 650px;
+
+        }
+
+
+        .intro-copy p {
+
+            font-size: 1.12rem;
+
+            line-height: 1.8;
+
+        }
+
+
+        .intro-side {
+
+            padding-left: 35px;
+
+            border-left:
+                2px solid
+                rgba(103,232,249,.55);
+
+        }
+
+
+        .intro-side p {
+
+            font-size: 1.05rem;
+
+            color: #d2dbe7;
 
         }
 
 
         /* =====================================================
            PROBLEMA
-        ===================================================== */
+        ====================================================== */
 
         .problem {
 
-            background: var(--bg-secondary);
+            background: var(--bg);
 
         }
+
+
+        .section-heading {
+
+            max-width: 850px;
+
+            margin-bottom: 45px;
+
+        }
+
+
+        .section-heading p {
+
+            font-size: 1.12rem;
+
+            max-width: 850px;
+
+            line-height: 1.75;
+
+        }
+
 
         .cards {
 
@@ -825,11 +837,14 @@
             grid-template-columns:
                 repeat(3,1fr);
 
-            gap: 22px;
+            gap: 20px;
 
         }
 
+
         .card {
+
+            padding: 30px;
 
             background: var(--bg-card);
 
@@ -839,15 +854,259 @@
 
             border-radius: 18px;
 
-            padding: 30px;
-
-            transition:
-                transform .25s ease,
-                border-color .25s ease;
+            transition: .25s ease;
 
         }
 
+
         .card:hover {
+
+            transform: translateY(-5px);
+
+            border-color:
+                rgba(103,232,249,.22);
+
+        }
+
+
+        .card-number {
+
+            color: var(--neo);
+
+            font-weight: 850;
+
+            font-size: .82rem;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .card h3 {
+
+            font-size: 1.25rem;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .card p {
+
+            font-size: .98rem;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =====================================================
+           COMO FUNCIONA
+        ====================================================== */
+
+        .how {
+
+            background: var(--bg-soft);
+
+        }
+
+
+        .how-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 16px;
+
+            margin-top: 45px;
+
+        }
+
+
+        .how-card {
+
+            min-height: 220px;
+
+            padding: 28px;
+
+            background:
+                rgba(16,30,49,.7);
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 18px;
+
+        }
+
+
+        .how-number {
+
+            width: 42px;
+
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                rgba(103,232,249,.12);
+
+            border:
+                1px solid
+                rgba(103,232,249,.3);
+
+            color: var(--neo);
+
+            font-weight: 850;
+
+            margin-bottom: 28px;
+
+        }
+
+
+        .how-card h3 {
+
+            margin-bottom: 10px;
+
+            font-size: 1.15rem;
+
+        }
+
+
+        .how-card p {
+
+            font-size: .94rem;
+
+            line-height: 1.65;
+
+        }
+
+
+        /* =====================================================
+           BENEFICIOS
+        ====================================================== */
+
+        .benefits {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 18px;
+
+            margin-top: 40px;
+
+        }
+
+
+        .benefit {
+
+            padding: 28px;
+
+            background: var(--bg-card);
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 18px;
+
+        }
+
+
+        .benefit-icon {
+
+            color: var(--neo);
+
+            font-size: 1.35rem;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .benefit h3 {
+
+            margin-bottom: 9px;
+
+            font-size: 1.2rem;
+
+        }
+
+
+        .benefit p {
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =====================================================
+           INDUSTRIAS
+        ====================================================== */
+
+        .industries {
+
+            background: var(--bg-soft);
+
+        }
+
+
+        .industry-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 18px;
+
+            margin-top: 45px;
+
+        }
+
+
+        .industry {
+
+            min-height: 230px;
+
+            padding: 28px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #122239,
+                    #0d1a2c
+                );
+
+            border:
+                1px solid
+                var(--border);
+
+            transition: .3s ease;
+
+        }
+
+
+        .industry:hover {
 
             transform: translateY(-5px);
 
@@ -856,220 +1115,12 @@
 
         }
 
-        .card-number {
-
-            color: var(--neo);
-
-            font-size: .8rem;
-
-            font-weight: 800;
-
-            letter-spacing: 1px;
-
-            margin-bottom: 18px;
-
-        }
-
-        .card h3 {
-
-            font-size: 1.25rem;
-
-            margin-bottom: 10px;
-
-        }
-
-
-        /* =====================================================
-           FUNCIONAMIENTO
-        ===================================================== */
-
-        .how {
-
-            background: var(--bg-main);
-
-        }
-
-        .steps {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(4,1fr);
-
-            gap: 18px;
-
-        }
-
-        .step {
-
-            padding: 30px 24px;
-
-            border-top:
-                1px solid
-                rgba(103,232,249,.18);
-
-            background:
-                rgba(18,33,55,.55);
-
-        }
-
-        .step-number {
-
-            color: var(--neo);
-
-            font-size: .85rem;
-
-            font-weight: 800;
-
-            margin-bottom: 22px;
-
-        }
-
-        .step h3 {
-
-            font-size: 1.1rem;
-
-            margin-bottom: 10px;
-
-        }
-
-        .step p {
-
-            font-size: .95rem;
-
-        }
-
-
-        /* =====================================================
-           BENEFICIOS
-        ===================================================== */
-
-        .benefits-section {
-
-            background: var(--bg-secondary);
-
-        }
-
-        .benefits {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(4,1fr);
-
-            gap: 20px;
-
-        }
-
-        .benefit {
-
-            padding: 28px;
-
-            border-radius: 18px;
-
-            background: var(--bg-card);
-
-            border:
-                1px solid
-                var(--border);
-
-        }
-
-        .benefit-icon {
-
-            color: var(--neo);
-
-            font-size: 1.6rem;
-
-            margin-bottom: 18px;
-
-        }
-
-        .benefit h3 {
-
-            margin-bottom: 10px;
-
-        }
-
-
-        /* =====================================================
-           INDUSTRIAS
-        ===================================================== */
-
-        .industries {
-
-            background: var(--bg-main);
-
-        }
-
-        .industry-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(5,1fr);
-
-            gap: 15px;
-
-        }
-
-        .industry {
-
-            position: relative;
-
-            min-height: 175px;
-
-            padding: 22px;
-
-            display: flex;
-
-            flex-direction: column;
-
-            justify-content: flex-end;
-
-            overflow: hidden;
-
-            border-radius: 18px;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    #14243a,
-                    #0e1929
-                );
-
-            border:
-                1px solid
-                var(--border);
-
-            transition:
-                transform .25s ease,
-                border-color .25s ease;
-
-        }
-
-        .industry:hover {
-
-            transform: translateY(-5px);
-
-            border-color:
-                rgba(103,232,249,.28);
-
-        }
 
         .industry-icon {
 
-            position: absolute;
+            width: 54px;
 
-            top: 20px;
-
-            left: 20px;
-
-            width: 52px;
-
-            height: 52px;
-
-            border-radius: 14px;
+            height: 54px;
 
             display: flex;
 
@@ -1077,39 +1128,108 @@
 
             justify-content: center;
 
+            border-radius: 15px;
+
+            background:
+                rgba(103,232,249,.10);
+
+            border:
+                1px solid
+                rgba(103,232,249,.22);
+
             color: var(--neo);
 
             font-size: 1.45rem;
 
-            background:
-                rgba(103,232,249,.08);
-
-            border:
-                1px solid
-                rgba(103,232,249,.16);
+            margin-bottom: 28px;
 
         }
+
 
         .industry h3 {
 
-            font-size: 1rem;
+            font-size: 1.3rem;
 
-            margin-bottom: 6px;
+            margin-bottom: 10px;
 
         }
 
+
         .industry p {
 
-            font-size: .82rem;
+            font-size: .93rem;
 
-            line-height: 1.45;
+            line-height: 1.65;
+
+        }
+
+
+        .industry-tag {
+
+            position: absolute;
+
+            right: 22px;
+
+            top: 22px;
+
+            font-size: .7rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            color: var(--text-muted);
 
         }
 
 
         /* =====================================================
-           CTA
-        ===================================================== */
+           ÁREAS
+        ====================================================== */
+
+        .areas {
+
+            padding-top: 80px;
+
+        }
+
+
+        .area-list {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 30px;
+
+        }
+
+
+        .area {
+
+            padding: 11px 17px;
+
+            border-radius: 9px;
+
+            border:
+                1px solid
+                rgba(103,232,249,.16);
+
+            background:
+                rgba(103,232,249,.04);
+
+            color: #cbd5e1;
+
+            font-size: .9rem;
+
+        }
+
+
+        /* =====================================================
+           CTA FINAL
+        ====================================================== */
 
         .cta {
 
@@ -1126,21 +1246,18 @@
 
                 radial-gradient(
                     circle at 50% 0%,
-                    rgba(103,232,249,.10),
-                    transparent 40%
+                    rgba(37,99,235,.22),
+                    transparent 45%
                 ),
 
-                #0b1728;
+                #091526;
 
             border-top:
                 1px solid
                 rgba(103,232,249,.10);
 
-            border-bottom:
-                1px solid
-                rgba(103,232,249,.10);
-
         }
+
 
         .cta::before {
 
@@ -1150,73 +1267,84 @@
 
             width: 500px;
 
-            height: 250px;
+            height: 500px;
+
+            border-radius: 50%;
 
             border:
                 1px solid
-                rgba(103,232,249,.10);
-
-            border-radius:
-                500px 500px 0 0;
+                rgba(103,232,249,.08);
 
             left: 50%;
 
-            bottom: -170px;
+            top: -410px;
 
-            transform:
-                translateX(-50%);
+            transform: translateX(-50%);
 
         }
 
-        .cta .container {
+
+        .cta-content {
 
             position: relative;
 
             z-index: 2;
 
+            max-width: 780px;
+
+            margin: auto;
+
         }
+
 
         .cta h2 {
 
-            max-width: 800px;
+            font-size:
+                clamp(
+                    2.3rem,
+                    4.5vw,
+                    4rem
+                );
 
-            margin:
-                0 auto 18px;
+            margin-bottom: 20px;
 
         }
 
+
         .cta p {
 
-            max-width: 650px;
+            font-size: 1.15rem;
+
+            line-height: 1.75;
+
+            max-width: 680px;
 
             margin:
-                0 auto 32px;
-
-            font-size: 1.12rem;
+                0 auto 34px;
 
         }
 
 
         /* =====================================================
            FOOTER
-        ===================================================== */
+        ====================================================== */
 
         footer {
 
-            padding: 35px 20px;
+            padding: 38px 20px;
 
             text-align: center;
 
-            background: #060d18;
+            background: #050d19;
+
+            color: var(--text-muted);
 
         }
+
 
         footer hr {
 
             width: 65px;
-
-            margin:
-                0 auto 20px;
 
             border: 0;
 
@@ -1224,29 +1352,35 @@
                 2px solid
                 var(--neo);
 
+            margin:
+                0 auto 22px;
+
             box-shadow:
                 0 0 12px
-                rgba(103,232,249,.3);
+                rgba(103,232,249,.25);
 
         }
+
 
         footer p {
 
-            color: var(--text-muted);
-
             font-size: .9rem;
 
+            color: var(--text-muted);
+
         }
+
 
         footer .brand {
 
             color: #ffffff;
 
-            font-weight: 700;
+            font-weight: 750;
 
             text-decoration: none;
 
         }
+
 
         footer .brand span {
 
@@ -1257,23 +1391,21 @@
 
         /* =====================================================
            TABLET
-        ===================================================== */
+        ====================================================== */
 
-        @media (max-width: 1000px) {
+        @media (max-width: 950px) {
 
-            .nav a:not(.nav-button) {
-
+            .nav a:not(.nav-cta) {
                 display: none;
-
             }
+
 
             .hero-grid {
 
                 grid-template-columns: 1fr;
 
-                gap: 50px;
-
             }
+
 
             .hero-content {
 
@@ -1281,12 +1413,14 @@
 
             }
 
-            .hero-content p {
+
+            .hero-description {
 
                 margin-left: auto;
                 margin-right: auto;
 
             }
+
 
             .hero-actions {
 
@@ -1294,36 +1428,50 @@
 
             }
 
+
             .hero-visual {
 
-                min-height: 430px;
+                min-height: 400px;
 
             }
 
-            .cards {
+
+            .hero-badge {
+
+                left: 10px;
+
+            }
+
+
+            .intro-grid {
 
                 grid-template-columns: 1fr;
 
+                gap: 35px;
+
             }
 
-            .steps {
+
+            .cards {
 
                 grid-template-columns:
-                    repeat(2,1fr);
+                    1fr 1fr;
 
             }
 
-            .benefits {
+
+            .how-grid {
 
                 grid-template-columns:
-                    repeat(2,1fr);
+                    1fr 1fr;
 
             }
+
 
             .industry-grid {
 
                 grid-template-columns:
-                    repeat(3,1fr);
+                    1fr 1fr;
 
             }
 
@@ -1332,7 +1480,7 @@
 
         /* =====================================================
            MOBILE
-        ===================================================== */
+        ====================================================== */
 
         @media (max-width: 600px) {
 
@@ -1342,24 +1490,30 @@
 
             }
 
+
             .hero {
 
                 padding:
-                    110px 0 70px;
+                    120px 0 65px;
 
             }
 
-            .hero-content h1 {
 
-                font-size: 2.65rem;
+            .hero h1 {
+
+                font-size: 2.8rem;
+
+                letter-spacing: -1.8px;
 
             }
 
-            .hero-content p {
+
+            .hero-description {
 
                 font-size: 1.08rem;
 
             }
+
 
             .hero-actions {
 
@@ -1369,91 +1523,88 @@
 
             }
 
-            .btn-neo {
+
+            .hero-actions .btn-neo {
 
                 width: 100%;
 
             }
 
-            .hero-visual {
 
-                min-height: 340px;
+            .hero-note {
 
-            }
-
-            .visual-frame {
-
-                max-width: 350px;
+                text-align: center;
 
             }
 
-            .node {
 
-                font-size: .68rem;
+            .hero-photo-frame {
 
-                padding:
-                    8px 10px;
+                height: 350px;
 
             }
 
-            .node-1 {
 
-                left: 0;
+            .hero-badge {
 
-            }
+                left: 5px;
 
-            .node-2 {
+                bottom: 20px;
 
-                right: 0;
-
-            }
-
-            .node-3 {
-
-                left: 0;
+                padding: 13px 16px;
 
             }
 
-            .node-4 {
 
-                right: 0;
+            .hero-circle {
 
-            }
+                width: 450px;
 
-            .steps {
+                height: 450px;
 
-                grid-template-columns: 1fr;
-
-            }
-
-            .benefits {
-
-                grid-template-columns: 1fr;
+                right: -270px;
 
             }
 
+
+            .cards,
+            .benefits,
+            .how-grid,
             .industry-grid {
 
-                grid-template-columns:
-                    repeat(2,1fr);
+                grid-template-columns: 1fr;
 
             }
+
+
+            .intro-side {
+
+                padding-left: 20px;
+
+            }
+
 
             .industry {
 
-                min-height: 155px;
+                min-height: 200px;
 
             }
 
-            .industry p {
 
-                font-size: .76rem;
+            .nav-cta {
+
+                padding:
+                    9px 13px;
+
+                font-size: .82rem !important;
 
             }
 
-            h2 {
 
-                font-size: 2rem;
+            .cta {
+
+                padding:
+                    85px 0;
 
             }
 
@@ -1478,26 +1629,19 @@
             <a
                 href="https://neo.neomynd.tech/"
                 class="logo"
-                aria-label="NEO"
             >
                 NEO<span class="logo-dot">.</span>
             </a>
 
-            <nav
-                class="nav"
-                aria-label="Navegación principal"
-            >
 
-                <a href="#problema">
-                    El desafío
+            <nav class="nav">
+
+                <a href="#que-hacemos">
+                    Qué hacemos
                 </a>
 
                 <a href="#como-funciona">
                     Cómo funciona
-                </a>
-
-                <a href="#beneficios">
-                    Beneficios
                 </a>
 
                 <a href="#industrias">
@@ -1506,12 +1650,11 @@
 
                 <a
                     href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
-                    class="btn-neo nav-button"
+                    class="nav-cta"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Solicitar demo
-                    <span>→</span>
                 </a>
 
             </nav>
@@ -1521,13 +1664,14 @@
     </header>
 
 
+
     <!-- =====================================================
          HERO
     ====================================================== -->
 
     <section class="hero">
 
-        <div class="hero-orbit"></div>
+        <div class="hero-circle"></div>
 
         <div class="container">
 
@@ -1537,20 +1681,23 @@
                 <div class="hero-content">
 
                     <div class="hero-eyebrow">
-                        Inteligencia artificial aplicada
+                        Inteligencia artificial especializada
                     </div>
 
+
                     <h1>
-                        La inteligencia que
-                        <strong>hace avanzar</strong>
-                        tu negocio.
+                        La inteligencia que hace
+                        <strong>más simple</strong>
+                        tu operación.
                     </h1>
 
-                    <p>
-                        NEO conecta inteligencia artificial con las
-                        funciones que hacen funcionar tu organización:
-                        atención, gestión, seguimiento, análisis y mucho más.
+
+                    <p class="hero-description">
+                        NEO. transforma gestiones que requieren
+                        tiempo, información y coordinación en
+                        experiencias simples, guiadas y automatizadas.
                     </p>
+
 
                     <div class="hero-actions">
 
@@ -1560,12 +1707,13 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Conocé NEO
-                            <span>→</span>
+                            Conocé NEO.
+                            <span class="btn-arrow">→</span>
                         </a>
 
+
                         <span class="hero-note">
-                            Descubrí qué puede hacer por tu organización.
+                            Descubrí dónde puede ayudarte.
                         </span>
 
                     </div>
@@ -1573,29 +1721,33 @@
                 </div>
 
 
-                <!-- VISUAL -->
 
                 <div class="hero-visual">
 
-                    <div class="visual-frame">
+                    <div class="hero-photo-frame">
 
-                        <div class="visual-core"></div>
+                        <!--
+                            Fotografía corporativa real.
+                            Reemplazable por la fotografía definitiva
+                            de NEO cuando esté disponible.
+                        -->
 
-                        <div class="node node-1">
-                            Atención
-                        </div>
+                        <img
+                            class="hero-photo"
+                            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+                            alt="Equipo corporativo trabajando con tecnología e inteligencia artificial"
+                        >
 
-                        <div class="node node-2">
-                            Seguimiento
-                        </div>
+                    </div>
 
-                        <div class="node node-3">
-                            Gestión
-                        </div>
 
-                        <div class="node node-4">
-                            Análisis
-                        </div>
+                    <div class="hero-badge">
+
+                        <strong>NEO.</strong>
+
+                        <span>
+                            Inteligencia aplicada al negocio
+                        </span>
 
                     </div>
 
@@ -1609,28 +1761,85 @@
     </section>
 
 
+
     <!-- =====================================================
-         DESAFÍO
+         INTRO
     ====================================================== -->
 
     <section
-        class="problem"
-        id="problema"
+        class="intro"
+        id="que-hacemos"
     >
 
         <div class="container">
 
-            <div class="section-intro">
+            <div class="intro-grid">
+
+
+                <div class="intro-copy">
+
+                    <div class="section-label">
+                        Una nueva forma de gestionar
+                    </div>
+
+                    <h2>
+                        Menos tareas manuales.
+                        Más capacidad para tu equipo.
+                    </h2>
+
+                    <p>
+                        NEO. entiende lo que necesitás, guía a las
+                        personas, consulta la información necesaria
+                        y genera resultados listos para usar.
+                    </p>
+
+                </div>
+
+
+                <div class="intro-side">
+
+                    <p>
+                        Desde atención y seguimiento hasta
+                        documentación, análisis y coordinación:
+                        NEO. se adapta a la forma en que trabaja
+                        cada organización.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DESAFÍO
+    ====================================================== -->
+
+    <section class="problem">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    El desafío
+                </div>
 
                 <h2>
                     Tu equipo no debería perder tiempo
-                    haciendo lo que la IA puede hacer por ellos.
+                    haciendo lo que NEO. puede hacer por ellos.
                 </h2>
 
                 <p>
-                    Muchas organizaciones todavía dependen de tareas
-                    repetitivas, búsqueda de información, seguimiento
-                    manual y respuestas que consumen horas de trabajo.
+                    Buscar información, revisar documentación,
+                    completar datos, responder consultas y hacer
+                    seguimiento consume horas que podrían estar
+                    dedicadas a tareas de mayor valor.
                 </p>
 
             </div>
@@ -1650,9 +1859,9 @@
                     </h3>
 
                     <p>
-                        Buscar información, interpretar documentación
-                        y encontrar respuestas consume tiempo que podría
-                        dedicarse a tareas de mayor valor.
+                        NEO. ayuda a reunir y consultar la
+                        información necesaria para cada gestión,
+                        sin búsquedas interminables.
                     </p>
 
                 </div>
@@ -1665,13 +1874,13 @@
                     </div>
 
                     <h3>
-                        Resolver tareas repetitivas
+                        Completar tareas
                     </h3>
 
                     <p>
-                        Muchas actividades dependen todavía de carga
-                        manual, revisión de datos y coordinación entre
-                        distintas personas.
+                        Guía a las personas paso a paso y
+                        reduce la carga de tareas repetitivas
+                        y administrativas.
                     </p>
 
                 </div>
@@ -1684,13 +1893,13 @@
                     </div>
 
                     <h3>
-                        Mantener todo bajo control
+                        No dejar nada pendiente
                     </h3>
 
                     <p>
-                        Consultas, pendientes y seguimientos pueden
-                        acumularse cuando el equipo tiene que hacerlo
-                        todo manualmente.
+                        Facilita el seguimiento de cada caso
+                        y ayuda a mantener la información
+                        organizada y disponible.
                     </p>
 
                 </div>
@@ -1703,35 +1912,44 @@
     </section>
 
 
+
     <!-- =====================================================
          COMO FUNCIONA
     ====================================================== -->
 
-    <section id="como-funciona">
+    <section
+        class="how"
+        id="como-funciona"
+    >
 
         <div class="container">
 
-            <div class="section-intro">
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Cómo funciona
+                </div>
 
                 <h2>
-                    Hablá con NEO. El resto empieza a suceder.
+                    Hablás con NEO.
+                    NEO. hace el resto.
                 </h2>
 
                 <p>
-                    NEO entiende lo que necesitás, hace las preguntas
-                    correctas y utiliza inteligencia especializada para
-                    ayudarte a resolver cada gestión.
+                    Una experiencia simple para resolver
+                    gestiones que antes requerían múltiples
+                    pasos, personas y herramientas.
                 </p>
 
             </div>
 
 
-            <div class="steps">
+            <div class="how-grid">
 
 
-                <div class="step">
+                <div class="how-card">
 
-                    <div class="step-number">
+                    <div class="how-number">
                         01
                     </div>
 
@@ -1740,58 +1958,63 @@
                     </h3>
 
                     <p>
-                        Explicá tu necesidad como lo harías con una persona.
+                        La persona explica su necesidad
+                        de manera natural, como lo haría
+                        con un integrante del equipo.
                     </p>
 
                 </div>
 
 
-                <div class="step">
+                <div class="how-card">
 
-                    <div class="step-number">
+                    <div class="how-number">
                         02
                     </div>
 
                     <h3>
-                        NEO entiende
+                        NEO. pregunta
                     </h3>
 
                     <p>
-                        La IA identifica la información necesaria para avanzar.
+                        Identifica la información necesaria
+                        y guía la conversación para obtenerla.
                     </p>
 
                 </div>
 
 
-                <div class="step">
+                <div class="how-card">
 
-                    <div class="step-number">
+                    <div class="how-number">
                         03
                     </div>
 
                     <h3>
-                        NEO trabaja
+                        NEO. trabaja
                     </h3>
 
                     <p>
-                        Consulta, analiza, organiza y prepara la respuesta.
+                        Analiza la información, aplica las
+                        reglas definidas y organiza el resultado.
                     </p>
 
                 </div>
 
 
-                <div class="step">
+                <div class="how-card">
 
-                    <div class="step-number">
+                    <div class="how-number">
                         04
                     </div>
 
                     <h3>
-                        Vos decidís
+                        Obtenés el resultado
                     </h3>
 
                     <p>
-                        Recibís el resultado listo para revisar y utilizar.
+                        La gestión queda preparada para
+                        continuar, revisar o finalizar.
                     </p>
 
                 </div>
@@ -1804,26 +2027,30 @@
     </section>
 
 
+
     <!-- =====================================================
          BENEFICIOS
     ====================================================== -->
 
-    <section
-        class="benefits-section"
-        id="beneficios"
-    >
+    <section>
 
         <div class="container">
 
-            <div class="section-intro">
+            <div class="section-heading">
+
+                <div class="section-label">
+                    El impacto
+                </div>
 
                 <h2>
-                    Más inteligencia. Menos trabajo repetitivo.
+                    Convertí tiempo operativo
+                    en capacidad de crecimiento.
                 </h2>
 
                 <p>
-                    NEO ayuda a que tu equipo pueda dedicar más tiempo
-                    a las decisiones, los clientes y el crecimiento.
+                    NEO. ayuda a que los equipos puedan hacer
+                    más con los mismos recursos, manteniendo
+                    una experiencia consistente.
                 </p>
 
             </div>
@@ -1835,15 +2062,16 @@
                 <div class="benefit">
 
                     <div class="benefit-icon">
-                        ◌
+                        ◈
                     </div>
 
                     <h3>
-                        Ahorrá tiempo
+                        Más velocidad
                     </h3>
 
                     <p>
-                        Automatizá tareas que consumen horas de trabajo.
+                        Resolvé gestiones en menos tiempo y
+                        acelerá la respuesta de tu organización.
                     </p>
 
                 </div>
@@ -1856,11 +2084,12 @@
                     </div>
 
                     <h3>
-                        Mejorá la atención
+                        Menos trabajo repetitivo
                     </h3>
 
                     <p>
-                        Respondé más rápido y acompañá mejor a cada persona.
+                        Liberá a tu equipo de tareas manuales
+                        que consumen horas todos los días.
                     </p>
 
                 </div>
@@ -1869,15 +2098,16 @@
                 <div class="benefit">
 
                     <div class="benefit-icon">
-                        ↗
+                        ◎
                     </div>
 
                     <h3>
-                        Aumentá capacidad
+                        Más consistencia
                     </h3>
 
                     <p>
-                        Hacé más con el mismo equipo y los mismos recursos.
+                        Aplicá los mismos criterios y
+                        estándares en cada gestión.
                     </p>
 
                 </div>
@@ -1886,16 +2116,16 @@
                 <div class="benefit">
 
                     <div class="benefit-icon">
-                        ∞
+                        ⬡
                     </div>
 
                     <h3>
-                        Escalá con inteligencia
+                        Más capacidad
                     </h3>
 
                     <p>
-                        Incorporá nuevos motores según las necesidades
-                        de tu organización.
+                        Aumentá el volumen de trabajo que
+                        puede gestionar tu organización.
                     </p>
 
                 </div>
@@ -1906,6 +2136,7 @@
         </div>
 
     </section>
+
 
 
     <!-- =====================================================
@@ -1919,16 +2150,20 @@
 
         <div class="container">
 
-            <div class="section-intro">
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Aplicaciones
+                </div>
 
                 <h2>
-                    Inteligencia especializada para cada industria.
+                    Un motor. Distintas industrias.
                 </h2>
 
                 <p>
-                    NEO se adapta a la realidad de cada organización
-                    para resolver necesidades concretas y generar
-                    resultados desde el primer día.
+                    NEO. puede adaptarse a las necesidades
+                    específicas de cada organización y a las
+                    gestiones que forman parte de su operación.
                 </p>
 
             </div>
@@ -1941,6 +2176,10 @@
 
                 <div class="industry">
 
+                    <span class="industry-tag">
+                        Legal
+                    </span>
+
                     <div class="industry-icon">
                         ⚖
                     </div>
@@ -1950,19 +2189,24 @@
                     </h3>
 
                     <p>
-                        Investigación, documentación,
-                        análisis y asistencia jurídica.
+                        Organización documental, análisis de
+                        información, generación de documentos
+                        y asistencia en gestiones jurídicas.
                     </p>
 
                 </div>
 
 
-                <!-- NOTARÍAS -->
+                <!-- NOTARIAL -->
 
                 <div class="industry">
 
+                    <span class="industry-tag">
+                        Notarial
+                    </span>
+
                     <div class="industry-icon">
-                        ◈
+                        ◫
                     </div>
 
                     <h3>
@@ -1970,8 +2214,9 @@
                     </h3>
 
                     <p>
-                        Preparación documental,
-                        revisión y asistencia especializada.
+                        Preparación de documentación,
+                        recopilación de información y
+                        asistencia en gestiones notariales.
                     </p>
 
                 </div>
@@ -1981,8 +2226,12 @@
 
                 <div class="industry">
 
+                    <span class="industry-tag">
+                        Financiera
+                    </span>
+
                     <div class="industry-icon">
-                        ◫
+                        ◈
                     </div>
 
                     <h3>
@@ -1990,8 +2239,9 @@
                     </h3>
 
                     <p>
-                        Atención, análisis de información
-                        y seguimiento de operaciones.
+                        Atención, análisis de información,
+                        seguimiento y asistencia en tareas
+                        administrativas y comerciales.
                     </p>
 
                 </div>
@@ -2001,8 +2251,12 @@
 
                 <div class="industry">
 
+                    <span class="industry-tag">
+                        Servicios
+                    </span>
+
                     <div class="industry-icon">
-                        ◰
+                        ▤
                     </div>
 
                     <h3>
@@ -2010,8 +2264,34 @@
                     </h3>
 
                     <p>
-                        Organización, seguimiento y
-                        gestión de solicitudes.
+                        Organización de documentación,
+                        seguimiento de solicitudes y
+                        coordinación de tareas.
+                    </p>
+
+                </div>
+
+
+                <!-- EMPRESAS -->
+
+                <div class="industry">
+
+                    <span class="industry-tag">
+                        Corporativo
+                    </span>
+
+                    <div class="industry-icon">
+                        ◌
+                    </div>
+
+                    <h3>
+                        Empresas
+                    </h3>
+
+                    <p>
+                        Atención interna, gestión documental,
+                        seguimiento y automatización de tareas
+                        administrativas.
                     </p>
 
                 </div>
@@ -2021,21 +2301,70 @@
 
                 <div class="industry">
 
+                    <span class="industry-tag">
+                        Servicios
+                    </span>
+
                     <div class="industry-icon">
-                        ◎
+                        ⌁
                     </div>
 
                     <h3>
-                        Servicios
+                        Servicios profesionales
                     </h3>
 
                     <p>
-                        Atención al cliente, seguimiento
-                        y asistencia inteligente.
+                        Asistencia inteligente para equipos que
+                        necesitan gestionar información, clientes
+                        y tareas de forma más eficiente.
                     </p>
 
                 </div>
 
+
+            </div>
+
+
+            <!-- ÁREAS -->
+
+            <div class="areas">
+
+                <div class="section-label">
+                    También puede integrarse en
+                </div>
+
+
+                <div class="area-list">
+
+                    <span class="area">
+                        Atención al cliente
+                    </span>
+
+                    <span class="area">
+                        Seguimiento
+                    </span>
+
+                    <span class="area">
+                        Gestión documental
+                    </span>
+
+                    <span class="area">
+                        Recursos Humanos
+                    </span>
+
+                    <span class="area">
+                        Administración
+                    </span>
+
+                    <span class="area">
+                        Análisis
+                    </span>
+
+                    <span class="area">
+                        Coordinación
+                    </span>
+
+                </div>
 
             </div>
 
@@ -2044,8 +2373,9 @@
     </section>
 
 
+
     <!-- =====================================================
-         CTA
+         CTA FINAL
     ====================================================== -->
 
     <section
@@ -2055,29 +2385,42 @@
 
         <div class="container">
 
-            <h2>
-                Descubrí qué puede hacer NEO por tu organización.
-            </h2>
+            <div class="cta-content">
 
-            <p>
-                Coordiná una conversación con nuestro equipo y
-                descubrí dónde la inteligencia artificial puede
-                generar mayor impacto en tu negocio.
-            </p>
+                <div class="section-label">
+                    Conocé NEO.
+                </div>
 
-            <a
-                href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
-                class="btn-neo"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Solicitar una demo
-                <span>→</span>
-            </a>
+
+                <h2>
+                    Descubrí cuánto puede
+                    simplificar tu organización.
+                </h2>
+
+
+                <p>
+                    Contanos qué gestiones querés mejorar
+                    y descubrí cómo NEO. puede convertirse
+                    en una nueva capacidad para tu equipo.
+                </p>
+
+
+                <a
+                    href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
+                    class="btn-neo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Solicitar una demo
+                    <span class="btn-arrow">→</span>
+                </a>
+
+            </div>
 
         </div>
 
     </section>
+
 
 
     <!-- =====================================================
@@ -2099,7 +2442,7 @@
                 Neomynd
             </a>
 
-            – Future Intelligence, Today.
+            · NEO. — Future Intelligence, Today.
 
         </p>
 
