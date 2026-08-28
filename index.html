@@ -4,36 +4,37 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="robots" content="index, follow">
+
     <meta name="author" content="Neomynd">
+
     <meta name="language" content="Spanish">
 
-    <!-- =====================================================
-         SEO
-    ====================================================== -->
-
-    <title>NEO | Inteligencia Artificial para gestionar y generar documentos</title>
+    <title>
+        NEO | IA para generar documentos y gestionar solicitudes mediante conversación
+    </title>
 
     <meta
         name="description"
-        content="NEO es el producto de Neomynd que transforma gestiones complejas en una conversación. Respondé unas preguntas y NEO reúne la información, completa la gestión y genera el documento que necesitás."
+        content="NEO transforma conversaciones en documentos. Genera poderes, compraventas, autorizaciones, formularios y otros documentos a partir de una conversación simple."
     >
 
     <meta
         name="keywords"
-        content="NEO, Neomynd, inteligencia artificial, IA legal, IA notarial, IA financiera, IA para documentos, generación de documentos con IA, automatización documental, gestiones con inteligencia artificial, IA jurídica, IA para notarías, IA para estudios jurídicos, poderes, compraventas, documentación legal"
+        content="IA legal, IA notarial, inteligencia artificial legal, inteligencia artificial notarial, IA para notarías, IA para abogados, IA gestorías, IA documental, generación de documentos con IA, poderes, compraventas, autorizaciones de viaje, formularios, documentación jurídica"
     >
 
     <meta
         property="og:title"
-        content="NEO | Gestioná hablando con inteligencia artificial"
+        content="NEO | Hablás. NEO entiende. El documento toma forma."
     >
 
     <meta
         property="og:description"
-        content="Una conversación. Las preguntas necesarias. El documento que necesitás. NEO transforma gestiones complejas en una experiencia simple."
+        content="Una conversación simple para generar documentos y resolver gestiones documentales."
     >
 
     <meta
@@ -48,7 +49,7 @@
 
     <meta
         property="og:site_name"
-        content="NEO by Neomynd"
+        content="Neomynd"
     >
 
     <meta
@@ -63,20 +64,18 @@
 
     <meta
         name="twitter:title"
-        content="NEO | Inteligencia Artificial para gestionar más fácil"
+        content="NEO | Hablás. NEO entiende. El documento toma forma."
     >
 
     <meta
         name="twitter:description"
-        content="Conversá con NEO, respondé lo necesario y obtené el documento que necesitás."
+        content="Generá documentos a partir de una conversación simple con NEO."
     >
 
     <link
         rel="canonical"
         href="https://neo.neomynd.tech/"
     >
-
-    <!-- FAVICON -->
 
     <link
         rel="icon"
@@ -89,20 +88,12 @@
         href="favicon.ico"
     >
 
-    <!-- FONT -->
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
     <!-- ICONOS -->
 
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
-
 
     <style>
 
@@ -117,65 +108,61 @@
         }
 
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-
-        body {
-
-            font-family:
-                'Montserrat',
-                Arial,
-                Helvetica,
-                sans-serif;
-
-            background:
-                #071229;
-
-            color:
-                #ffffff;
-
-            line-height:
-                1.6;
-
-            overflow-x:
-                hidden;
-        }
-
-
         /* =====================================================
            VARIABLES
         ====================================================== */
 
         :root {
 
-            --navy:
-                #071229;
+            --bg-main: #0f172a;
 
-            --navy-light:
-                #0b1b3d;
+            --bg-secondary: #111c32;
 
-            --blue:
-                #123d8f;
+            --bg-card: #1e293b;
 
-            --neo:
-                #00e5ff;
+            --bg-header: #080f20;
 
-            --neo-light:
-                #8df5ff;
+            --text-main: #ffffff;
 
-            --text:
-                #ffffff;
+            --text-secondary: #cbd5e1;
 
-            --text-soft:
-                #b8c5d6;
+            --text-muted: #94a3b8;
 
-            --card:
-                rgba(255,255,255,0.055);
+            --neo: #67e8f9;
+
+            --neo-light: #a5f3fc;
+
+            --neo-dark: #082f49;
+
+            --blue: #2563eb;
 
             --border:
-                rgba(0,229,255,0.18);
+                rgba(148, 163, 184, 0.12);
+
+        }
+
+
+        /* =====================================================
+           BODY
+        ====================================================== */
+
+        body {
+
+            font-family:
+                'Inter',
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                var(--bg-main);
+
+            color:
+                var(--text-main);
+
+            line-height:
+                1.6;
+
         }
 
 
@@ -185,47 +172,48 @@
 
         header {
 
-            position:
-                fixed;
+            position: fixed;
 
-            top:
-                0;
+            top: 0;
+            left: 0;
 
-            left:
-                0;
+            width: 100%;
 
-            width:
-                100%;
-
-            z-index:
-                1000;
+            height: 70px;
 
             background:
-                rgba(1,6,25,0.94);
+                rgba(8, 15, 32, 0.96);
 
             backdrop-filter:
                 blur(12px);
 
+            -webkit-backdrop-filter:
+                blur(12px);
+
+            display: flex;
+
+            align-items: center;
+
+            z-index: 1000;
+
             border-bottom:
                 1px solid
-                rgba(0,229,255,0.10);
+                rgba(103, 232, 249, 0.10);
 
             box-shadow:
-                0 5px 25px
-                rgba(0,0,0,0.25);
+                0 4px 25px
+                rgba(0, 0, 0, 0.25);
+
         }
 
 
         .header-container {
 
             width:
-                min(1200px, 92%);
+                min(1200px, 90%);
 
             margin:
                 auto;
-
-            min-height:
-                72px;
 
             display:
                 flex;
@@ -235,76 +223,43 @@
 
             justify-content:
                 space-between;
+
         }
 
 
-        /* LOGO NEO */
+        /* LOGO */
 
         .logo {
 
-            display:
-                flex;
-
-            align-items:
-                center;
+            color:
+                #ffffff;
 
             text-decoration:
                 none;
 
             font-size:
-                29px;
+                1.45rem;
 
             font-weight:
                 800;
 
             letter-spacing:
-                -1px;
+                -0.5px;
 
-            color:
-                #ffffff;
         }
 
 
-        .logo .dot {
+        .logo span {
 
             color:
                 var(--neo);
 
-            margin-left:
-                2px;
-
-            text-shadow:
-                0 0 12px
-                rgba(0,229,255,0.5);
-        }
-
-
-        .logo-company {
-
-            font-size:
-                10px;
-
-            color:
-                #8190a8;
-
-            margin-left:
-                10px;
-
-            padding-left:
-                10px;
-
-            border-left:
-                1px solid
-                rgba(255,255,255,0.15);
-
-            letter-spacing:
-                0.5px;
         }
 
 
         /* NAV */
 
-        .nav-links {
+        .nav {
 
             display:
                 flex;
@@ -315,136 +270,132 @@
             gap:
                 28px;
 
-            list-style:
-                none;
         }
 
 
-        .nav-links a {
+        .nav a {
 
             color:
-                #d7dfeb;
+                #cbd5e1;
 
             text-decoration:
                 none;
 
             font-size:
-                14px;
+                0.95rem;
 
             font-weight:
                 500;
 
             transition:
-                0.25s;
+                color 0.2s ease;
+
         }
 
 
-        .nav-links a:hover {
+        .nav a:hover {
 
             color:
                 var(--neo);
+
         }
 
 
-        .nav-button {
+        .nav .nav-button {
 
-            padding:
-                11px 20px;
+            color:
+                var(--neo-dark);
 
             background:
                 var(--neo);
 
-            color:
-                #06152d !important;
+            padding:
+                9px 18px;
 
             border-radius:
                 9px;
 
             font-weight:
-                800 !important;
+                800;
 
-            box-shadow:
-                0 8px 25px
-                rgba(0,229,255,0.18);
         }
 
 
-        .nav-button:hover {
+        .nav .nav-button:hover {
+
+            color:
+                var(--neo-dark);
 
             background:
                 var(--neo-light);
 
-            transform:
-                translateY(-1px);
         }
 
 
         /* =====================================================
-           GENERAL
+           CONTAINER
         ====================================================== */
 
         .container {
 
             width:
-                min(1200px, 92%);
+                min(1200px, 90%);
 
             margin:
                 auto;
+
         }
 
 
         section {
 
             padding:
-                100px 20px;
+                90px 0;
+
         }
 
 
-        .section-alt {
+        /* =====================================================
+           TIPOGRAFÍA
+        ====================================================== */
 
-            background:
-                rgba(255,255,255,0.018);
-        }
-
-
-        .section-title {
-
-            text-align:
-                center;
-
-            font-size:
-                clamp(30px, 4vw, 44px);
-
-            font-weight:
-                800;
+        h1,
+        h2,
+        h3 {
 
             line-height:
                 1.15;
 
-            margin-bottom:
-                20px;
         }
 
 
-        .section-subtitle {
-
-            text-align:
-                center;
-
-            max-width:
-                780px;
-
-            margin:
-                0 auto 55px;
-
-            color:
-                var(--text-soft);
+        h1 {
 
             font-size:
-                18px;
+                4rem;
 
-            line-height:
-                1.7;
+            font-weight:
+                800;
+
+        }
+
+
+        h2 {
+
+            font-size:
+                2.6rem;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        p {
+
+            color:
+                var(--text-secondary);
+
         }
 
 
@@ -452,14 +403,41 @@
 
             color:
                 var(--neo);
+
+        }
+
+
+        .eyebrow {
+
+            display:
+                inline-block;
+
+            color:
+                var(--neo);
+
+            font-size:
+                .85rem;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                1.5px;
+
+            text-transform:
+                uppercase;
+
+            margin-bottom:
+                14px;
+
         }
 
 
         /* =====================================================
-           BOTONES
+           BOTÓN NEO
         ====================================================== */
 
-        .btn {
+        .btn-neo {
 
             display:
                 inline-flex;
@@ -474,74 +452,59 @@
                 10px;
 
             padding:
-                16px 30px;
+                15px 28px;
+
+            background:
+                var(--neo);
+
+            color:
+                var(--neo-dark);
+
+            border:
+                1px solid
+                var(--neo);
 
             border-radius:
-                10px;
+                12px;
 
             text-decoration:
                 none;
 
             font-size:
-                16px;
+                1rem;
 
             font-weight:
                 800;
 
             transition:
-                all 0.25s ease;
+                all .25s ease;
+
         }
 
 
-        .btn-primary {
-
-            background:
-                var(--neo);
-
-            color:
-                #06152d;
-
-            box-shadow:
-                0 10px 35px
-                rgba(0,229,255,0.25);
-        }
-
-
-        .btn-primary:hover {
+        .btn-neo:hover {
 
             background:
                 var(--neo-light);
 
-            transform:
-                translateY(-3px);
-
-            box-shadow:
-                0 15px 40px
-                rgba(0,229,255,0.35);
-        }
-
-
-        .btn-secondary {
-
-            background:
-                transparent;
-
-            color:
-                var(--neo);
-
-            border:
-                1px solid
-                rgba(0,229,255,0.55);
-        }
-
-
-        .btn-secondary:hover {
-
-            background:
-                rgba(0,229,255,0.08);
+            border-color:
+                var(--neo-light);
 
             transform:
                 translateY(-2px);
+
+            box-shadow:
+                0 10px 30px
+                rgba(103, 232, 249, .20);
+
+        }
+
+
+        .btn-neo span {
+
+            font-size:
+                1.2rem;
+
         }
 
 
@@ -554,9 +517,6 @@
             min-height:
                 100vh;
 
-            padding:
-                145px 20px 90px;
-
             display:
                 flex;
 
@@ -572,29 +532,26 @@
             background:
 
                 radial-gradient(
-                    circle at 80% 30%,
-                    rgba(0,229,255,0.10),
-                    transparent 30%
-                ),
-
-                radial-gradient(
-                    circle at 15% 75%,
-                    rgba(18,61,143,0.35),
-                    transparent 35%
+                    circle at 20% 45%,
+                    rgba(37, 99, 235, .16),
+                    transparent 38%
                 ),
 
                 linear-gradient(
                     135deg,
-                    #071229 0%,
-                    #0b1d42 55%,
-                    #071229 100%
+                    #0f172a,
+                    #172554
                 );
+
+            padding:
+                140px 0 90px;
+
         }
 
 
-        /* SEMICÍRCULO */
+        /* SEMICIRCULO */
 
-        .hero::after {
+        .hero::before {
 
             content:
                 "";
@@ -607,399 +564,77 @@
 
             height:
                 650px;
+
+            border-radius:
+                50%;
+
+            border:
+                1px solid
+                rgba(103, 232, 249, .12);
 
             right:
                 -330px;
 
-            bottom:
-                -360px;
-
-            border-radius:
+            top:
                 50%;
-
-            border:
-                1px solid
-                rgba(0,229,255,0.16);
-
-            box-shadow:
-                0 0 80px
-                rgba(0,229,255,0.04);
-
-            pointer-events:
-                none;
-        }
-
-
-        .hero-layout {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                1fr 0.95fr;
-
-            align-items:
-                center;
-
-            gap:
-                65px;
-
-            position:
-                relative;
-
-            z-index:
-                2;
-        }
-
-
-        .hero-copy {
-
-            max-width:
-                650px;
-        }
-
-
-        .eyebrow {
-
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            gap:
-                9px;
-
-            margin-bottom:
-                22px;
-
-            color:
-                var(--neo);
-
-            font-size:
-                13px;
-
-            font-weight:
-                700;
-
-            letter-spacing:
-                1.5px;
-
-            text-transform:
-                uppercase;
-        }
-
-
-        .eyebrow::before {
-
-            content:
-                "";
-
-            width:
-                24px;
-
-            height:
-                2px;
-
-            background:
-                var(--neo);
-        }
-
-
-        .hero h1 {
-
-            font-size:
-                clamp(42px, 5vw, 67px);
-
-            line-height:
-                1.05;
-
-            font-weight:
-                800;
-
-            letter-spacing:
-                -2px;
-
-            margin-bottom:
-                25px;
-        }
-
-
-        .hero h1 .accent {
-
-            color:
-                var(--neo);
-        }
-
-
-        .hero-description {
-
-            color:
-                var(--text-soft);
-
-            font-size:
-                20px;
-
-            line-height:
-                1.7;
-
-            max-width:
-                620px;
-
-            margin-bottom:
-                34px;
-        }
-
-
-        .hero-actions {
-
-            display:
-                flex;
-
-            gap:
-                14px;
-
-            flex-wrap:
-                wrap;
-        }
-
-
-        /* HERO VISUAL */
-
-        .hero-visual {
-
-            position:
-                relative;
-
-            min-height:
-                480px;
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-        }
-
-
-        .hero-orbit {
-
-            position:
-                absolute;
-
-            width:
-                430px;
-
-            height:
-                430px;
-
-            border-radius:
-                50%;
-
-            border:
-                1px solid
-                rgba(0,229,255,0.15);
 
             transform:
-                rotate(-12deg);
+                translateY(-50%);
+
         }
 
 
-        .hero-orbit::before {
-
-            content:
-                "";
-
-            position:
-                absolute;
+        .hero-box {
 
             width:
-                12px;
-
-            height:
-                12px;
-
-            border-radius:
-                50%;
-
-            background:
-                var(--neo);
-
-            top:
-                58px;
-
-            right:
-                50px;
-
-            box-shadow:
-                0 0 20px
-                rgba(0,229,255,0.8);
-        }
-
-
-        .hero-photo {
-
-            width:
-                390px;
-
-            height:
-                430px;
-
-            object-fit:
-                cover;
-
-            border-radius:
-                25px;
-
-            position:
-                relative;
-
-            z-index:
-                2;
-
-            border:
-                1px solid
-                rgba(0,229,255,0.20);
-
-            box-shadow:
-                0 30px 70px
-                rgba(0,0,0,0.45);
-
-            filter:
-                saturate(0.85);
-        }
-
-
-        .hero-floating {
-
-            position:
-                absolute;
-
-            z-index:
-                4;
-
-            left:
-                5px;
-
-            bottom:
-                35px;
-
-            background:
-                rgba(7,18,41,0.94);
-
-            border:
-                1px solid
-                rgba(0,229,255,0.22);
-
-            border-radius:
-                15px;
-
-            padding:
-                17px 20px;
-
-            backdrop-filter:
-                blur(12px);
-
-            box-shadow:
-                0 15px 40px
-                rgba(0,0,0,0.35);
-        }
-
-
-        .hero-floating small {
-
-            display:
-                block;
-
-            color:
-                #8190a8;
-
-            font-size:
-                11px;
-
-            margin-bottom:
-                4px;
-        }
-
-
-        .hero-floating strong {
-
-            color:
-                #ffffff;
-
-            font-size:
-                15px;
-        }
-
-
-        .hero-floating strong span {
-
-            color:
-                var(--neo);
-        }
-
-
-        /* =====================================================
-           BENEFICIOS
-        ====================================================== */
-
-        .benefits-grid {
+                100%;
 
             display:
                 grid;
 
             grid-template-columns:
-                repeat(4,1fr);
+                45% 55%;
+
+            align-items:
+                center;
 
             gap:
-                22px;
-        }
-
-
-        .benefit-card {
+                40px;
 
             background:
-                var(--card);
+                var(--bg-secondary);
 
             border:
                 1px solid
                 var(--border);
 
             border-radius:
-                18px;
+                28px;
 
             padding:
-                32px 25px;
+                45px;
 
-            transition:
-                all 0.3s ease;
-        }
-
-
-        .benefit-card:hover {
-
-            transform:
-                translateY(-7px);
-
-            border-color:
-                rgba(0,229,255,0.5);
+            overflow:
+                hidden;
 
             box-shadow:
-                0 20px 45px
-                rgba(0,229,255,0.08);
+                0 25px 70px
+                rgba(0, 0, 0, .25);
+
+            position:
+                relative;
+
+            z-index:
+                2;
+
         }
 
 
-        .benefit-icon {
+        /* =====================================================
+           IMAGEN HERO
+        ====================================================== */
 
-            width:
-                50px;
-
-            height:
-                50px;
+        .hero-image {
 
             display:
                 flex;
@@ -1010,43 +645,175 @@
             justify-content:
                 center;
 
+        }
+
+
+        .hero-image img {
+
+            width:
+                100%;
+
+            max-width:
+                420px;
+
+            height:
+                auto;
+
+            display:
+                block;
+
             border-radius:
-                13px;
-
-            background:
-                rgba(0,229,255,0.09);
-
-            color:
-                var(--neo);
-
-            font-size:
-                22px;
-
-            margin-bottom:
                 20px;
+
         }
 
 
-        .benefit-card h3 {
+        /* =====================================================
+           HERO CONTENT
+        ====================================================== */
+
+        .hero-content {
+
+            padding:
+                10px 15px;
+
+        }
+
+
+        .hero-content h1 {
 
             font-size:
-                19px;
+                clamp(
+                    2.5rem,
+                    4vw,
+                    4rem
+                );
+
+            line-height:
+                1.08;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                -1.5px;
 
             margin-bottom:
-                10px;
+                25px;
+
+            max-width:
+                650px;
+
         }
 
 
-        .benefit-card p {
-
-            color:
-                var(--text-soft);
+        .hero-content p {
 
             font-size:
-                14px;
+                1.3rem;
 
             line-height:
                 1.65;
+
+            color:
+                var(--text-secondary);
+
+            max-width:
+                620px;
+
+            margin-bottom:
+                32px;
+
+        }
+
+
+        /* =====================================================
+           SECCIONES
+        ====================================================== */
+
+        .section-header {
+
+            max-width:
+                850px;
+
+            margin-bottom:
+                40px;
+
+        }
+
+
+        .section-header p {
+
+            font-size:
+                1.15rem;
+
+            color:
+                var(--text-secondary);
+
+        }
+
+
+        /* =====================================================
+           CARDS
+        ====================================================== */
+
+        .cards {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(250px, 1fr)
+                );
+
+            gap:
+                25px;
+
+            margin-top:
+                40px;
+
+        }
+
+
+        .card {
+
+            background:
+                var(--bg-card);
+
+            padding:
+                30px;
+
+            border-radius:
+                18px;
+
+            border:
+                1px solid
+                var(--border);
+
+            transition:
+                all .25s ease;
+
+        }
+
+
+        .card:hover {
+
+            transform:
+                translateY(-4px);
+
+            border-color:
+                rgba(103, 232, 249, .25);
+
+        }
+
+
+        .card h3 {
+
+            margin-bottom:
+                10px;
+
         }
 
 
@@ -1054,62 +821,57 @@
            COMO FUNCIONA
         ====================================================== */
 
-        .how-section {
-
-            position:
-                relative;
-        }
-
-
         .steps {
 
             display:
                 grid;
 
             grid-template-columns:
-                repeat(4,1fr);
+                repeat(4, 1fr);
 
             gap:
                 20px;
 
-            position:
-                relative;
+            margin-top:
+                40px;
+
         }
 
 
         .step {
 
             background:
-                rgba(255,255,255,0.045);
-
-            border:
-                1px solid
-                rgba(0,229,255,0.16);
-
-            border-radius:
-                18px;
+                var(--bg-card);
 
             padding:
-                35px 25px;
+                25px;
+
+            border-radius:
+                16px;
 
             text-align:
                 center;
 
-            position:
-                relative;
+            border:
+                1px solid
+                var(--border);
+
         }
 
 
-        .step-number {
+        .number {
 
             width:
-                52px;
+                50px;
 
             height:
-                52px;
+                50px;
 
-            margin:
-                0 auto 22px;
+            border-radius:
+                50%;
+
+            background:
+                var(--blue);
 
             display:
                 flex;
@@ -1120,98 +882,117 @@
             justify-content:
                 center;
 
-            border-radius:
-                50%;
-
-            background:
-                var(--neo);
-
-            color:
-                #06152d;
-
-            font-size:
-                19px;
+            margin:
+                auto auto 20px;
 
             font-weight:
-                800;
+                bold;
 
-            box-shadow:
-                0 8px 25px
-                rgba(0,229,255,0.2);
-        }
-
-
-        .step h3 {
-
-            font-size:
-                18px;
-
-            margin-bottom:
-                10px;
-        }
-
-
-        .step p {
-
-            color:
-                var(--text-soft);
-
-            font-size:
-                14px;
-
-            line-height:
-                1.65;
         }
 
 
         /* =====================================================
-           DOCUMENTOS
+           BENEFICIOS
         ====================================================== */
 
-        .documents {
+        .benefits {
 
             display:
                 grid;
 
             grid-template-columns:
-                0.9fr 1.1fr;
+                repeat(
+                    auto-fit,
+                    minmax(250px, 1fr)
+                );
 
             gap:
-                60px;
+                25px;
+
+        }
+
+
+        .benefit {
+
+            background:
+                var(--bg-card);
+
+            padding:
+                25px;
+
+            border-radius:
+                18px;
+
+            border:
+                1px solid
+                var(--border);
+
+        }
+
+
+        .benefit h3 {
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        /* =====================================================
+           GANCHO DOCUMENTAL
+        ====================================================== */
+
+        .conversation-proof {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                55px;
 
             align-items:
                 center;
+
+            margin-top:
+                45px;
+
         }
 
 
-        .documents-copy h2 {
+        .conversation-proof-content {
+
+            min-width:
+                0;
+
+        }
+
+
+        .conversation-proof-content h3 {
 
             font-size:
-                clamp(30px,4vw,46px);
-
-            line-height:
-                1.15;
+                1.6rem;
 
             margin-bottom:
-                20px;
+                12px;
+
         }
 
 
-        .documents-copy p {
-
-            color:
-                var(--text-soft);
-
-            font-size:
-                18px;
-
-            line-height:
-                1.75;
+        .conversation-proof-content > p {
 
             margin-bottom:
                 25px;
+
+            font-size:
+                1.05rem;
+
         }
 
+
+        /* DOCUMENTOS */
 
         .document-list {
 
@@ -1219,27 +1000,15 @@
                 grid;
 
             grid-template-columns:
-                repeat(2,1fr);
+                repeat(2, 1fr);
 
             gap:
-                14px;
+                12px;
+
         }
 
 
         .document-item {
-
-            padding:
-                18px;
-
-            border:
-                1px solid
-                rgba(0,229,255,0.14);
-
-            background:
-                rgba(255,255,255,0.04);
-
-            border-radius:
-                13px;
 
             display:
                 flex;
@@ -1249,6 +1018,30 @@
 
             gap:
                 12px;
+
+            padding:
+                14px 16px;
+
+            background:
+                var(--bg-card);
+
+            border:
+                1px solid
+                var(--border);
+
+            border-left:
+                3px solid
+                var(--neo);
+
+            border-radius:
+                10px;
+
+            color:
+                #ffffff;
+
+            font-size:
+                .95rem;
+
         }
 
 
@@ -1257,257 +1050,84 @@
             color:
                 var(--neo);
 
-            font-size:
-                18px;
-        }
-
-
-        .document-item span {
-
-            font-size:
-                14px;
-
-            color:
-                #d9e2ee;
-        }
-
-
-        .document-panel {
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(0,229,255,0.08),
-                    rgba(255,255,255,0.035)
-                );
-
-            border:
-                1px solid
-                rgba(0,229,255,0.20);
-
-            border-radius:
-                24px;
-
-            padding:
-                35px;
-
-            box-shadow:
-                0 25px 60px
-                rgba(0,0,0,0.25);
-
-            position:
-                relative;
-
-            overflow:
-                hidden;
-        }
-
-
-        .document-panel::before {
-
-            content:
-                "";
-
-            position:
-                absolute;
-
             width:
-                180px;
+                20px;
 
-            height:
-                180px;
+            text-align:
+                center;
 
-            border-radius:
-                50%;
-
-            border:
-                1px solid
-                rgba(0,229,255,0.12);
-
-            right:
-                -80px;
-
-            top:
-                -80px;
         }
 
 
-        .conversation {
+        /* IMAGEN CONVERSACIÓN */
+
+        .conversation-proof-visual {
 
             display:
                 flex;
-
-            flex-direction:
-                column;
-
-            gap:
-                14px;
-        }
-
-
-        .message {
-
-            max-width:
-                82%;
-
-            padding:
-                13px 16px;
-
-            border-radius:
-                14px;
-
-            font-size:
-                13px;
-
-            line-height:
-                1.5;
-        }
-
-
-        .message-user {
-
-            align-self:
-                flex-end;
-
-            background:
-                rgba(0,229,255,0.12);
-
-            border:
-                1px solid
-                rgba(0,229,255,0.16);
-
-            color:
-                #dffcff;
-        }
-
-
-        .message-neo {
-
-            align-self:
-                flex-start;
-
-            background:
-                rgba(255,255,255,0.07);
-
-            border:
-                1px solid
-                rgba(255,255,255,0.08);
-
-            color:
-                #d9e2ee;
-        }
-
-
-        .generated {
-
-            margin-top:
-                12px;
-
-            padding:
-                18px;
-
-            border-radius:
-                15px;
-
-            background:
-                rgba(0,0,0,0.20);
-
-            border:
-                1px solid
-                rgba(0,229,255,0.18);
-        }
-
-
-        .generated-top {
-
-            display:
-                flex;
-
-            justify-content:
-                space-between;
 
             align-items:
                 center;
 
-            margin-bottom:
-                12px;
+            justify-content:
+                center;
+
         }
 
 
-        .generated-title {
-
-            font-weight:
-                700;
-
-            font-size:
-                14px;
-        }
-
-
-        .generated-check {
-
-            color:
-                var(--neo);
-        }
-
-
-        .document-lines {
-
-            display:
-                grid;
-
-            gap:
-                8px;
-        }
-
-
-        .document-line {
-
-            height:
-                7px;
-
-            background:
-                rgba(255,255,255,0.10);
-
-            border-radius:
-                10px;
-        }
-
-
-        .document-line.short {
+        .conversation-proof-visual img {
 
             width:
-                65%;
+                100%;
+
+            max-width:
+                520px;
+
+            height:
+                auto;
+
+            display:
+                block;
+
+            border-radius:
+                20px;
+
+            border:
+                1px solid
+                var(--border);
+
+            box-shadow:
+                0 20px 55px
+                rgba(0, 0, 0, .28);
+
         }
 
 
         /* =====================================================
-           USOS
+           INDUSTRIAS
         ====================================================== */
 
-        .use-grid {
+        .niche-grid {
 
             display:
                 grid;
 
             grid-template-columns:
-                repeat(5,1fr);
+                repeat(5, 1fr);
 
             gap:
                 15px;
 
             margin-top:
                 40px;
+
         }
 
 
-        .use-card {
+        .niche-card {
 
-            min-height:
-                180px;
-
-            padding:
-                25px 18px;
+            position:
+                relative;
 
             display:
                 flex;
@@ -1516,40 +1136,55 @@
                 column;
 
             justify-content:
-                space-between;
+                center;
+
+            min-height:
+                155px;
+
+            padding:
+                22px;
 
             border-radius:
-                17px;
-
-            background:
-                rgba(255,255,255,0.045);
+                14px;
 
             border:
                 1px solid
-                rgba(0,229,255,0.14);
+                var(--border);
+
+            border-left:
+                3px solid
+                var(--neo);
+
+            background:
+                var(--bg-card);
 
             transition:
-                0.3s;
+                all .25s ease;
+
         }
 
 
-        .use-card:hover {
+        .niche-card:hover {
 
             transform:
-                translateY(-5px);
+                translateY(-4px);
 
             border-color:
-                rgba(0,229,255,0.45);
+                rgba(103, 232, 249, .30);
+
+            border-left-color:
+                var(--neo);
+
         }
 
 
-        .use-icon {
+        .niche-icon {
 
             width:
-                48px;
+                46px;
 
             height:
-                48px;
+                46px;
 
             display:
                 flex;
@@ -1560,40 +1195,63 @@
             justify-content:
                 center;
 
+            margin-bottom:
+                14px;
+
             border-radius:
+                12px;
+
+            background:
+                rgba(103, 232, 249, .10);
+
+            color:
+                var(--neo);
+
+            font-size:
+                21px;
+
+        }
+
+
+        .niche-card h3 {
+
+            margin-bottom:
+                7px;
+
+            font-size:
+                1.05rem;
+
+        }
+
+
+        .niche-card p {
+
+            font-size:
+                .88rem;
+
+            color:
+                var(--text-muted);
+
+        }
+
+
+        .niche-label {
+
+            margin-top:
                 13px;
 
             color:
                 var(--neo);
 
-            background:
-                rgba(0,229,255,0.09);
-
             font-size:
-                20px;
-        }
+                .68rem;
 
+            font-weight:
+                800;
 
-        .use-card h3 {
+            letter-spacing:
+                1px;
 
-            font-size:
-                17px;
-
-            margin:
-                18px 0 8px;
-        }
-
-
-        .use-card p {
-
-            color:
-                var(--text-soft);
-
-            font-size:
-                12px;
-
-            line-height:
-                1.55;
         }
 
 
@@ -1603,99 +1261,57 @@
 
         .cta {
 
-            padding:
-                100px 20px;
-
             text-align:
                 center;
 
-            position:
-                relative;
-
-            overflow:
-                hidden;
-
             background:
-
-                radial-gradient(
-                    circle at center,
-                    rgba(0,229,255,0.10),
-                    transparent 45%
-                ),
-
-                #081631;
+                linear-gradient(
+                    135deg,
+                    #111c32,
+                    #16233d
+                );
 
             border-top:
                 1px solid
-                rgba(0,229,255,0.12);
+                rgba(103, 232, 249, .10);
 
             border-bottom:
                 1px solid
-                rgba(0,229,255,0.12);
+                rgba(103, 232, 249, .10);
+
         }
 
 
-        .cta::before {
+        .cta .container {
 
-            content:
-                "";
+            max-width:
+                900px;
 
-            position:
-                absolute;
-
-            width:
-                600px;
-
-            height:
-                300px;
-
-            left:
-                50%;
-
-            bottom:
-                -240px;
-
-            transform:
-                translateX(-50%);
-
-            border:
-                1px solid
-                rgba(0,229,255,0.15);
-
-            border-radius:
-                50% 50% 0 0;
         }
 
 
         .cta h2 {
 
-            font-size:
-                clamp(32px,4vw,50px);
-
             margin-bottom:
-                18px;
+                20px;
 
-            position:
-                relative;
         }
 
 
         .cta p {
 
+            color:
+                var(--text-secondary);
+
+            margin:
+                20px auto 35px;
+
             max-width:
                 700px;
 
-            margin:
-                0 auto 32px;
-
-            color:
-                var(--text-soft);
-
             font-size:
-                18px;
+                1.15rem;
 
-            position:
-                relative;
         }
 
 
@@ -1706,298 +1322,262 @@
         footer {
 
             padding:
-                45px 20px;
+                40px 20px;
 
             text-align:
                 center;
 
+            color:
+                var(--text-muted);
+
             background:
-                #010619;
+                #080f20;
 
-            color:
-                #7f8ca2;
         }
 
 
-        .footer-logo {
+        footer hr {
 
-            color:
-                #ffffff;
+            width:
+                80px;
 
-            font-size:
-                25px;
+            margin:
+                0 auto 25px;
 
-            font-weight:
-                800;
+            border:
+                0;
 
-            margin-bottom:
-                8px;
+            border-top:
+                2px solid
+                var(--neo);
+
+            box-shadow:
+                0 0 12px
+                rgba(103, 232, 249, .35);
+
         }
 
 
-        .footer-logo span {
+        footer p {
+
+            color:
+                var(--text-muted);
+
+        }
+
+
+        footer .brand {
 
             color:
                 var(--neo);
-        }
 
-
-        .footer-company {
-
-            font-size:
-                12px;
-
-            color:
-                #718096;
-
-            margin-bottom:
-                20px;
-        }
-
-
-        .copyright {
-
-            padding-top:
-                20px;
-
-            border-top:
-                1px solid
-                rgba(255,255,255,0.08);
-
-            font-size:
-                12px;
-        }
-
-
-        /* =====================================================
-           WHATSAPP
-        ====================================================== */
-
-        .whatsapp {
-
-            position:
-                fixed;
-
-            right:
-                24px;
-
-            bottom:
-                24px;
-
-            width:
-                55px;
-
-            height:
-                55px;
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            border-radius:
-                50%;
-
-            background:
-                #25D366;
-
-            color:
-                #ffffff;
-
-            font-size:
-                27px;
+            font-weight:
+                700;
 
             text-decoration:
                 none;
 
-            box-shadow:
-                0 10px 30px
-                rgba(37,211,102,0.35);
-
-            z-index:
-                1000;
-
-            transition:
-                0.25s;
-        }
-
-
-        .whatsapp:hover {
-
-            transform:
-                scale(1.08);
         }
 
 
         /* =====================================================
-           RESPONSIVE
+           TABLET
         ====================================================== */
 
         @media (max-width: 1000px) {
 
-            .hero-layout {
+            .nav {
+
+                gap:
+                    15px;
+
+            }
+
+
+            .nav a:not(.nav-button) {
+
+                display:
+                    none;
+
+            }
+
+
+            .hero-box {
 
                 grid-template-columns:
                     1fr;
 
+                padding:
+                    35px;
+
                 text-align:
                     center;
+
             }
 
 
-            .hero-copy {
+            .hero-image {
 
-                margin:
-                    auto;
+                order:
+                    1;
+
             }
 
 
-            .hero-description {
+            .hero-content {
+
+                order:
+                    2;
+
+                padding:
+                    0;
+
+            }
+
+
+            .hero-image img {
+
+                max-width:
+                    380px;
+
+            }
+
+
+            .hero-content p {
 
                 margin-left:
                     auto;
 
                 margin-right:
                     auto;
-            }
 
-
-            .hero-actions {
-
-                justify-content:
-                    center;
-            }
-
-
-            .hero-visual {
-
-                min-height:
-                    430px;
-            }
-
-
-            .benefits-grid {
-
-                grid-template-columns:
-                    repeat(2,1fr);
             }
 
 
             .steps {
 
                 grid-template-columns:
-                    repeat(2,1fr);
+                    repeat(2, 1fr);
+
             }
 
 
-            .documents {
+            .niche-grid {
+
+                grid-template-columns:
+                    repeat(3, 1fr);
+
+            }
+
+
+            .conversation-proof {
 
                 grid-template-columns:
                     1fr;
+
             }
 
 
-            .use-grid {
+            .conversation-proof-visual {
 
-                grid-template-columns:
-                    repeat(3,1fr);
+                order:
+                    2;
+
             }
+
         }
 
 
-        @media (max-width: 700px) {
+        /* =====================================================
+           MÓVIL
+        ====================================================== */
 
-            .header-container {
-
-                min-height:
-                    65px;
-            }
-
-
-            .nav-links li:not(:last-child) {
-
-                display:
-                    none;
-            }
-
-
-            .logo-company {
-
-                display:
-                    none;
-            }
-
+        @media (max-width: 600px) {
 
             section {
 
                 padding:
-                    75px 18px;
+                    70px 0;
+
             }
 
 
             .hero {
 
+                min-height:
+                    auto;
+
                 padding:
-                    120px 18px 70px;
+                    100px 0 40px;
+
             }
 
 
-            .hero h1 {
+            .hero-box {
 
-                font-size:
-                    42px;
+                padding:
+                    25px 20px;
 
-                letter-spacing:
-                    -1.3px;
+                border-radius:
+                    20px;
+
+                gap:
+                    30px;
+
             }
 
 
-            .hero-description {
+            .hero-image img {
 
-                font-size:
-                    17px;
-            }
-
-
-            .hero-photo {
-
-                width:
+                max-width:
                     300px;
 
-                height:
-                    340px;
             }
 
 
-            .hero-orbit {
+            .hero-content h1 {
+
+                font-size:
+                    2.35rem;
+
+                letter-spacing:
+                    -.8px;
+
+            }
+
+
+            .hero-content p {
+
+                font-size:
+                    1.15rem;
+
+                line-height:
+                    1.6;
+
+            }
+
+
+            .btn-neo {
 
                 width:
-                    340px;
+                    100%;
 
-                height:
-                    340px;
             }
 
 
-            .hero-floating {
+            h2 {
 
-                left:
-                    calc(50% - 155px);
+                font-size:
+                    2rem;
 
-                bottom:
-                    15px;
             }
 
 
-            .benefits-grid,
             .steps {
 
                 grid-template-columns:
                     1fr;
+
             }
 
 
@@ -2005,51 +1585,39 @@
 
                 grid-template-columns:
                     1fr;
+
             }
 
 
-            .use-grid {
+            .niche-grid {
 
                 grid-template-columns:
-                    repeat(2,1fr);
+                    repeat(2, 1fr);
+
+                gap:
+                    12px;
+
             }
 
 
-            .btn {
+            .niche-card {
 
-                width:
-                    100%;
-            }
-        }
+                min-height:
+                    135px;
 
+                padding:
+                    18px;
 
-        @media (max-width: 420px) {
-
-            .use-grid {
-
-                grid-template-columns:
-                    1fr;
             }
 
 
-            .hero-photo {
+            .niche-card p {
 
-                width:
-                    260px;
+                display:
+                    none;
 
-                height:
-                    310px;
             }
 
-
-            .hero-orbit {
-
-                width:
-                    290px;
-
-                height:
-                    290px;
-            }
         }
 
     </style>
@@ -2069,64 +1637,48 @@
         <div class="header-container">
 
             <a
-                href="https://neo.neomynd.tech"
+                href="https://neo.neomynd.tech/"
                 class="logo"
             >
-                NEO<span class="dot">.</span>
-
-                <span class="logo-company">
-                    by Neomynd
-                </span>
+                NEO<span>.</span>
             </a>
 
 
-            <nav>
+            <nav
+                class="nav"
+                aria-label="Navegación principal"
+            >
 
-                <ul class="nav-links">
+                <a href="#problema">
+                    El problema
+                </a>
 
-                    <li>
-                        <a href="#como-funciona">
-                            Cómo funciona
-                        </a>
-                    </li>
+                <a href="#como-funciona">
+                    Cómo funciona
+                </a>
 
-                    <li>
-                        <a href="#documentos">
-                            Qué podés generar
-                        </a>
-                    </li>
+                <a href="#documentos">
+                    Ejemplos
+                </a>
 
-                    <li>
-                        <a href="#usos">
-                            Usos
-                        </a>
-                    </li>
+                <a href="#industrias">
+                    Industrias
+                </a>
 
-                    <li>
-                        <a href="https://www.neomynd.tech">
-                            Neomynd
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="nav-button"
-                        >
-                            Conocé NEO
-                        </a>
-                    </li>
-
-                </ul>
+                <a
+                    href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
+                    class="nav-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Solicitar demo
+                </a>
 
             </nav>
 
         </div>
 
     </header>
-
 
 
     <!-- =====================================================
@@ -2137,83 +1689,44 @@
 
         <div class="container">
 
-            <div class="hero-layout">
+            <div class="hero-box">
 
+                <div class="hero-image">
 
-                <div class="hero-copy">
-
-                    <div class="eyebrow">
-                        Inteligencia artificial para gestionar
-                    </div>
-
-
-                    <h1>
-                        Hacé en minutos
-                        lo que antes
-                        llevaba <span class="accent">horas.</span>
-                    </h1>
-
-
-                    <p class="hero-description">
-
-                        NEO conversa con vos, entiende lo que necesitás,
-                        hace las preguntas necesarias y genera la
-                        documentación que corresponde.
-
-                    </p>
-
-
-                    <div class="hero-actions">
-
-                        <a
-                            href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="btn btn-primary"
-                        >
-                            Conocé NEO
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-
-
-                        <a
-                            href="#como-funciona"
-                            class="btn btn-secondary"
-                        >
-                            Cómo funciona
-                        </a>
-
-                    </div>
+                    <img
+                        src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=85"
+                        alt="Equipo profesional trabajando con tecnología y documentación digital"
+                    >
 
                 </div>
 
 
+                <div class="hero-content">
 
-                <div class="hero-visual">
+                    <span class="eyebrow">
+                        Inteligencia artificial aplicada
+                    </span>
 
-                    <div class="hero-orbit"></div>
+                    <h1>
+                        Resuelve gestiones complejas
+                        <span class="accent">en minutos.</span>
+                    </h1>
 
+                    <p>
+                        NEO convierte una conversación simple en
+                        documentación lista para usar. Respondés,
+                        NEO entiende y genera lo que necesitás.
+                    </p>
 
-                    <!-- Imagen corporativa / tecnológica -->
-
-                    <img
-                        class="hero-photo"
-                        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85"
-                        alt="Equipo profesional utilizando tecnología de inteligencia artificial"
+                    <a
+                        href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
+                        class="btn-neo"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-
-
-                    <div class="hero-floating">
-
-                        <small>
-                            NEO está trabajando
-                        </small>
-
-                        <strong>
-                            Generando <span>documentación</span>
-                        </strong>
-
-                    </div>
+                        Solicitar demo
+                        <span>→</span>
+                    </a>
 
                 </div>
 
@@ -2222,105 +1735,75 @@
         </div>
 
     </section>
-
 
 
     <!-- =====================================================
-         BENEFICIOS
+         PROBLEMA
     ====================================================== -->
 
-    <section
-        class="section section-alt"
-        id="beneficios"
-    >
+    <section id="problema">
 
         <div class="container">
 
-            <h2 class="section-title">
-                Menos vueltas.
-                <span class="accent">Más resultados.</span>
-            </h2>
+            <div class="section-header">
+
+                <span class="eyebrow">
+                    El problema
+                </span>
+
+                <h2>
+                    Demasiado tiempo para llegar
+                    a un resultado.
+                </h2>
+
+                <p>
+                    Buscar información, pedir datos, revisar
+                    documentación y completar formularios puede
+                    convertir una gestión simple en horas de trabajo.
+                </p>
+
+            </div>
 
 
-            <p class="section-subtitle">
+            <div class="cards">
 
-                NEO convierte una gestión que requiere conocimiento,
-                preguntas y documentación en una experiencia simple:
-                hablás, respondés y obtenés el resultado.
-
-            </p>
-
-
-            <div class="benefits-grid">
-
-
-                <div class="benefit-card">
-
-                    <div class="benefit-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
+                <div class="card">
 
                     <h3>
-                        Una conversación
+                        Buscar información
                     </h3>
 
                     <p>
-                        Explicá qué necesitás con tus propias palabras.
-                        NEO entiende la solicitud y te guía.
+                        Encontrar requisitos, antecedentes,
+                        datos y documentación necesaria.
                     </p>
 
                 </div>
 
 
-                <div class="benefit-card">
-
-                    <div class="benefit-icon">
-                        <i class="fas fa-list-check"></i>
-                    </div>
+                <div class="card">
 
                     <h3>
-                        Las preguntas justas
+                        Pedir y ordenar datos
                     </h3>
 
                     <p>
-                        NEO identifica qué información falta y
-                        pregunta solo lo necesario para completar la gestión.
+                        Recopilar información de distintas personas
+                        y asegurarse de que esté completa.
                     </p>
 
                 </div>
 
 
-                <div class="benefit-card">
-
-                    <div class="benefit-icon">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
+                <div class="card">
 
                     <h3>
-                        Documentación lista
+                        Preparar documentación
                     </h3>
 
                     <p>
-                        Con la información reunida, NEO genera el
-                        documento correspondiente de forma estructurada.
-                    </p>
-
-                </div>
-
-
-                <div class="benefit-card">
-
-                    <div class="benefit-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-
-                    <h3>
-                        Mucho menos tiempo
-                    </h3>
-
-                    <p>
-                        Reducí la carga de tareas repetitivas y
-                        dedicá tu tiempo a lo que realmente importa.
+                        Pasar información de una conversación
+                        a documentos listos para revisar.
                     </p>
 
                 </div>
@@ -2330,108 +1813,90 @@
         </div>
 
     </section>
-
 
 
     <!-- =====================================================
          COMO FUNCIONA
     ====================================================== -->
 
-    <section
-        class="how-section"
-        id="como-funciona"
-    >
+    <section id="como-funciona">
 
         <div class="container">
 
-            <h2 class="section-title">
-                Así de simple es trabajar con
-                <span class="accent">NEO.</span>
-            </h2>
+            <div class="section-header">
 
+                <span class="eyebrow">
+                    Así funciona NEO
+                </span>
 
-            <p class="section-subtitle">
+                <h2>
+                    Hablás.
+                    <span class="accent">
+                        NEO entiende.
+                    </span>
+                </h2>
 
-                No necesitás aprender un sistema nuevo.
-                Solo contale a NEO qué necesitás.
+                <p>
+                    Sin formularios interminables ni pasos innecesarios.
+                    NEO guía la conversación, recopila la información
+                    necesaria y prepara el resultado.
+                </p>
 
-            </p>
+            </div>
 
 
             <div class="steps">
 
-
                 <div class="step">
 
-                    <div class="step-number">
+                    <div class="number">
                         1
                     </div>
 
                     <h3>
-                        Contale qué necesitás
+                        Contá qué necesitás
                     </h3>
-
-                    <p>
-                        Iniciá la conversación y explicá
-                        la gestión que querés realizar.
-                    </p>
 
                 </div>
 
 
                 <div class="step">
 
-                    <div class="step-number">
+                    <div class="number">
                         2
                     </div>
 
                     <h3>
-                        Respondé
+                        Respondé preguntas
                     </h3>
-
-                    <p>
-                        NEO te hace las preguntas necesarias
-                        para reunir toda la información.
-                    </p>
 
                 </div>
 
 
                 <div class="step">
 
-                    <div class="step-number">
+                    <div class="number">
                         3
                     </div>
 
                     <h3>
-                        NEO prepara todo
+                        NEO organiza la información
                     </h3>
-
-                    <p>
-                        Organiza la información y aplica
-                        las reglas correspondientes a la gestión.
-                    </p>
 
                 </div>
 
 
                 <div class="step">
 
-                    <div class="step-number">
+                    <div class="number">
                         4
                     </div>
 
                     <h3>
-                        Obtené el resultado
+                        Recibís el documento
                     </h3>
 
-                    <p>
-                        Recibí la documentación generada
-                        y lista para continuar.
-                    </p>
-
                 </div>
-
 
             </div>
 
@@ -2440,45 +1905,96 @@
     </section>
 
 
-
     <!-- =====================================================
-         DOCUMENTOS
+         DOCUMENTOS / GANCHO
     ====================================================== -->
 
-    <section
-        class="section-alt"
-        id="documentos"
-    >
+    <section id="documentos">
 
         <div class="container">
 
-            <div class="documents">
+            <div class="section-header">
+
+                <span class="eyebrow">
+                    Ejemplos
+                </span>
+
+                <h2>
+                    De una conversación
+                    a un documento listo para usar.
+                </h2>
+
+                <p>
+                    NEO puede ayudarte a generar distintos tipos
+                    de documentación a partir de la información
+                    que surge durante la conversación.
+                </p>
+
+            </div>
 
 
-                <div class="documents-copy">
-
-                    <div class="eyebrow">
-                        De la conversación al documento
-                    </div>
+            <div class="conversation-proof">
 
 
-                    <h2>
-                        Lo complejo queda
-                        <span class="accent">resuelto.</span>
-                    </h2>
+                <!-- EJEMPLOS -->
 
+                <div class="conversation-proof-content">
+
+                    <h3>
+                        Algunos ejemplos
+                    </h3>
 
                     <p>
-
-                        NEO reúne la información necesaria durante
-                        la conversación y la transforma en documentación
-                        estructurada, sin que tengas que completar
-                        manualmente cada campo.
-
+                        Desde documentos jurídicos y notariales
+                        hasta autorizaciones y formularios.
                     </p>
 
 
                     <div class="document-list">
+
+
+                        <div class="document-item">
+
+                            <i class="fas fa-file-signature"></i>
+
+                            <span>
+                                Poderes
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-item">
+
+                            <i class="fas fa-house"></i>
+
+                            <span>
+                                Compraventas
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-item">
+
+                            <i class="fas fa-plane-departure"></i>
+
+                            <span>
+                                Autorizaciones de viaje
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-item">
+
+                            <i class="fas fa-file-lines"></i>
+
+                            <span>
+                                Formularios
+                            </span>
+
+                        </div>
 
 
                         <div class="document-item">
@@ -2505,32 +2021,21 @@
 
                         <div class="document-item">
 
+                            <i class="fas fa-file-circle-check"></i>
+
+                            <span>
+                                Autorizaciones
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-item">
+
                             <i class="fas fa-file-contract"></i>
 
                             <span>
-                                Poderes
-                            </span>
-
-                        </div>
-
-
-                        <div class="document-item">
-
-                            <i class="fas fa-house"></i>
-
-                            <span>
-                                Compraventas
-                            </span>
-
-                        </div>
-
-
-                        <div class="document-item">
-
-                            <i class="fas fa-file-lines"></i>
-
-                            <span>
-                                Formularios
+                                Declaraciones
                             </span>
 
                         </div>
@@ -2541,7 +2046,7 @@
                             <i class="fas fa-folder-open"></i>
 
                             <span>
-                                Otras gestiones documentales
+                                Otros documentos
                             </span>
 
                         </div>
@@ -2552,76 +2057,17 @@
                 </div>
 
 
+                <!-- CONVERSACIÓN -->
 
-                <div class="document-panel">
+                <div class="conversation-proof-visual">
 
-
-                    <div class="conversation">
-
-
-                        <div class="message message-user">
-
-                            Necesito preparar la documentación
-                            para una compraventa.
-
-                        </div>
-
-
-                        <div class="message message-neo">
-
-                            Perfecto. Para comenzar necesito
-                            algunos datos de las partes y del inmueble.
-
-                        </div>
-
-
-                        <div class="message message-user">
-
-                            Es una operación entre dos personas.
-
-                        </div>
-
-
-                        <div class="message message-neo">
-
-                            Entendido. Te voy a pedir la información
-                            necesaria para preparar la documentación.
-
-                        </div>
-
-
-                        <div class="generated">
-
-                            <div class="generated-top">
-
-                                <span class="generated-title">
-                                    Documento generado
-                                </span>
-
-                                <span class="generated-check">
-                                    <i class="fas fa-circle-check"></i>
-                                </span>
-
-                            </div>
-
-
-                            <div class="document-lines">
-
-                                <div class="document-line"></div>
-
-                                <div class="document-line"></div>
-
-                                <div class="document-line short"></div>
-
-                                <div class="document-line"></div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <img
+                        src="https://raw.githubusercontent.com/CaroMSerrano/neo/main/conversacion.png"
+                        alt="Ejemplo de conversación con NEO para generar documentación"
+                    >
 
                 </div>
+
 
             </div>
 
@@ -2630,139 +2076,145 @@
     </section>
 
 
-
     <!-- =====================================================
-         USOS
+         INDUSTRIAS
     ====================================================== -->
 
-    <section id="usos">
+    <section id="industrias">
 
         <div class="container">
 
-            <h2 class="section-title">
-                Una forma más simple de resolver
-                <span class="accent">gestiones complejas.</span>
-            </h2>
+            <div class="section-header">
+
+                <span class="eyebrow">
+                    Para distintas organizaciones
+                </span>
+
+                <h2>
+                    Una experiencia simple.
+                    <span class="accent">
+                        Distintos usos.
+                    </span>
+                </h2>
+
+                <p>
+                    NEO se adapta a las necesidades de organizaciones
+                    que necesitan gestionar información, solicitudes
+                    y documentación de manera más simple.
+                </p>
+
+            </div>
 
 
-            <p class="section-subtitle">
-
-                NEO puede acompañar distintas necesidades donde
-                reunir información y preparar documentación consume
-                tiempo y esfuerzo.
-
-            </p>
+            <div class="niche-grid">
 
 
-            <div class="use-grid">
+                <div class="niche-card">
 
-
-                <div class="use-card">
-
-                    <div class="use-icon">
+                    <div class="niche-icon">
                         <i class="fas fa-scale-balanced"></i>
                     </div>
 
-                    <div>
+                    <h3>
+                        Legal
+                    </h3>
 
-                        <h3>
-                            Legal
-                        </h3>
+                    <p>
+                        Información, documentación y solicitudes
+                        jurídicas.
+                    </p>
 
-                        <p>
-                            Preparación de documentación,
-                            consultas y recopilación de información.
-                        </p>
-
-                    </div>
+                    <span class="niche-label">
+                        IA LEGAL
+                    </span>
 
                 </div>
 
 
-                <div class="use-card">
+                <div class="niche-card">
 
-                    <div class="use-icon">
+                    <div class="niche-icon">
                         <i class="fas fa-building-columns"></i>
                     </div>
 
-                    <div>
+                    <h3>
+                        Notarías
+                    </h3>
 
-                        <h3>
-                            Notarial
-                        </h3>
+                    <p>
+                        Recopilación de información y preparación
+                        de documentación.
+                    </p>
 
-                        <p>
-                            Recolección de datos y generación
-                            de documentación para distintas gestiones.
-                        </p>
-
-                    </div>
+                    <span class="niche-label">
+                        IA NOTARIAL
+                    </span>
 
                 </div>
 
 
-                <div class="use-card">
+                <div class="niche-card">
 
-                    <div class="use-icon">
+                    <div class="niche-icon">
                         <i class="fas fa-landmark"></i>
                     </div>
 
-                    <div>
+                    <h3>
+                        Financiera
+                    </h3>
 
-                        <h3>
-                            Financiera
-                        </h3>
+                    <p>
+                        Solicitudes, información y documentación
+                        de clientes.
+                    </p>
 
-                        <p>
-                            Recolección de información y
-                            preparación de documentación.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="use-card">
-
-                    <div class="use-icon">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            Poderes
-                        </h3>
-
-                        <p>
-                            Guiá al usuario y reuní la información
-                            necesaria para preparar la documentación.
-                        </p>
-
-                    </div>
+                    <span class="niche-label">
+                        IA FINANCIERA
+                    </span>
 
                 </div>
 
 
-                <div class="use-card">
+                <div class="niche-card">
 
-                    <div class="use-icon">
-                        <i class="fas fa-house"></i>
+                    <div class="niche-icon">
+                        <i class="fas fa-file-lines"></i>
                     </div>
 
-                    <div>
+                    <h3>
+                        Gestorías
+                    </h3>
 
-                        <h3>
-                            Compraventas
-                        </h3>
+                    <p>
+                        Recopilación de información y documentación
+                        para distintas gestiones.
+                    </p>
 
-                        <p>
-                            Reuní los datos de las partes y
-                            prepará la documentación correspondiente.
-                        </p>
+                    <span class="niche-label">
+                        IA GESTORÍAS
+                    </span>
 
+                </div>
+
+
+                <div class="niche-card">
+
+                    <div class="niche-icon">
+                        <i class="fas fa-gears"></i>
                     </div>
+
+                    <h3>
+                        Operaciones
+                    </h3>
+
+                    <p>
+                        Solicitudes internas, información
+                        y documentación administrativa.
+                    </p>
+
+                    <span class="niche-label">
+                        IA OPERACIONES
+                    </span>
 
                 </div>
 
@@ -2774,43 +2226,44 @@
     </section>
 
 
-
     <!-- =====================================================
-         CTA
+         CTA FINAL
     ====================================================== -->
 
-    <section class="cta">
+    <section
+        class="cta"
+        id="demo"
+    >
 
         <div class="container">
 
+            <span class="eyebrow">
+                Empezá con NEO
+            </span>
+
             <h2>
-                ¿Cuánto tiempo podrías
-                <span class="accent">recuperar?</span>
+                ¿Cuánto tiempo podrías recuperar?
             </h2>
 
-
             <p>
-
-                Conocé cómo NEO puede transformar las gestiones
-                que hoy consumen horas de tu equipo.
-
+                Mostranos cómo gestionás hoy tu documentación
+                y descubrí cómo una conversación puede simplificar
+                el trabajo de tu equipo.
             </p>
-
 
             <a
                 href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
+                class="btn-neo"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-primary"
             >
-                Quiero conocer NEO
-                <i class="fas fa-arrow-right"></i>
+                Solicitar una demo
+                <span>→</span>
             </a>
 
         </div>
 
     </section>
-
 
 
     <!-- =====================================================
@@ -2819,37 +2272,24 @@
 
     <footer>
 
-        <div class="footer-logo">
-            NEO<span>.</span>
-        </div>
+        <hr>
 
+        <p>
 
-        <div class="footer-company">
-            Un producto de Neomynd
-        </div>
+            <a
+                href="https://www.neomynd.tech"
+                class="brand"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Neomynd
+            </a>
 
+            – Future Intelligence, Today.
 
-        <div class="copyright">
-
-            © 2025 Neomynd. Todos los derechos reservados.
-
-        </div>
+        </p>
 
     </footer>
-
-
-
-    <!-- WHATSAPP -->
-
-    <a
-        href="https://wa.me/5491133072057"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="whatsapp"
-        aria-label="Contactar por WhatsApp"
-    >
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
 
 </body>
