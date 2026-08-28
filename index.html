@@ -6,82 +6,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NEO | Inteligencia Artificial para gestionar mejor</title>
-
-    <meta name="description"
-        content="NEO es el motor de inteligencia artificial de Neomynd para simplificar gestiones, automatizar tareas y asistir equipos en áreas legales, notariales, financieras y administrativas.">
-
-    <meta name="keywords"
-        content="NEO, IA legal, IA notarial, inteligencia artificial, IA financiera, IA gestorías, automatización administrativa, inteligencia artificial empresas, automatización documental, asistentes de IA">
-
     <meta name="robots" content="index, follow">
     <meta name="author" content="Neomynd">
+    <meta name="language" content="Spanish">
 
-    <link rel="canonical" href="https://neo.neomynd.tech/">
+    <title>NEO | Motores de IA para potenciar tu negocio</title>
 
-    <meta property="og:title"
-        content="NEO | Inteligencia Artificial para gestionar mejor">
+    <meta
+        name="description"
+        content="NEO es la plataforma de inteligencia artificial de Neomynd que potencia la atención, gestión, seguimiento y automatización de funciones clave de tu organización."
+    >
 
-    <meta property="og:description"
-        content="Un motor de inteligencia artificial diseñado para simplificar gestiones y potenciar equipos.">
+    <meta
+        name="keywords"
+        content="NEO IA, inteligencia artificial empresarial, IA legal, IA notarial, IA financiera, IA para empresas, automatización inteligente, atención al cliente con IA, seguimiento con IA, gestión inteligente, IA RRHH, inteligencia artificial para notarías, inteligencia artificial para estudios jurídicos"
+    >
+
+    <meta property="og:title" content="NEO | Motores de IA para potenciar tu negocio">
+
+    <meta
+        property="og:description"
+        content="Motores de inteligencia artificial diseñados para potenciar distintas funciones de tu organización."
+    >
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://neo.neomynd.tech/">
-    <meta property="og:site_name" content="NEO by Neomynd">
+
+    <meta
+        property="og:url"
+        content="https://neo.neomynd.tech/"
+    >
+
+    <meta property="og:site_name" content="Neomynd">
+
+    <meta property="og:locale" content="es_ES">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title"
-        content="NEO | Inteligencia Artificial para gestionar mejor">
 
-    <meta name="twitter:description"
-        content="IA especializada para simplificar gestiones, asistir equipos y automatizar tareas.">
+    <meta
+        name="twitter:title"
+        content="NEO | Motores de IA para potenciar tu negocio"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Inteligencia artificial aplicada a la atención, gestión, seguimiento y funciones clave de tu organización."
+    >
+
+    <link
+        rel="canonical"
+        href="https://neo.neomynd.tech/"
+    >
 
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
+
     <style>
-
-        /* =====================================================
-           VARIABLES
-        ===================================================== */
-
-        :root {
-
-            --bg:
-                #07101f;
-
-            --bg-soft:
-                #0b1628;
-
-            --bg-card:
-                #101d31;
-
-            --bg-card-hover:
-                #13243b;
-
-            --neo:
-                #00e5ff;
-
-            --neo-soft:
-                #67e8f9;
-
-            --neo-dark:
-                #062c3d;
-
-            --white:
-                #ffffff;
-
-            --text:
-                #d9e4ef;
-
-            --muted:
-                #8fa3b8;
-
-            --border:
-                rgba(148,163,184,.14);
-
-        }
-
 
         /* =====================================================
            RESET
@@ -94,68 +74,98 @@
         }
 
 
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        :root {
+
+            --bg-main: #08111f;
+            --bg-secondary: #0d192b;
+            --bg-card: #122137;
+
+            --text-main: #ffffff;
+            --text-secondary: #b8c7d9;
+            --text-muted: #7f91a8;
+
+            --neo: #67e8f9;
+            --neo-light: #a5f3fc;
+            --neo-dark: #062f40;
+
+            --blue: #2563eb;
+
+            --border: rgba(148, 163, 184, 0.13);
+
+        }
+
+
+        /* =====================================================
+           GENERAL
+        ===================================================== */
+
         html {
             scroll-behavior: smooth;
         }
 
-
         body {
 
             font-family:
-                Inter,
+                'Inter',
                 Arial,
                 Helvetica,
                 sans-serif;
 
-            background:
-                var(--bg);
+            background: var(--bg-main);
 
-            color:
-                var(--white);
+            color: var(--text-main);
 
-            line-height:
-                1.6;
+            line-height: 1.6;
 
-            overflow-x:
-                hidden;
+            overflow-x: hidden;
 
         }
-
-
-        img {
-            max-width: 100%;
-        }
-
 
         .container {
 
-            width:
-                min(1160px, 90%);
+            width: min(1180px, 90%);
 
-            margin:
-                auto;
+            margin: auto;
 
         }
-
 
         section {
-            padding: 100px 0;
-        }
 
+            padding: 100px 0;
+
+        }
 
         h1,
         h2,
         h3 {
 
-            line-height:
-                1.12;
+            line-height: 1.12;
 
         }
 
+        h1,
+        h2 {
+
+            letter-spacing: -1.5px;
+
+        }
+
+        h2 {
+
+            font-size: clamp(2rem, 4vw, 3rem);
+
+            margin-bottom: 18px;
+
+        }
 
         p {
-            color:
-                var(--text);
+
+            color: var(--text-secondary);
+
         }
 
 
@@ -165,265 +175,163 @@
 
         header {
 
-            position:
-                fixed;
+            position: fixed;
 
-            top:
-                0;
+            top: 0;
+            left: 0;
 
-            left:
-                0;
+            width: 100%;
 
-            width:
-                100%;
+            height: 72px;
 
-            height:
-                72px;
+            z-index: 1000;
 
-            z-index:
-                1000;
+            display: flex;
+
+            align-items: center;
 
             background:
-                rgba(7,16,31,.92);
+                rgba(8, 17, 31, 0.92);
 
-            backdrop-filter:
-                blur(14px);
+            backdrop-filter: blur(14px);
+
+            -webkit-backdrop-filter: blur(14px);
 
             border-bottom:
                 1px solid
-                rgba(0,229,255,.08);
+                rgba(103, 232, 249, 0.08);
+
+        }
+
+        .header-container {
+
+            width: min(1180px, 90%);
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
 
         }
 
 
-        .header-inner {
+        /* LOGO */
 
-            width:
-                min(1160px,90%);
+        .logo {
 
-            height:
-                100%;
+            text-decoration: none;
 
-            margin:
-                auto;
+            color: #ffffff;
 
-            display:
-                flex;
+            font-size: 1.55rem;
 
-            align-items:
-                center;
+            font-weight: 800;
 
-            justify-content:
-                space-between;
+            letter-spacing: -0.7px;
+
+        }
+
+        .logo-dot {
+
+            color: var(--neo);
 
         }
 
 
-        /* LOGO NEO */
-
-        .neo-logo {
-
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            text-decoration:
-                none;
-
-            color:
-                #ffffff;
-
-            font-size:
-                1.55rem;
-
-            font-weight:
-                850;
-
-            letter-spacing:
-                -1px;
-
-        }
-
-
-        .neo-logo .dot {
-            color:
-                var(--neo);
-        }
-
+        /* NAV */
 
         .nav {
 
-            display:
-                flex;
+            display: flex;
 
-            align-items:
-                center;
+            align-items: center;
 
-            gap:
-                28px;
+            gap: 28px;
 
         }
-
 
         .nav a {
 
-            color:
-                #b9c8d8;
+            color: #b9c6d7;
 
-            text-decoration:
-                none;
+            text-decoration: none;
 
-            font-size:
-                .94rem;
+            font-size: 0.94rem;
 
-            transition:
-                .2s ease;
+            font-weight: 500;
+
+            transition: color .2s ease;
 
         }
-
 
         .nav a:hover {
-            color:
-                var(--neo);
-        }
 
-
-        .nav-cta {
-
-            background:
-                var(--neo);
-
-            color:
-                var(--neo-dark) !important;
-
-            padding:
-                9px 18px;
-
-            border-radius:
-                9px;
-
-            font-weight:
-                800;
-
-        }
-
-
-        .nav-cta:hover {
-
-            background:
-                var(--neo-soft);
+            color: var(--neo);
 
         }
 
 
         /* =====================================================
-           BUTTON
+           BOTÓN NEO
         ===================================================== */
 
         .btn-neo {
 
-            display:
-                inline-flex;
+            display: inline-flex;
 
-            align-items:
-                center;
+            align-items: center;
 
-            justify-content:
-                center;
+            justify-content: center;
 
-            gap:
-                10px;
+            gap: 10px;
 
-            background:
-                var(--neo);
+            padding: 14px 25px;
 
-            color:
-                var(--neo-dark);
+            background: var(--neo);
 
-            padding:
-                15px 28px;
+            color: var(--neo-dark);
 
-            border-radius:
-                10px;
+            border: 1px solid var(--neo);
 
-            border:
-                1px solid var(--neo);
+            border-radius: 10px;
 
-            text-decoration:
-                none;
+            text-decoration: none;
 
-            font-size:
-                1rem;
+            font-weight: 800;
 
-            font-weight:
-                800;
+            font-size: .98rem;
 
-            transition:
-                .25s ease;
+            transition: all .25s ease;
 
         }
-
 
         .btn-neo:hover {
 
-            background:
-                var(--neo-soft);
+            background: var(--neo-light);
 
-            transform:
-                translateY(-2px);
+            border-color: var(--neo-light);
+
+            transform: translateY(-2px);
 
             box-shadow:
-                0 12px 35px
-                rgba(0,229,255,.18);
+                0 12px 30px
+                rgba(103,232,249,.20);
+
+        }
+
+        .btn-neo span {
+
+            font-size: 1.15rem;
 
         }
 
 
-        .btn-secondary {
+        .nav-button {
 
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            padding:
-                14px 22px;
-
-            border:
-                1px solid
-                rgba(255,255,255,.16);
-
-            border-radius:
-                10px;
-
-            color:
-                #dbe8f3;
-
-            text-decoration:
-                none;
-
-            font-weight:
-                650;
-
-            transition:
-                .25s ease;
-
-        }
-
-
-        .btn-secondary:hover {
-
-            border-color:
-                var(--neo);
-
-            color:
-                var(--neo);
+            padding: 9px 17px !important;
 
         }
 
@@ -434,234 +342,194 @@
 
         .hero {
 
-            min-height:
-                100vh;
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
 
             padding:
-                150px 0 100px;
+                130px 0 90px;
 
-            position:
-                relative;
+            position: relative;
 
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            overflow:
-                hidden;
+            overflow: hidden;
 
             background:
+
                 radial-gradient(
-                    circle at 15% 30%,
-                    rgba(0,229,255,.08),
-                    transparent 32%
+                    circle at 12% 30%,
+                    rgba(37,99,235,.16),
+                    transparent 34%
                 ),
+
                 radial-gradient(
-                    circle at 85% 80%,
-                    rgba(30,64,175,.13),
-                    transparent 35%
-                );
+                    circle at 88% 80%,
+                    rgba(103,232,249,.07),
+                    transparent 30%
+                ),
+
+                var(--bg-main);
 
         }
 
 
-        /* SEMICÍRCULO PROPIO DE NEO */
+        /* SEMICÍRCULO */
 
-        .hero::before {
+        .hero-orbit {
 
-            content:
-                "";
+            position: absolute;
 
-            position:
-                absolute;
+            width: 620px;
 
-            width:
-                650px;
+            height: 620px;
 
-            height:
-                650px;
+            right: -280px;
+
+            top: 50%;
+
+            transform: translateY(-50%);
 
             border:
                 1px solid
-                rgba(0,229,255,.12);
+                rgba(103,232,249,.18);
 
-            border-radius:
-                50%;
+            border-radius: 50%;
 
-            right:
-                -300px;
-
-            top:
-                80px;
+            pointer-events: none;
 
         }
 
+        .hero-orbit::before {
 
-        .hero::after {
+            content: "";
 
-            content:
-                "";
+            position: absolute;
 
-            position:
-                absolute;
-
-            width:
-                430px;
-
-            height:
-                430px;
+            inset: 55px;
 
             border:
                 1px solid
-                rgba(0,229,255,.07);
+                rgba(103,232,249,.08);
 
-            border-radius:
-                50%;
-
-            right:
-                -190px;
-
-            top:
-                190px;
+            border-radius: 50%;
 
         }
 
+
+        /* HERO GRID */
 
         .hero-grid {
 
-            display:
-                grid;
+            display: grid;
 
             grid-template-columns:
-                1.02fr .98fr;
+                1.05fr
+                .95fr;
 
-            align-items:
-                center;
+            align-items: center;
 
-            gap:
-                70px;
+            gap: 70px;
 
-            position:
-                relative;
+            position: relative;
 
-            z-index:
-                2;
+            z-index: 2;
 
         }
 
 
-        .hero-kicker {
+        /* HERO TEXTO */
 
-            display:
-                inline-flex;
+        .hero-eyebrow {
 
-            align-items:
-                center;
+            display: inline-flex;
 
-            gap:
-                8px;
+            align-items: center;
 
-            margin-bottom:
-                20px;
+            gap: 9px;
 
-            color:
-                var(--neo);
+            color: var(--neo);
+
+            font-size: .85rem;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .hero-eyebrow::before {
+
+            content: "";
+
+            width: 28px;
+
+            height: 1px;
+
+            background: var(--neo);
+
+        }
+
+        .hero-content h1 {
 
             font-size:
-                .85rem;
+                clamp(
+                    3rem,
+                    5.5vw,
+                    5.2rem
+                );
 
-            font-weight:
-                800;
+            line-height: 1.02;
 
-            text-transform:
-                uppercase;
+            font-weight: 800;
 
-            letter-spacing:
-                1.5px;
+            max-width: 720px;
 
-        }
-
-
-        .hero-kicker::before {
-
-            content:
-                "";
-
-            width:
-                28px;
-
-            height:
-                2px;
-
-            background:
-                var(--neo);
+            margin-bottom: 25px;
 
         }
 
+        .hero-content h1 strong {
 
-        .hero h1 {
+            color: var(--neo);
 
-            font-size:
-                clamp(3rem,6vw,5.4rem);
-
-            max-width:
-                720px;
-
-            letter-spacing:
-                -3px;
-
-            margin-bottom:
-                28px;
+            font-weight: 800;
 
         }
 
+        .hero-content p {
 
-        .hero h1 strong {
+            max-width: 650px;
 
-            color:
-                var(--neo);
+            font-size: 1.25rem;
 
-            font-weight:
-                850;
+            line-height: 1.7;
 
-        }
-
-
-        .hero-description {
-
-            font-size:
-                1.25rem;
-
-            line-height:
-                1.7;
-
-            color:
-                #aebfd0;
-
-            max-width:
-                620px;
-
-            margin-bottom:
-                34px;
+            margin-bottom: 32px;
 
         }
-
 
         .hero-actions {
 
-            display:
-                flex;
+            display: flex;
 
-            align-items:
-                center;
+            align-items: center;
 
-            gap:
-                14px;
+            gap: 20px;
 
-            flex-wrap:
-                wrap;
+            flex-wrap: wrap;
+
+        }
+
+        .hero-note {
+
+            color: var(--text-muted);
+
+            font-size: .85rem;
 
         }
 
@@ -672,162 +540,270 @@
 
         .hero-visual {
 
-            min-height:
-                500px;
+            position: relative;
 
-            position:
-                relative;
+            min-height: 500px;
 
-            display:
-                flex;
+            display: flex;
 
-            align-items:
-                center;
+            align-items: center;
 
-            justify-content:
-                center;
+            justify-content: center;
 
         }
 
+        .visual-frame {
 
-        .visual-ring {
+            position: relative;
 
-            width:
-                450px;
+            width: 100%;
 
-            height:
-                450px;
+            max-width: 500px;
 
-            border-radius:
-                50%;
+            aspect-ratio: 1 / 1;
 
-            border:
-                1px solid
-                rgba(0,229,255,.16);
+            border-radius: 35px;
 
-            position:
-                absolute;
+            background:
 
-        }
-
-
-        .visual-ring::before {
-
-            content:
-                "";
-
-            position:
-                absolute;
-
-            width:
-                320px;
-
-            height:
-                320px;
-
-            border-radius:
-                50%;
+                linear-gradient(
+                    145deg,
+                    rgba(18,33,55,.95),
+                    rgba(8,17,31,.75)
+                );
 
             border:
                 1px solid
-                rgba(0,229,255,.11);
-
-            top:
-                64px;
-
-            left:
-                64px;
-
-        }
-
-
-        .visual-image {
-
-            position:
-                relative;
-
-            z-index:
-                2;
-
-            width:
-                430px;
-
-            max-width:
-                90%;
-
-            border-radius:
-                24px;
-
-            border:
-                1px solid
-                rgba(0,229,255,.12);
+                rgba(103,232,249,.14);
 
             box-shadow:
-                0 30px 90px
-                rgba(0,0,0,.45);
+                0 35px 90px
+                rgba(0,0,0,.35);
+
+            overflow: hidden;
+
+        }
+
+
+        /* VISUAL TECNOLÓGICO */
+
+        .visual-frame::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 360px;
+
+            height: 360px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(103,232,249,.20);
+
+            top: 50%;
+
+            left: 50%;
+
+            transform:
+                translate(-50%,-50%);
+
+        }
+
+        .visual-frame::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 240px;
+
+            height: 240px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(37,99,235,.28);
+
+            top: 50%;
+
+            left: 50%;
+
+            transform:
+                translate(-50%,-50%);
+
+        }
+
+        .visual-core {
+
+            position: absolute;
+
+            width: 145px;
+
+            height: 145px;
+
+            border-radius: 50%;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform:
+                translate(-50%,-50%);
+
+            background:
+
+                radial-gradient(
+                    circle at 35% 30%,
+                    #a5f3fc,
+                    #67e8f9 30%,
+                    #087b99 70%,
+                    #062f40
+                );
+
+            box-shadow:
+
+                0 0 45px
+                rgba(103,232,249,.35),
+
+                inset 0 0 35px
+                rgba(255,255,255,.18);
+
+        }
+
+        .visual-core::after {
+
+            content: "NEO";
+
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #062f40;
+
+            font-size: 1.5rem;
+
+            font-weight: 900;
+
+            letter-spacing: -1px;
+
+        }
+
+
+        /* NODOS */
+
+        .node {
+
+            position: absolute;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding: 10px 14px;
+
+            background:
+                rgba(13,25,43,.92);
+
+            border:
+                1px solid
+                rgba(103,232,249,.15);
+
+            border-radius: 10px;
+
+            color: #dce9f5;
+
+            font-size: .78rem;
+
+            font-weight: 600;
+
+            box-shadow:
+                0 12px 25px
+                rgba(0,0,0,.2);
+
+        }
+
+        .node::before {
+
+            content: "";
+
+            width: 7px;
+
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: var(--neo);
+
+            box-shadow:
+                0 0 10px
+                rgba(103,232,249,.6);
+
+        }
+
+        .node-1 {
+
+            top: 22%;
+
+            left: 9%;
+
+        }
+
+        .node-2 {
+
+            top: 18%;
+
+            right: 8%;
+
+        }
+
+        .node-3 {
+
+            bottom: 20%;
+
+            left: 7%;
+
+        }
+
+        .node-4 {
+
+            bottom: 17%;
+
+            right: 8%;
 
         }
 
 
         /* =====================================================
-           SECTION HEADER
+           SECCIONES
         ===================================================== */
 
-        .section-header {
+        .section-intro {
 
-            margin-bottom:
-                45px;
+            max-width: 780px;
 
-        }
-
-
-        .section-label {
-
-            color:
-                var(--neo);
-
-            font-size:
-                .8rem;
-
-            font-weight:
-                800;
-
-            text-transform:
-                uppercase;
-
-            letter-spacing:
-                1.4px;
-
-            margin-bottom:
-                12px;
+            margin-bottom: 45px;
 
         }
 
+        .section-intro p {
 
-        .section-header h2 {
+            font-size: 1.15rem;
 
-            font-size:
-                clamp(2.2rem,4vw,3.3rem);
+            max-width: 760px;
 
-            max-width:
-                850px;
-
-            margin-bottom:
-                15px;
-
-        }
-
-
-        .section-header p {
-
-            font-size:
-                1.12rem;
-
-            color:
-                #a5b6c7;
-
-            max-width:
-                1100px;
+            line-height: 1.7;
 
         }
 
@@ -838,196 +814,128 @@
 
         .problem {
 
-            background:
-                var(--bg-soft);
+            background: var(--bg-secondary);
 
         }
 
+        .cards {
 
-        .problem-grid {
-
-            display:
-                grid;
+            display: grid;
 
             grid-template-columns:
                 repeat(3,1fr);
 
-            gap:
-                20px;
+            gap: 22px;
 
         }
 
+        .card {
 
-        .info-card {
-
-            background:
-                var(--bg-card);
+            background: var(--bg-card);
 
             border:
                 1px solid
                 var(--border);
 
-            border-radius:
-                18px;
+            border-radius: 18px;
 
-            padding:
-                30px;
+            padding: 30px;
 
             transition:
-                .25s ease;
+                transform .25s ease,
+                border-color .25s ease;
 
         }
 
+        .card:hover {
 
-        .info-card:hover {
-
-            transform:
-                translateY(-5px);
+            transform: translateY(-5px);
 
             border-color:
-                rgba(0,229,255,.25);
-
-            background:
-                var(--bg-card-hover);
+                rgba(103,232,249,.25);
 
         }
 
+        .card-number {
 
-        .card-icon {
+            color: var(--neo);
 
-            width:
-                48px;
+            font-size: .8rem;
 
-            height:
-                48px;
+            font-weight: 800;
 
-            border-radius:
-                12px;
+            letter-spacing: 1px;
 
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            background:
-                rgba(0,229,255,.08);
-
-            border:
-                1px solid
-                rgba(0,229,255,.14);
-
-            color:
-                var(--neo);
-
-            font-size:
-                20px;
-
-            margin-bottom:
-                22px;
+            margin-bottom: 18px;
 
         }
 
+        .card h3 {
 
-        .info-card h3 {
+            font-size: 1.25rem;
 
-            font-size:
-                1.15rem;
-
-            margin-bottom:
-                10px;
-
-        }
-
-
-        .info-card p {
-
-            color:
-                #9eb0c2;
-
-            font-size:
-                .98rem;
+            margin-bottom: 10px;
 
         }
 
 
         /* =====================================================
-           COMO FUNCIONA
+           FUNCIONAMIENTO
         ===================================================== */
+
+        .how {
+
+            background: var(--bg-main);
+
+        }
 
         .steps {
 
-            display:
-                grid;
+            display: grid;
 
             grid-template-columns:
                 repeat(4,1fr);
 
-            gap:
-                18px;
+            gap: 18px;
 
         }
-
 
         .step {
 
-            position:
-                relative;
+            padding: 30px 24px;
 
-            padding:
-                30px 24px;
+            border-top:
+                1px solid
+                rgba(103,232,249,.18);
 
             background:
-                #0d192b;
-
-            border:
-                1px solid
-                var(--border);
-
-            border-radius:
-                16px;
+                rgba(18,33,55,.55);
 
         }
-
 
         .step-number {
 
-            color:
-                var(--neo);
+            color: var(--neo);
 
-            font-size:
-                .8rem;
+            font-size: .85rem;
 
-            font-weight:
-                850;
+            font-weight: 800;
 
-            margin-bottom:
-                25px;
+            margin-bottom: 22px;
 
         }
-
 
         .step h3 {
 
-            font-size:
-                1.1rem;
+            font-size: 1.1rem;
 
-            margin-bottom:
-                10px;
+            margin-bottom: 10px;
 
         }
 
-
         .step p {
 
-            color:
-                #93a7bb;
-
-            font-size:
-                .94rem;
+            font-size: .95rem;
 
         }
 
@@ -1036,50 +944,50 @@
            BENEFICIOS
         ===================================================== */
 
+        .benefits-section {
+
+            background: var(--bg-secondary);
+
+        }
+
         .benefits {
 
-            display:
-                grid;
+            display: grid;
 
             grid-template-columns:
                 repeat(4,1fr);
 
-            gap:
-                18px;
+            gap: 20px;
 
         }
-
 
         .benefit {
 
-            padding:
-                28px;
+            padding: 28px;
 
-            border-left:
-                2px solid
-                rgba(0,229,255,.35);
+            border-radius: 18px;
 
-            background:
-                rgba(16,29,49,.65);
+            background: var(--bg-card);
+
+            border:
+                1px solid
+                var(--border);
 
         }
 
+        .benefit-icon {
+
+            color: var(--neo);
+
+            font-size: 1.6rem;
+
+            margin-bottom: 18px;
+
+        }
 
         .benefit h3 {
 
-            margin-bottom:
-                9px;
-
-        }
-
-
-        .benefit p {
-
-            color:
-                #91a5b9;
-
-            font-size:
-                .94rem;
+            margin-bottom: 10px;
 
         }
 
@@ -1090,121 +998,111 @@
 
         .industries {
 
-            background:
-                var(--bg-soft);
+            background: var(--bg-main);
 
         }
 
-
         .industry-grid {
 
-            display:
-                grid;
+            display: grid;
 
             grid-template-columns:
                 repeat(5,1fr);
 
-            gap:
-                15px;
+            gap: 15px;
 
         }
 
-
         .industry {
 
+            position: relative;
+
+            min-height: 175px;
+
+            padding: 22px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
             background:
-                var(--bg-card);
+                linear-gradient(
+                    145deg,
+                    #14243a,
+                    #0e1929
+                );
 
             border:
                 1px solid
                 var(--border);
 
-            border-radius:
-                18px;
-
-            padding:
-                25px 15px;
-
-            text-align:
-                center;
-
             transition:
-                .25s ease;
+                transform .25s ease,
+                border-color .25s ease;
 
         }
-
 
         .industry:hover {
 
-            transform:
-                translateY(-5px);
+            transform: translateY(-5px);
 
             border-color:
-                rgba(0,229,255,.3);
+                rgba(103,232,249,.28);
 
         }
-
 
         .industry-icon {
 
-            width:
-                58px;
+            position: absolute;
 
-            height:
-                58px;
+            top: 20px;
 
-            margin:
-                0 auto 17px;
+            left: 20px;
 
-            display:
-                flex;
+            width: 52px;
 
-            align-items:
-                center;
+            height: 52px;
 
-            justify-content:
-                center;
+            border-radius: 14px;
 
-            border-radius:
-                16px;
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: var(--neo);
+
+            font-size: 1.45rem;
 
             background:
-                rgba(0,229,255,.08);
+                rgba(103,232,249,.08);
 
             border:
                 1px solid
-                rgba(0,229,255,.16);
-
-            color:
-                var(--neo);
-
-            font-size:
-                24px;
+                rgba(103,232,249,.16);
 
         }
-
 
         .industry h3 {
 
-            font-size:
-                .98rem;
+            font-size: 1rem;
 
-            margin-bottom:
-                8px;
+            margin-bottom: 6px;
 
         }
 
-
         .industry p {
 
-            color:
-                #879caf;
+            font-size: .82rem;
 
-            font-size:
-                .82rem;
-
-            line-height:
-                1.45;
+            line-height: 1.45;
 
         }
 
@@ -1215,86 +1113,86 @@
 
         .cta {
 
-            position:
-                relative;
+            position: relative;
 
-            overflow:
-                hidden;
+            overflow: hidden;
 
-            text-align:
-                center;
+            text-align: center;
 
             padding:
                 110px 0;
 
             background:
-                #0a1628;
+
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(103,232,249,.10),
+                    transparent 40%
+                ),
+
+                #0b1728;
 
             border-top:
                 1px solid
-                rgba(0,229,255,.08);
+                rgba(103,232,249,.10);
 
             border-bottom:
                 1px solid
-                rgba(0,229,255,.08);
+                rgba(103,232,249,.10);
 
         }
-
 
         .cta::before {
 
-            content:
-                "";
+            content: "";
 
-            position:
-                absolute;
+            position: absolute;
 
-            width:
-                500px;
+            width: 500px;
 
-            height:
-                500px;
-
-            border-radius:
-                50%;
+            height: 250px;
 
             border:
                 1px solid
-                rgba(0,229,255,.08);
+                rgba(103,232,249,.10);
 
-            left:
-                -250px;
+            border-radius:
+                500px 500px 0 0;
 
-            top:
-                -200px;
+            left: 50%;
+
+            bottom: -170px;
+
+            transform:
+                translateX(-50%);
 
         }
 
+        .cta .container {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
 
         .cta h2 {
 
-            font-size:
-                clamp(2.3rem,4vw,3.5rem);
+            max-width: 800px;
 
-            margin-bottom:
-                18px;
+            margin:
+                0 auto 18px;
 
         }
 
-
         .cta p {
 
-            max-width:
-                680px;
+            max-width: 650px;
 
             margin:
                 0 auto 32px;
 
-            color:
-                #9fb2c4;
-
-            font-size:
-                1.1rem;
+            font-size: 1.12rem;
 
         }
 
@@ -1305,62 +1203,55 @@
 
         footer {
 
-            padding:
-                35px 20px;
+            padding: 35px 20px;
 
-            text-align:
-                center;
+            text-align: center;
 
-            background:
-                #050c17;
-
-            color:
-                #73879c;
-
-            font-size:
-                .9rem;
+            background: #060d18;
 
         }
 
+        footer hr {
 
-        .footer-line {
-
-            width:
-                55px;
-
-            height:
-                2px;
+            width: 65px;
 
             margin:
                 0 auto 20px;
 
-            background:
+            border: 0;
+
+            border-top:
+                2px solid
                 var(--neo);
 
             box-shadow:
                 0 0 12px
-                rgba(0,229,255,.35);
+                rgba(103,232,249,.3);
 
         }
 
+        footer p {
 
-        .company-link {
+            color: var(--text-muted);
 
-            color:
-                #ffffff;
-
-            text-decoration:
-                none;
-
-            font-weight:
-                700;
+            font-size: .9rem;
 
         }
 
+        footer .brand {
 
-        .company-link:hover {
-            color:
-                var(--neo);
+            color: #ffffff;
+
+            font-weight: 700;
+
+            text-decoration: none;
+
+        }
+
+        footer .brand span {
+
+            color: var(--neo);
+
         }
 
 
@@ -1370,71 +1261,70 @@
 
         @media (max-width: 1000px) {
 
-            .nav a:not(.nav-cta) {
-                display:
-                    none;
-            }
+            .nav a:not(.nav-button) {
 
+                display: none;
+
+            }
 
             .hero-grid {
 
-                grid-template-columns:
-                    1fr;
+                grid-template-columns: 1fr;
 
-                gap:
-                    40px;
+                gap: 50px;
 
             }
-
 
             .hero-content {
-                text-align:
-                    center;
+
+                text-align: center;
+
             }
 
+            .hero-content p {
 
-            .hero-description {
-                margin-left:
-                    auto;
+                margin-left: auto;
+                margin-right: auto;
 
-                margin-right:
-                    auto;
             }
-
 
             .hero-actions {
-                justify-content:
-                    center;
-            }
 
+                justify-content: center;
+
+            }
 
             .hero-visual {
-                min-height:
-                    420px;
+
+                min-height: 430px;
+
             }
 
+            .cards {
 
-            .problem-grid {
-                grid-template-columns:
-                    1fr;
+                grid-template-columns: 1fr;
+
             }
-
 
             .steps {
+
                 grid-template-columns:
                     repeat(2,1fr);
-            }
 
+            }
 
             .benefits {
+
                 grid-template-columns:
                     repeat(2,1fr);
+
             }
 
-
             .industry-grid {
+
                 grid-template-columns:
                     repeat(3,1fr);
+
             }
 
         }
@@ -1447,104 +1337,100 @@
         @media (max-width: 600px) {
 
             section {
-                padding:
-                    75px 0;
-            }
 
+                padding: 75px 0;
+
+            }
 
             .hero {
 
                 padding:
-                    120px 0 70px;
+                    110px 0 70px;
 
             }
 
+            .hero-content h1 {
 
-            .hero h1 {
-
-                font-size:
-                    3rem;
-
-                letter-spacing:
-                    -1.8px;
+                font-size: 2.65rem;
 
             }
 
+            .hero-content p {
 
-            .hero-description {
-
-                font-size:
-                    1.08rem;
+                font-size: 1.08rem;
 
             }
 
+            .hero-actions {
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+            }
+
+            .btn-neo {
+
+                width: 100%;
+
+            }
 
             .hero-visual {
 
-                min-height:
-                    330px;
+                min-height: 340px;
 
             }
 
+            .visual-frame {
 
-            .visual-ring {
-
-                width:
-                    320px;
-
-                height:
-                    320px;
+                max-width: 350px;
 
             }
 
+            .node {
 
-            .visual-ring::before {
+                font-size: .68rem;
 
-                width:
-                    230px;
-
-                height:
-                    230px;
-
-                top:
-                    44px;
-
-                left:
-                    44px;
+                padding:
+                    8px 10px;
 
             }
 
+            .node-1 {
 
-            .visual-image {
-                width:
-                    300px;
-            }
-
-
-            .btn-neo,
-            .btn-secondary {
-
-                width:
-                    100%;
+                left: 0;
 
             }
 
+            .node-2 {
+
+                right: 0;
+
+            }
+
+            .node-3 {
+
+                left: 0;
+
+            }
+
+            .node-4 {
+
+                right: 0;
+
+            }
 
             .steps {
 
-                grid-template-columns:
-                    1fr;
+                grid-template-columns: 1fr;
 
             }
-
 
             .benefits {
 
-                grid-template-columns:
-                    1fr;
+                grid-template-columns: 1fr;
 
             }
-
 
             .industry-grid {
 
@@ -1553,19 +1439,21 @@
 
             }
 
-
             .industry {
 
-                padding:
-                    22px 10px;
+                min-height: 155px;
 
             }
 
-
             .industry p {
 
-                font-size:
-                    .78rem;
+                font-size: .76rem;
+
+            }
+
+            h2 {
+
+                font-size: 2rem;
 
             }
 
@@ -1581,21 +1469,28 @@
 
     <!-- =====================================================
          HEADER
-    ===================================================== -->
+    ====================================================== -->
 
     <header>
 
-        <div class="header-inner">
+        <div class="header-container">
 
             <a
                 href="https://neo.neomynd.tech/"
-                class="neo-logo"
+                class="logo"
+                aria-label="NEO"
             >
-                NEO<span class="dot">.</span>
+                NEO<span class="logo-dot">.</span>
             </a>
 
+            <nav
+                class="nav"
+                aria-label="Navegación principal"
+            >
 
-            <nav class="nav">
+                <a href="#problema">
+                    El desafío
+                </a>
 
                 <a href="#como-funciona">
                     Cómo funciona
@@ -1610,20 +1505,13 @@
                 </a>
 
                 <a
-                    href="https://www.neomynd.tech"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Neomynd
-                </a>
-
-                <a
                     href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
-                    class="nav-cta"
+                    class="btn-neo nav-button"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Solicitar demo
+                    <span>→</span>
                 </a>
 
             </nav>
@@ -1633,12 +1521,13 @@
     </header>
 
 
-
     <!-- =====================================================
          HERO
-    ===================================================== -->
+    ====================================================== -->
 
     <section class="hero">
+
+        <div class="hero-orbit"></div>
 
         <div class="container">
 
@@ -1647,26 +1536,21 @@
 
                 <div class="hero-content">
 
-                    <div class="hero-kicker">
+                    <div class="hero-eyebrow">
                         Inteligencia artificial aplicada
                     </div>
 
-
                     <h1>
-                        Gestioná más.
-                        <strong>Automatizá mejor.</strong>
+                        La inteligencia que
+                        <strong>hace avanzar</strong>
+                        tu negocio.
                     </h1>
 
-
-                    <p class="hero-description">
-
-                        NEO es un motor de inteligencia artificial
-                        diseñado para acompañar a tus equipos,
-                        simplificar gestiones y convertir tareas
-                        complejas en interacciones simples.
-
+                    <p>
+                        NEO conecta inteligencia artificial con las
+                        funciones que hacen funcionar tu organización:
+                        atención, gestión, seguimiento, análisis y mucho más.
                     </p>
-
 
                     <div class="hero-actions">
 
@@ -1676,41 +1560,44 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Solicitar demo
+                            Conocé NEO
                             <span>→</span>
                         </a>
 
-
-                        <a
-                            href="#como-funciona"
-                            class="btn-secondary"
-                        >
-                            Descubrir NEO
-                        </a>
+                        <span class="hero-note">
+                            Descubrí qué puede hacer por tu organización.
+                        </span>
 
                     </div>
 
                 </div>
 
 
-
-                <!-- IMAGEN PRINCIPAL -->
+                <!-- VISUAL -->
 
                 <div class="hero-visual">
 
-                    <div class="visual-ring"></div>
+                    <div class="visual-frame">
 
+                        <div class="visual-core"></div>
 
-                    <!--
-                        Reemplazar esta imagen por la nueva
-                        imagen corporativa de NEO.
-                    -->
+                        <div class="node node-1">
+                            Atención
+                        </div>
 
-                    <img
-                        class="visual-image"
-                        src="https://raw.githubusercontent.com/CaroMSerrano/neo/main/IA.png"
-                        alt="NEO, inteligencia artificial aplicada a gestiones empresariales"
-                    >
+                        <div class="node node-2">
+                            Seguimiento
+                        </div>
+
+                        <div class="node node-3">
+                            Gestión
+                        </div>
+
+                        <div class="node node-4">
+                            Análisis
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -1722,87 +1609,88 @@
     </section>
 
 
-
     <!-- =====================================================
-         PROBLEMA
-    ===================================================== -->
+         DESAFÍO
+    ====================================================== -->
 
-    <section class="problem">
+    <section
+        class="problem"
+        id="problema"
+    >
 
         <div class="container">
 
-            <div class="section-header">
-
-                <div class="section-label">
-                    El desafío
-                </div>
+            <div class="section-intro">
 
                 <h2>
                     Tu equipo no debería perder tiempo
-                    haciendo lo que la IA puede resolver.
+                    haciendo lo que la IA puede hacer por ellos.
                 </h2>
 
                 <p>
-                    Información dispersa, documentación repetitiva
-                    y tareas que consumen horas pueden transformarse
-                    en una experiencia mucho más simple.
+                    Muchas organizaciones todavía dependen de tareas
+                    repetitivas, búsqueda de información, seguimiento
+                    manual y respuestas que consumen horas de trabajo.
                 </p>
 
             </div>
 
 
-            <div class="problem-grid">
+            <div class="cards">
 
 
-                <div class="info-card">
+                <div class="card">
 
-                    <div class="card-icon">
-                        ⌕
+                    <div class="card-number">
+                        01 — INFORMACIÓN
                     </div>
 
                     <h3>
-                        Buscar y entender información
+                        Encontrar lo que necesitan
                     </h3>
 
                     <p>
-                        Encontrar requisitos, documentación
-                        y criterios antes de poder avanzar.
+                        Buscar información, interpretar documentación
+                        y encontrar respuestas consume tiempo que podría
+                        dedicarse a tareas de mayor valor.
                     </p>
 
                 </div>
 
 
-                <div class="info-card">
+                <div class="card">
 
-                    <div class="card-icon">
-                        ▣
+                    <div class="card-number">
+                        02 — GESTIÓN
                     </div>
 
                     <h3>
-                        Completar documentación
+                        Resolver tareas repetitivas
                     </h3>
 
                     <p>
-                        Cargar datos, revisar documentos
-                        y repetir información una y otra vez.
+                        Muchas actividades dependen todavía de carga
+                        manual, revisión de datos y coordinación entre
+                        distintas personas.
                     </p>
 
                 </div>
 
 
-                <div class="info-card">
+                <div class="card">
 
-                    <div class="card-icon">
-                        ↻
+                    <div class="card-number">
+                        03 — SEGUIMIENTO
                     </div>
 
                     <h3>
-                        Hacer seguimiento
+                        Mantener todo bajo control
                     </h3>
 
                     <p>
-                        Recordar pendientes, responder consultas
-                        y mantener cada gestión en movimiento.
+                        Consultas, pendientes y seguimientos pueden
+                        acumularse cuando el equipo tiene que hacerlo
+                        todo manualmente.
                     </p>
 
                 </div>
@@ -1815,30 +1703,24 @@
     </section>
 
 
-
     <!-- =====================================================
          COMO FUNCIONA
-    ===================================================== -->
+    ====================================================== -->
 
     <section id="como-funciona">
 
         <div class="container">
 
-            <div class="section-header">
-
-                <div class="section-label">
-                    Cómo funciona
-                </div>
+            <div class="section-intro">
 
                 <h2>
-                    De una tarea compleja
-                    a una conversación simple.
+                    Hablá con NEO. El resto empieza a suceder.
                 </h2>
 
                 <p>
                     NEO entiende lo que necesitás, hace las preguntas
-                    correctas y acompaña la gestión hasta obtener
-                    el resultado esperado.
+                    correctas y utiliza inteligencia especializada para
+                    ayudarte a resolver cada gestión.
                 </p>
 
             </div>
@@ -1858,8 +1740,7 @@
                     </h3>
 
                     <p>
-                        Iniciá la gestión hablando con NEO,
-                        como lo harías con una persona.
+                        Explicá tu necesidad como lo harías con una persona.
                     </p>
 
                 </div>
@@ -1872,12 +1753,11 @@
                     </div>
 
                     <h3>
-                        NEO pregunta
+                        NEO entiende
                     </h3>
 
                     <p>
-                        Identifica la información necesaria
-                        y solicita únicamente lo que falta.
+                        La IA identifica la información necesaria para avanzar.
                     </p>
 
                 </div>
@@ -1894,8 +1774,7 @@
                     </h3>
 
                     <p>
-                        Organiza información, documentos,
-                        consultas y tareas asociadas.
+                        Consulta, analiza, organiza y prepara la respuesta.
                     </p>
 
                 </div>
@@ -1908,12 +1787,11 @@
                     </div>
 
                     <h3>
-                        Obtené el resultado
+                        Vos decidís
                     </h3>
 
                     <p>
-                        Recibí una gestión más rápida,
-                        ordenada y consistente.
+                        Recibís el resultado listo para revisar y utilizar.
                     </p>
 
                 </div>
@@ -1926,25 +1804,27 @@
     </section>
 
 
-
     <!-- =====================================================
          BENEFICIOS
-    ===================================================== -->
+    ====================================================== -->
 
-    <section id="beneficios">
+    <section
+        class="benefits-section"
+        id="beneficios"
+    >
 
         <div class="container">
 
-            <div class="section-header">
-
-                <div class="section-label">
-                    El impacto
-                </div>
+            <div class="section-intro">
 
                 <h2>
-                    Más capacidad para tu equipo.
-                    Menos tareas que lo frenan.
+                    Más inteligencia. Menos trabajo repetitivo.
                 </h2>
+
+                <p>
+                    NEO ayuda a que tu equipo pueda dedicar más tiempo
+                    a las decisiones, los clientes y el crecimiento.
+                </p>
 
             </div>
 
@@ -1954,12 +1834,16 @@
 
                 <div class="benefit">
 
+                    <div class="benefit-icon">
+                        ◌
+                    </div>
+
                     <h3>
-                        Más velocidad
+                        Ahorrá tiempo
                     </h3>
 
                     <p>
-                        Resolvé más gestiones en menos tiempo.
+                        Automatizá tareas que consumen horas de trabajo.
                     </p>
 
                 </div>
@@ -1967,12 +1851,16 @@
 
                 <div class="benefit">
 
+                    <div class="benefit-icon">
+                        ◇
+                    </div>
+
                     <h3>
-                        Menos tareas repetitivas
+                        Mejorá la atención
                     </h3>
 
                     <p>
-                        Dejá que NEO se ocupe de lo operativo.
+                        Respondé más rápido y acompañá mejor a cada persona.
                     </p>
 
                 </div>
@@ -1980,13 +1868,16 @@
 
                 <div class="benefit">
 
+                    <div class="benefit-icon">
+                        ↗
+                    </div>
+
                     <h3>
-                        Mayor capacidad
+                        Aumentá capacidad
                     </h3>
 
                     <p>
-                        Hacé crecer el volumen sin crecer
-                        proporcionalmente el equipo.
+                        Hacé más con el mismo equipo y los mismos recursos.
                     </p>
 
                 </div>
@@ -1994,13 +1885,17 @@
 
                 <div class="benefit">
 
+                    <div class="benefit-icon">
+                        ∞
+                    </div>
+
                     <h3>
-                        Mejor experiencia
+                        Escalá con inteligencia
                     </h3>
 
                     <p>
-                        Respuestas más rápidas para clientes,
-                        usuarios y equipos internos.
+                        Incorporá nuevos motores según las necesidades
+                        de tu organización.
                     </p>
 
                 </div>
@@ -2013,10 +1908,9 @@
     </section>
 
 
-
     <!-- =====================================================
          INDUSTRIAS
-    ===================================================== -->
+    ====================================================== -->
 
     <section
         class="industries"
@@ -2025,21 +1919,16 @@
 
         <div class="container">
 
-            <div class="section-header">
-
-                <div class="section-label">
-                    Soluciones
-                </div>
+            <div class="section-intro">
 
                 <h2>
-                    Una tecnología.
-                    Distintas necesidades.
+                    Inteligencia especializada para cada industria.
                 </h2>
 
                 <p>
-                    NEO puede adaptarse a diferentes industrias
-                    y equipos para resolver gestiones específicas,
-                    atención, seguimiento y tareas de soporte.
+                    NEO se adapta a la realidad de cada organización
+                    para resolver necesidades concretas y generar
+                    resultados desde el primer día.
                 </p>
 
             </div>
@@ -2061,14 +1950,14 @@
                     </h3>
 
                     <p>
-                        Consultas, documentación,
-                        contratos y gestiones jurídicas.
+                        Investigación, documentación,
+                        análisis y asistencia jurídica.
                     </p>
 
                 </div>
 
 
-                <!-- NOTARIAL -->
+                <!-- NOTARÍAS -->
 
                 <div class="industry">
 
@@ -2077,12 +1966,12 @@
                     </div>
 
                     <h3>
-                        Notarial
+                        Notarías
                     </h3>
 
                     <p>
-                        Escrituras, poderes,
-                        documentación y consultas.
+                        Preparación documental,
+                        revisión y asistencia especializada.
                     </p>
 
                 </div>
@@ -2093,7 +1982,7 @@
                 <div class="industry">
 
                     <div class="industry-icon">
-                        ◇
+                        ◫
                     </div>
 
                     <h3>
@@ -2101,8 +1990,8 @@
                     </h3>
 
                     <p>
-                        Atención, solicitudes,
-                        documentación y seguimiento.
+                        Atención, análisis de información
+                        y seguimiento de operaciones.
                     </p>
 
                 </div>
@@ -2113,7 +2002,7 @@
                 <div class="industry">
 
                     <div class="industry-icon">
-                        ◎
+                        ◰
                     </div>
 
                     <h3>
@@ -2121,28 +2010,28 @@
                     </h3>
 
                     <p>
-                        Gestión documental,
-                        consultas y seguimiento.
+                        Organización, seguimiento y
+                        gestión de solicitudes.
                     </p>
 
                 </div>
 
 
-                <!-- ADMINISTRACIÓN -->
+                <!-- SERVICIOS -->
 
                 <div class="industry">
 
                     <div class="industry-icon">
-                        ≡
+                        ◎
                     </div>
 
                     <h3>
-                        Administración
+                        Servicios
                     </h3>
 
                     <p>
-                        Atención interna,
-                        documentación y tareas administrativas.
+                        Atención al cliente, seguimiento
+                        y asistencia inteligente.
                     </p>
 
                 </div>
@@ -2155,10 +2044,9 @@
     </section>
 
 
-
     <!-- =====================================================
-         CTA FINAL
-    ===================================================== -->
+         CTA
+    ====================================================== -->
 
     <section
         class="cta"
@@ -2167,23 +2055,15 @@
 
         <div class="container">
 
-            <div class="section-label">
-                Empezá con NEO
-            </div>
-
-
             <h2>
-                Descubrí qué puede hacer NEO
-                por tu equipo.
+                Descubrí qué puede hacer NEO por tu organización.
             </h2>
 
-
             <p>
-                Contanos qué gestiones querés simplificar
-                y descubrí cómo aplicar inteligencia artificial
-                a tu operación.
+                Coordiná una conversación con nuestro equipo y
+                descubrí dónde la inteligencia artificial puede
+                generar mayor impacto en tu negocio.
             </p>
-
 
             <a
                 href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
@@ -2200,27 +2080,26 @@
     </section>
 
 
-
     <!-- =====================================================
          FOOTER
-    ===================================================== -->
+    ====================================================== -->
 
     <footer>
 
-        <div class="footer-line"></div>
+        <hr>
 
         <p>
 
             <a
                 href="https://www.neomynd.tech"
-                class="company-link"
+                class="brand"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 Neomynd
             </a>
 
-            · NEO · Future Intelligence, Today.
+            – Future Intelligence, Today.
 
         </p>
 
