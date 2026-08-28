@@ -10,85 +10,41 @@
     <meta name="author" content="Neomynd">
     <meta name="language" content="Spanish">
 
-    <title>NEO | Inteligencia artificial para gestionar documentación</title>
+    <title>NEO | Convertí conversaciones en documentación lista para usar</title>
 
     <meta
         name="description"
-        content="NEO es una inteligencia artificial que entiende lo que necesitás, guía la conversación y genera la documentación que necesitás de forma simple y eficiente."
+        content="NEO transforma una conversación en documentación lista para usar. Simplificá la generación de poderes, compraventas, autorizaciones, formularios y otras gestiones documentales."
     >
 
     <meta
         name="keywords"
-        content="IA legal, IA notarial, inteligencia artificial legal, inteligencia artificial notarial, IA para notarías, IA para abogados, IA gestorías, IA documentación, IA poderes, IA compraventas, IA autorizaciones de viaje, automatización documental, generación de documentos con IA, inteligencia artificial empresarial"
+        content="NEO, Neomynd, inteligencia artificial, IA documental, IA legal, IA notarial, documentación jurídica, documentación notarial, poderes, compraventas, autorizaciones de viaje, formularios, gestiones documentales"
     >
 
-    <meta
-        property="og:title"
-        content="NEO | Inteligencia artificial para gestionar documentación"
-    >
-
+    <meta property="og:title" content="NEO | Documentación lista para usar">
     <meta
         property="og:description"
-        content="Hablás con NEO, respondés unas preguntas y obtenés la documentación que necesitás."
+        content="Hablá con NEO y convertí una conversación en documentación lista para usar."
     >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neo.neomynd.tech/">
+    <meta property="og:site_name" content="Neomynd">
+    <meta property="og:locale" content="es_ES">
 
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:url"
-        content="https://neo.neomynd.tech/"
-    >
-
-    <meta
-        property="og:site_name"
-        content="Neomynd"
-    >
-
-    <meta
-        property="og:locale"
-        content="es_ES"
-    >
-
-    <meta
-        name="twitter:card"
-        content="summary_large_image"
-    >
-
-    <meta
-        name="twitter:title"
-        content="NEO | Inteligencia artificial para gestionar documentación"
-    >
-
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NEO | Documentación lista para usar">
     <meta
         name="twitter:description"
-        content="Una nueva forma de gestionar documentación: conversás con NEO y obtenés el resultado que necesitás."
+        content="Convertí una conversación en documentación lista para usar con NEO."
     >
 
-    <link
-        rel="canonical"
-        href="https://neo.neomynd.tech/"
-    >
+    <link rel="canonical" href="https://neo.neomynd.tech/">
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="favicon.png"
-    >
-
-    <link
-        rel="shortcut icon"
-        href="favicon.ico"
-    >
-
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <style>
-
-        /* =====================================================
-           RESET
-        ====================================================== */
 
         * {
             margin: 0;
@@ -96,1481 +52,766 @@
             box-sizing: border-box;
         }
 
-
-        /* =====================================================
-           VARIABLES
-        ====================================================== */
-
         :root {
+            --bg: #07111f;
+            --bg-soft: #0b1728;
+            --bg-card: #101e31;
+            --bg-card-hover: #13243a;
 
-            --bg-main: #07101f;
-            --bg-secondary: #0b1628;
-            --bg-card: #101d31;
-            --bg-card-hover: #13243b;
+            --text: #ffffff;
+            --text-soft: #b8c5d6;
+            --text-muted: #8190a5;
 
-            --text-main: #ffffff;
-            --text-secondary: #b9c7d9;
-            --text-muted: #7f91a8;
+            --neo: #67e8f9;
+            --neo-light: #a5f3fc;
+            --neo-dark: #082f49;
 
-            --neo: #00e5ff;
-            --neo-light: #75efff;
-            --neo-dark: #042c38;
-
-            --blue: #1687ff;
-
-            --border:
-                rgba(148, 163, 184, 0.14);
-
+            --border: rgba(148, 163, 184, 0.14);
+            --border-neo: rgba(103, 232, 249, 0.28);
         }
 
 
-        /* =====================================================
-           BODY
-        ====================================================== */
+        /* =========================
+           GENERAL
+        ========================= */
 
         html {
             scroll-behavior: smooth;
         }
 
         body {
-
             font-family:
                 Inter,
                 Arial,
                 Helvetica,
                 sans-serif;
 
-            background:
-                var(--bg-main);
+            background: var(--bg);
+            color: var(--text);
 
-            color:
-                var(--text-main);
-
-            line-height:
-                1.6;
-
+            line-height: 1.6;
+            overflow-x: hidden;
         }
 
-
-        /* =====================================================
-           HEADER
-        ====================================================== */
-
-        header {
-
-            position: fixed;
-
-            top: 0;
-            left: 0;
-
-            width: 100%;
-
-            height: 72px;
-
-            background:
-                rgba(7, 16, 31, 0.94);
-
-            backdrop-filter:
-                blur(16px);
-
-            -webkit-backdrop-filter:
-                blur(16px);
-
-            border-bottom:
-                1px solid
-                rgba(0, 229, 255, 0.08);
-
-            z-index: 1000;
-
+        a {
+            color: inherit;
         }
-
-
-        .header-container {
-
-            width:
-                min(1200px, 90%);
-
-            height: 100%;
-
-            margin:
-                auto;
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                space-between;
-
-        }
-
-
-        /* LOGO */
-
-        .logo {
-
-            color:
-                #ffffff;
-
-            text-decoration:
-                none;
-
-            font-size:
-                1.55rem;
-
-            font-weight:
-                800;
-
-            letter-spacing:
-                -0.8px;
-
-        }
-
-
-        .logo span {
-
-            color:
-                var(--neo);
-
-        }
-
-
-        /* NAV */
-
-        .nav {
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            gap:
-                28px;
-
-        }
-
-
-        .nav a {
-
-            color:
-                #b9c7d9;
-
-            text-decoration:
-                none;
-
-            font-size:
-                0.94rem;
-
-            font-weight:
-                500;
-
-            transition:
-                color .2s ease;
-
-        }
-
-
-        .nav a:hover {
-
-            color:
-                var(--neo);
-
-        }
-
-
-        .nav-button {
-
-            background:
-                var(--neo) !important;
-
-            color:
-                var(--neo-dark) !important;
-
-            padding:
-                10px 18px;
-
-            border-radius:
-                9px;
-
-            font-weight:
-                800 !important;
-
-        }
-
-
-        .nav-button:hover {
-
-            background:
-                var(--neo-light) !important;
-
-        }
-
-
-        /* =====================================================
-           CONTAINER
-        ====================================================== */
 
         .container {
-
-            width:
-                min(1200px, 90%);
-
-            margin:
-                auto;
-
+            width: min(1180px, 90%);
+            margin: 0 auto;
         }
-
 
         section {
-
-            padding:
-                100px 0;
-
+            padding: 100px 0;
         }
-
-
-        /* =====================================================
-           TIPOGRAFÍA
-        ====================================================== */
 
         h1,
         h2,
         h3 {
-
-            line-height:
-                1.12;
-
+            line-height: 1.15;
         }
-
-
-        h1 {
-
-            font-size:
-                clamp(2.7rem, 5vw, 4.6rem);
-
-            font-weight:
-                800;
-
-            letter-spacing:
-                -2px;
-
-        }
-
-
-        h2 {
-
-            font-size:
-                clamp(2rem, 3.5vw, 3rem);
-
-            font-weight:
-                800;
-
-            letter-spacing:
-                -1px;
-
-            margin-bottom:
-                18px;
-
-        }
-
-
-        h3 {
-
-            font-size:
-                1.15rem;
-
-        }
-
 
         p {
+            color: var(--text-soft);
+        }
 
-            color:
-                var(--text-secondary);
-
+        .highlight {
+            color: var(--neo);
         }
 
 
-        .section-lead {
+        /* =========================
+           HEADER
+        ========================= */
 
-            max-width:
-                none;
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
 
-            margin-bottom:
-                42px;
+            width: 100%;
+            height: 72px;
 
-            font-size:
-                1.18rem;
+            display: flex;
+            align-items: center;
 
-            color:
-                #8fa4bd;
+            background: rgba(7, 17, 31, 0.92);
 
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+
+            border-bottom:
+                1px solid
+                rgba(103, 232, 249, 0.08);
+
+            z-index: 1000;
+        }
+
+        .header-container {
+            width: min(1180px, 90%);
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            text-decoration: none;
+
+            font-size: 1.5rem;
+            font-weight: 800;
+
+            letter-spacing: -0.5px;
+            color: #ffffff;
+        }
+
+        .logo span {
+            color: var(--neo);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav a {
+            text-decoration: none;
+
+            color: var(--text-soft);
+
+            font-size: 0.92rem;
+            font-weight: 600;
+
+            transition: 0.2s ease;
+        }
+
+        .nav a:hover {
+            color: var(--neo);
+        }
+
+        .nav-button {
+            padding: 10px 18px;
+
+            background: var(--neo);
+            color: var(--neo-dark) !important;
+
+            border-radius: 9px;
+
+            font-weight: 800 !important;
+        }
+
+        .nav-button:hover {
+            background: var(--neo-light);
         }
 
 
-        /* =====================================================
-           BOTÓN
-        ====================================================== */
+        /* =========================
+           BUTTON
+        ========================= */
 
         .btn-neo {
+            display: inline-flex;
 
-            display:
-                inline-flex;
+            align-items: center;
+            justify-content: center;
 
-            align-items:
-                center;
+            gap: 10px;
 
-            justify-content:
-                center;
+            padding: 15px 27px;
 
-            gap:
-                10px;
+            background: var(--neo);
+            color: var(--neo-dark);
 
-            padding:
-                15px 28px;
+            border: 1px solid var(--neo);
+            border-radius: 11px;
 
-            background:
-                var(--neo);
+            text-decoration: none;
 
-            color:
-                var(--neo-dark);
+            font-size: 1rem;
+            font-weight: 800;
 
-            border:
-                1px solid
-                var(--neo);
-
-            border-radius:
-                10px;
-
-            text-decoration:
-                none;
-
-            font-size:
-                1rem;
-
-            font-weight:
-                800;
-
-            transition:
-                all .25s ease;
-
-            box-shadow:
-                0 0 0 rgba(0,229,255,0);
-
+            transition: 0.25s ease;
         }
 
-
         .btn-neo:hover {
+            background: var(--neo-light);
 
-            background:
-                var(--neo-light);
-
-            border-color:
-                var(--neo-light);
-
-            transform:
-                translateY(-2px);
+            transform: translateY(-2px);
 
             box-shadow:
                 0 12px 30px
-                rgba(0,229,255,.18);
-
+                rgba(103, 232, 249, 0.18);
         }
-
 
         .btn-neo span {
-
-            font-size:
-                1.15rem;
-
+            font-size: 1.2rem;
         }
 
 
-        /* =====================================================
+        /* =========================
            HERO
-        ====================================================== */
+        ========================= */
 
         .hero {
+            min-height: 100vh;
 
-            min-height:
-                100vh;
-
-            display:
-                flex;
-
-            align-items:
-                center;
+            display: flex;
+            align-items: center;
 
             padding:
-                130px 0 80px;
+                140px 0
+                90px;
 
-            position:
-                relative;
-
-            overflow:
-                hidden;
+            position: relative;
 
             background:
-
                 radial-gradient(
-                    circle at 85% 25%,
-                    rgba(0,229,255,.10),
+                    circle at 15% 45%,
+                    rgba(37, 99, 235, 0.18),
+                    transparent 38%
+                ),
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(103, 232, 249, 0.07),
                     transparent 30%
                 ),
-
-                radial-gradient(
-                    circle at 10% 80%,
-                    rgba(22,135,255,.12),
-                    transparent 35%
-                ),
-
-                var(--bg-main);
-
+                var(--bg);
         }
 
-
         .hero-box {
+            display: grid;
 
-            display:
-                grid;
+            grid-template-columns: 47% 53%;
 
-            grid-template-columns:
-                48% 52%;
+            align-items: center;
 
-            align-items:
-                center;
+            gap: 50px;
+
+            padding: 45px;
 
             background:
                 linear-gradient(
                     145deg,
-                    #0d192c,
-                    #091525
+                    rgba(16, 30, 49, 0.96),
+                    rgba(9, 23, 39, 0.96)
                 );
 
             border:
                 1px solid
-                rgba(0,229,255,.10);
+                var(--border);
 
-            border-radius:
-                28px;
-
-            overflow:
-                hidden;
+            border-radius: 28px;
 
             box-shadow:
-                0 35px 100px
-                rgba(0,0,0,.35);
+                0 30px 80px
+                rgba(0, 0, 0, 0.28);
 
+            overflow: hidden;
+
+            position: relative;
         }
 
+        .hero-box::before {
+            content: "";
 
-        /* FOTO HERO */
+            position: absolute;
+
+            width: 320px;
+            height: 320px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(103, 232, 249, 0.08);
+
+            right: -160px;
+            top: -160px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 20px;
+
+            color: var(--neo);
+
+            font-size: 0.85rem;
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.7rem, 4.2vw, 4.25rem);
+
+            letter-spacing: -1.8px;
+
+            font-weight: 800;
+
+            margin-bottom: 24px;
+
+            max-width: 620px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+
+            line-height: 1.65;
+
+            max-width: 600px;
+
+            margin-bottom: 30px;
+        }
 
         .hero-image {
+            position: relative;
 
-            min-height:
-                540px;
+            display: flex;
 
-            position:
-                relative;
+            justify-content: center;
+            align-items: center;
 
-            overflow:
-                hidden;
-
-            background:
-                #081322;
-
+            min-height: 390px;
         }
 
+        /*
+         * Imagen fotográfica:
+         * personas trabajando en una oficina moderna.
+         * El tratamiento visual oscuro + overlay la integra
+         * con el sistema visual de NEO.
+         */
 
         .hero-image::after {
+            content: "";
 
-            content:
-                "";
+            position: absolute;
 
-            position:
-                absolute;
+            inset: 5%;
 
-            inset:
-                0;
+            border-radius: 22px;
 
             background:
                 linear-gradient(
-                    90deg,
-                    transparent 55%,
-                    rgba(9,21,37,.8) 100%
+                    135deg,
+                    rgba(7, 17, 31, 0.05),
+                    rgba(7, 17, 31, 0.42)
                 );
 
-            pointer-events:
-                none;
-
+            pointer-events: none;
         }
-
 
         .hero-image img {
+            width: 100%;
+            max-width: 500px;
 
-            width:
-                100%;
+            height: 390px;
 
-            height:
-                100%;
+            object-fit: cover;
 
-            object-fit:
-                cover;
+            display: block;
 
-            display:
-                block;
+            border-radius: 22px;
 
             filter:
-                saturate(.9)
-                contrast(1.05);
+                saturate(0.85)
+                contrast(1.05)
+                brightness(0.82);
 
+            box-shadow:
+                0 25px 60px
+                rgba(0, 0, 0, 0.32);
         }
 
 
-        .hero-content {
-
-            padding:
-                55px;
-
-        }
-
-
-        .eyebrow {
-
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            gap:
-                9px;
-
-            margin-bottom:
-                20px;
-
-            color:
-                var(--neo);
-
-            font-size:
-                .85rem;
-
-            font-weight:
-                800;
-
-            letter-spacing:
-                1.8px;
-
-            text-transform:
-                uppercase;
-
-        }
-
-
-        .eyebrow::before {
-
-            content:
-                "";
-
-            width:
-                28px;
-
-            height:
-                1px;
-
-            background:
-                var(--neo);
-
-        }
-
-
-        .hero-content h1 {
-
-            max-width:
-                650px;
-
-            margin-bottom:
-                25px;
-
-        }
-
-
-        .hero-content h1 strong {
-
-            color:
-                var(--neo);
-
-            font-weight:
-                inherit;
-
-        }
-
-
-        .hero-content p {
-
-            max-width:
-                620px;
-
-            font-size:
-                1.3rem;
-
-            line-height:
-                1.65;
-
-            margin-bottom:
-                32px;
-
-            color:
-                #b9c7d9;
-
-        }
-
-
-        .hero-note {
-
-            margin-top:
-                16px;
-
-            font-size:
-                .86rem;
-
-            color:
-                var(--text-muted);
-
-        }
-
-
-        /* =====================================================
+        /* =========================
            SECCIONES
-        ====================================================== */
+        ========================= */
 
-        .section-dark {
+        .section-label {
+            color: var(--neo);
 
-            background:
-                var(--bg-main);
+            font-size: 0.82rem;
+            font-weight: 800;
 
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 3.5vw, 3rem);
+
+            letter-spacing: -1px;
+
+            max-width: 850px;
+
+            margin-bottom: 18px;
+        }
+
+        .section-intro {
+            font-size: 1.15rem;
+
+            max-width: 900px;
+
+            margin-bottom: 45px;
         }
 
 
-        .section-alt {
-
-            background:
-                #091525;
-
-        }
-
-
-        .section-heading {
-
-            margin-bottom:
-                42px;
-
-        }
-
-
-        .section-heading h2 {
-
-            max-width:
-                none;
-
-        }
-
-
-        .section-heading p {
-
-            font-size:
-                1.15rem;
-
-            color:
-                #8fa4bd;
-
-            max-width:
-                none;
-
-        }
-
-
-        /* =====================================================
+        /* =========================
            PROBLEMA
-        ====================================================== */
+        ========================= */
 
-        .problem-grid {
+        #problema {
+            background: var(--bg-soft);
+        }
 
-            display:
-                grid;
+        .cards {
+            display: grid;
 
             grid-template-columns:
                 repeat(3, 1fr);
 
-            gap:
-                18px;
-
+            gap: 22px;
         }
 
+        .card {
+            background: var(--bg-card);
 
-        .problem-card {
+            padding: 30px;
 
-            padding:
-                30px;
-
-            min-height:
-                205px;
-
-            background:
-                var(--bg-card);
+            border-radius: 17px;
 
             border:
                 1px solid
                 var(--border);
 
-            border-radius:
-                16px;
-
-            position:
-                relative;
-
-            overflow:
-                hidden;
-
+            transition: 0.25s ease;
         }
 
+        .card:hover {
+            transform: translateY(-4px);
 
-        .problem-card::before {
-
-            content:
-                "";
-
-            position:
-                absolute;
-
-            left:
-                0;
-
-            top:
-                0;
-
-            bottom:
-                0;
-
-            width:
-                3px;
-
-            background:
-                var(--neo);
-
-            opacity:
-                .7;
-
-        }
-
-
-        .problem-card h3 {
-
-            margin-bottom:
-                14px;
-
-        }
-
-
-        .problem-card p {
-
-            color:
-                #8fa4bd;
-
-        }
-
-
-        /* =====================================================
-           CÓMO FUNCIONA
-        ====================================================== */
-
-        .how-grid {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                1fr 1fr;
-
-            gap:
-                65px;
-
-            align-items:
-                center;
-
-        }
-
-
-        .steps {
-
-            display:
-                grid;
-
-            gap:
-                14px;
-
-        }
-
-
-        .step {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                48px 1fr;
-
-            gap:
-                18px;
-
-            align-items:
-                center;
-
-            padding:
-                20px;
-
-            background:
-                var(--bg-card);
-
-            border:
-                1px solid
-                var(--border);
-
-            border-radius:
-                14px;
-
-        }
-
-
-        .number {
-
-            width:
-                44px;
-
-            height:
-                44px;
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            border-radius:
-                50%;
-
-            color:
-                var(--neo);
-
-            background:
-                rgba(0,229,255,.08);
-
-            border:
-                1px solid
-                rgba(0,229,255,.25);
-
-            font-weight:
-                800;
-
-        }
-
-
-        /* =====================================================
-           CONVERSACIÓN
-        ====================================================== */
-
-        .chat-visual {
-
-            background:
-                #07101e;
-
-            border:
-                1px solid
-                rgba(0,229,255,.16);
-
-            border-radius:
-                22px;
-
-            padding:
-                20px;
-
-            box-shadow:
-                0 25px 70px
-                rgba(0,0,0,.28);
-
-        }
-
-
-        .chat-header {
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            gap:
-                10px;
-
-            padding-bottom:
-                17px;
-
-            border-bottom:
-                1px solid
-                rgba(148,163,184,.10);
-
-            margin-bottom:
-                20px;
-
-        }
-
-
-        .chat-dot {
-
-            width:
-                10px;
-
-            height:
-                10px;
-
-            border-radius:
-                50%;
-
-            background:
-                var(--neo);
-
-            box-shadow:
-                0 0 12px
-                rgba(0,229,255,.7);
-
-        }
-
-
-        .chat-header span {
-
-            color:
-                #dbeafe;
-
-            font-weight:
-                700;
-
-            font-size:
-                .92rem;
-
-        }
-
-
-        .message {
-
-            max-width:
-                84%;
-
-            padding:
-                13px 15px;
-
-            border-radius:
-                14px;
-
-            margin-bottom:
-                12px;
-
-            font-size:
-                .91rem;
-
-            line-height:
-                1.5;
-
-        }
-
-
-        .message.user {
-
-            margin-left:
-                auto;
-
-            background:
-                #123456;
-
-            color:
-                #dbeafe;
-
-            border-bottom-right-radius:
-                4px;
-
-        }
-
-
-        .message.neo {
-
-            background:
-                #101e31;
-
-            border:
-                1px solid
-                rgba(0,229,255,.12);
-
-            color:
-                #cbd5e1;
-
-            border-bottom-left-radius:
-                4px;
-
-        }
-
-
-        .document-result {
-
-            margin-top:
-                18px;
-
-            padding:
-                17px;
-
-            border-radius:
-                14px;
-
-            background:
-                rgba(0,229,255,.055);
-
-            border:
-                1px solid
-                rgba(0,229,255,.16);
-
-        }
-
-
-        .document-result small {
-
-            display:
-                block;
-
-            color:
-                var(--neo);
-
-            font-size:
-                .72rem;
-
-            font-weight:
-                800;
-
-            letter-spacing:
-                1px;
-
-            text-transform:
-                uppercase;
-
-            margin-bottom:
-                7px;
-
-        }
-
-
-        .document-result strong {
-
-            display:
-                block;
-
-            color:
-                #ffffff;
-
-            font-size:
-                .96rem;
-
-        }
-
-
-        /* =====================================================
-           EJEMPLOS
-        ====================================================== */
-
-        .examples-grid {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap:
-                16px;
-
-        }
-
-
-        .example {
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            gap:
-                14px;
-
-            min-height:
-                92px;
-
-            padding:
-                20px;
-
-            background:
-                var(--bg-card);
-
-            border:
-                1px solid
-                var(--border);
-
-            border-radius:
-                14px;
-
-            transition:
-                .25s ease;
-
-        }
-
-
-        .example:hover {
-
-            transform:
-                translateY(-3px);
+            background: var(--bg-card-hover);
 
             border-color:
-                rgba(0,229,255,.25);
+                var(--border-neo);
+        }
 
-            background:
-                var(--bg-card-hover);
+        .card h3 {
+            margin-bottom: 12px;
+        }
 
+        .card p {
+            font-size: 1rem;
         }
 
 
-        .example-icon {
+        /* =========================
+           CONVERSACIÓN
+        ========================= */
 
-            width:
-                42px;
-
-            height:
-                42px;
-
-            flex-shrink:
-                0;
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            border-radius:
-                11px;
-
-            color:
-                var(--neo);
-
-            background:
-                rgba(0,229,255,.08);
-
-            border:
-                1px solid
-                rgba(0,229,255,.17);
-
-            font-size:
-                18px;
-
+        .conversation-section {
+            background: var(--bg);
         }
 
+        .conversation-box {
+            display: grid;
 
-        .example h3 {
+            grid-template-columns: 48% 52%;
 
-            font-size:
-                .98rem;
+            align-items: center;
 
-            margin:
-                0;
+            gap: 60px;
 
-        }
+            padding: 50px;
 
-
-        /* =====================================================
-           INDUSTRIAS
-        ====================================================== */
-
-        .industry-grid {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap:
-                16px;
-
-        }
-
-
-        .industry {
-
-            position:
-                relative;
-
-            padding:
-                25px 25px 25px 29px;
-
-            background:
-                var(--bg-card);
+            background: var(--bg-card);
 
             border:
                 1px solid
                 var(--border);
 
-            border-radius:
-                14px;
-
-            overflow:
-                hidden;
-
+            border-radius: 24px;
         }
 
-
-        .industry::before {
-
-            content:
-                "";
-
-            position:
-                absolute;
-
-            left:
-                0;
-
-            top:
-                0;
-
-            bottom:
-                0;
-
-            width:
-                3px;
-
-            background:
-                var(--neo);
-
+        .conversation-copy {
+            padding-right: 15px;
         }
 
+        .conversation-copy h2 {
+            font-size: clamp(2rem, 3.3vw, 3rem);
 
-        .industry-top {
+            letter-spacing: -1px;
 
-            display:
-                flex;
+            margin-bottom: 20px;
 
-            align-items:
-                center;
-
-            gap:
-                13px;
-
-            margin-bottom:
-                11px;
-
+            max-width: 500px;
         }
 
+        .conversation-copy p {
+            font-size: 1.1rem;
 
-        .industry-icon {
+            max-width: 500px;
+        }
 
-            width:
-                42px;
+        .conversation-image {
+            display: flex;
 
-            height:
-                42px;
+            align-items: center;
+            justify-content: center;
 
-            display:
-                flex;
+            width: 100%;
+        }
 
-            align-items:
-                center;
+        .conversation-image img {
+            display: block;
 
-            justify-content:
-                center;
+            width: 100%;
+            max-width: 500px;
 
-            border-radius:
-                11px;
+            margin: 0 auto;
 
-            background:
-                rgba(0,229,255,.08);
+            border-radius: 18px;
 
             border:
                 1px solid
-                rgba(0,229,255,.16);
+                rgba(103, 232, 249, 0.16);
 
-            font-size:
-                20px;
-
+            box-shadow:
+                0 20px 50px
+                rgba(0, 0, 0, 0.28);
         }
 
 
-        .industry h3 {
+        /* =========================
+           DOCUMENTOS
+        ========================= */
 
-            margin:
-                0;
+        .documents {
+            background: var(--bg-soft);
+        }
 
+        .document-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 15px;
+
+            margin-top: 35px;
+        }
+
+        .document-item {
+            position: relative;
+
+            padding: 21px 22px 21px 25px;
+
+            background: var(--bg-card);
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 12px;
+
+            color: #ffffff;
+
+            font-weight: 650;
+
+            overflow: hidden;
+        }
+
+        .document-item::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+            width: 3px;
+
+            background: var(--neo);
+        }
+
+        .document-item span {
+            color: var(--neo);
+
+            margin-right: 8px;
         }
 
 
-        .industry p {
+        /* =========================
+           INDUSTRIAS
+        ========================= */
 
-            color:
-                #8499b2;
+        .industries {
+            background: var(--bg);
+        }
 
-            font-size:
-                .9rem;
+        .industry-grid {
+            display: grid;
 
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+
+            margin-top: 40px;
+        }
+
+        .industry-card {
+            position: relative;
+
+            padding: 25px 25px 25px 30px;
+
+            min-height: 120px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            background: var(--bg-card);
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            transition: 0.25s ease;
+        }
+
+        .industry-card::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+            width: 4px;
+
+            background: var(--neo);
+        }
+
+        .industry-card:hover {
+            transform: translateY(-3px);
+
+            border-color:
+                var(--border-neo);
+        }
+
+        .industry-icon {
+            font-size: 1.5rem;
+
+            margin-bottom: 8px;
+        }
+
+        .industry-card h3 {
+            font-size: 1.05rem;
+        }
+
+        .industry-card p {
+            margin-top: 5px;
+
+            font-size: 0.9rem;
+
+            color: var(--text-muted);
         }
 
 
-        /* =====================================================
+        /* =========================
            CTA
-        ====================================================== */
+        ========================= */
 
         .cta {
-
-            position:
-                relative;
-
-            text-align:
-                center;
-
-            overflow:
-                hidden;
+            padding: 100px 0;
 
             background:
-                #0a1729;
+                radial-gradient(
+                    circle at center,
+                    rgba(37, 99, 235, 0.18),
+                    transparent 55%
+                ),
+                var(--bg-soft);
 
             border-top:
                 1px solid
-                rgba(0,229,255,.10);
+                rgba(103, 232, 249, 0.08);
 
             border-bottom:
                 1px solid
-                rgba(0,229,255,.10);
+                rgba(103, 232, 249, 0.08);
 
+            text-align: center;
         }
 
+        .cta-box {
+            max-width: 850px;
 
-        .cta::before {
-
-            content:
-                "";
-
-            position:
-                absolute;
-
-            width:
-                500px;
-
-            height:
-                250px;
-
-            left:
-                50%;
-
-            top:
-                -160px;
-
-            transform:
-                translateX(-50%);
-
-            border-radius:
-                50%;
-
-            background:
-                rgba(0,229,255,.08);
-
-            filter:
-                blur(40px);
-
+            margin: auto;
         }
-
-
-        .cta .container {
-
-            position:
-                relative;
-
-            max-width:
-                900px;
-
-        }
-
 
         .cta h2 {
+            font-size: clamp(2.2rem, 4vw, 3.4rem);
 
-            max-width:
-                750px;
+            letter-spacing: -1.2px;
 
-            margin:
-                0 auto 20px;
-
+            margin-bottom: 20px;
         }
-
 
         .cta p {
-
-            max-width:
-                680px;
+            max-width: 680px;
 
             margin:
-                0 auto 32px;
+                0 auto
+                32px;
 
-            font-size:
-                1.15rem;
-
-            color:
-                #9eb0c5;
-
+            font-size: 1.15rem;
         }
 
 
-        /* =====================================================
+        /* =========================
            FOOTER
-        ====================================================== */
+        ========================= */
 
         footer {
+            padding: 40px 20px;
 
-            padding:
-                40px 20px;
+            text-align: center;
 
-            text-align:
-                center;
+            background: #050c17;
 
-            background:
-                #050c18;
-
-            color:
-                var(--text-muted);
-
+            color: var(--text-muted);
         }
 
-
         footer hr {
-
-            width:
-                70px;
+            width: 70px;
 
             margin:
-                0 auto 22px;
+                0 auto
+                22px;
 
-            border:
-                0;
+            border: 0;
 
             border-top:
                 2px solid
@@ -1578,50 +819,31 @@
 
             box-shadow:
                 0 0 12px
-                rgba(0,229,255,.35);
-
+                rgba(103, 232, 249, 0.3);
         }
-
 
         footer p {
+            color: var(--text-muted);
 
-            color:
-                var(--text-muted);
-
-            font-size:
-                .9rem;
-
-            margin:
-                5px 0;
-
+            font-size: 0.9rem;
         }
-
 
         footer .brand {
+            color: #ffffff;
 
-            color:
-                #ffffff;
+            text-decoration: none;
 
-            font-weight:
-                700;
-
-            text-decoration:
-                none;
-
+            font-weight: 700;
         }
-
 
         footer .brand span {
-
-            color:
-                var(--neo);
-
+            color: var(--neo);
         }
 
 
-        /* =====================================================
-           RESPONSIVE
-        ====================================================== */
+        /* =========================
+           TABLET
+        ========================= */
 
         @media (max-width: 950px) {
 
@@ -1631,30 +853,60 @@
 
             .hero-box {
                 grid-template-columns: 1fr;
+
+                text-align: center;
+
+                padding: 38px;
+            }
+
+            .hero-content h1,
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .hero-image {
-                min-height: 380px;
+                order: -1;
+
+                min-height: 320px;
             }
 
-            .hero-content {
-                padding: 45px;
+            .hero-image img {
+                height: 320px;
             }
 
-            .how-grid {
+            .cards {
                 grid-template-columns: 1fr;
+            }
+
+            .conversation-box {
+                grid-template-columns: 1fr;
+
                 gap: 40px;
             }
 
-            .problem-grid,
-            .examples-grid,
-            .industry-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
+            .conversation-copy {
+                padding: 0;
             }
 
+            .conversation-copy h2,
+            .conversation-copy p {
+                max-width: 100%;
+            }
+
+            .document-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .industry-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 600px) {
 
@@ -1663,64 +915,79 @@
             }
 
             .header-container {
-                width: 92%;
+                width: 90%;
+            }
+
+            .nav-button {
+                padding: 9px 13px;
+                font-size: 0.82rem !important;
             }
 
             .hero {
                 padding:
-                    105px 0 50px;
+                    105px 0
+                    45px;
             }
 
             .hero-box {
-                border-radius:
-                    20px;
+                padding: 25px 20px;
+
+                border-radius: 20px;
+
+                gap: 28px;
             }
 
             .hero-image {
-                min-height:
-                    280px;
+                min-height: 240px;
             }
 
-            .hero-content {
-                padding:
-                    32px 24px 38px;
+            .hero-image img {
+                height: 240px;
             }
 
             .hero-content h1 {
-                font-size:
-                    2.45rem;
+                font-size: 2.35rem;
 
-                letter-spacing:
-                    -1px;
+                letter-spacing: -0.8px;
             }
 
             .hero-content p {
-                font-size:
-                    1.08rem;
+                font-size: 1.08rem;
             }
 
             .btn-neo {
-                width:
-                    100%;
+                width: 100%;
             }
 
-            .problem-grid,
-            .examples-grid,
+            .conversation-box {
+                padding: 28px 20px;
+
+                border-radius: 20px;
+            }
+
+            .conversation-copy h2 {
+                font-size: 2rem;
+            }
+
+            .conversation-copy p {
+                font-size: 1rem;
+            }
+
+            .document-grid {
+                grid-template-columns: 1fr;
+            }
+
             .industry-grid {
-                grid-template-columns:
-                    1fr;
+                grid-template-columns: 1fr;
             }
 
-            .step {
-                grid-template-columns:
-                    44px 1fr;
+            .cta {
+                padding: 75px 0;
             }
 
-            .chat-visual {
-                padding:
-                    15px;
+            .cta h2 {
+                font-size: 2.2rem;
             }
-
         }
 
     </style>
@@ -1747,18 +1014,18 @@
                 NEO<span>.</span>
             </a>
 
+            <nav class="nav">
 
-            <nav
-                class="nav"
-                aria-label="Navegación principal"
-            >
+                <a href="#problema">
+                    El problema
+                </a>
 
                 <a href="#como-funciona">
                     Cómo funciona
                 </a>
 
-                <a href="#ejemplos">
-                    Qué podés hacer
+                <a href="#documentos">
+                    Ejemplos
                 </a>
 
                 <a href="#industrias">
@@ -1781,7 +1048,6 @@
     </header>
 
 
-
     <!-- =====================================================
          HERO
     ====================================================== -->
@@ -1792,31 +1058,23 @@
 
             <div class="hero-box">
 
-                <div class="hero-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
-                        alt="Equipo corporativo trabajando con tecnología en una oficina moderna"
-                    >
-
-                </div>
-
-
                 <div class="hero-content">
 
-                    <div class="eyebrow">
-                        Inteligencia artificial aplicada
-                    </div>
+                    <span class="eyebrow">
+                        Inteligencia artificial documental
+                    </span>
 
                     <h1>
                         Convertí una conversación en
-                        <strong>documentación lista para usar.</strong>
+                        <span class="highlight">
+                            documentación lista para usar.
+                        </span>
                     </h1>
 
                     <p>
-                        Contale a NEO qué necesitás.
-                        Te hace las preguntas correctas, entiende la información
-                        y genera la documentación correspondiente.
+                        Hablá con NEO, respondé lo necesario y obtené
+                        la documentación que necesitás, sin vueltas
+                        y sin cargar información una y otra vez.
                     </p>
 
                     <a
@@ -1825,13 +1083,19 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Conocé NEO
+                        Solicitar demo
                         <span>→</span>
                     </a>
 
-                    <div class="hero-note">
-                        Menos carga administrativa. Más tiempo para tu trabajo.
-                    </div>
+                </div>
+
+
+                <div class="hero-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
+                        alt="Equipo trabajando con tecnología en una oficina moderna"
+                    >
 
                 </div>
 
@@ -1840,71 +1104,73 @@
         </div>
 
     </section>
-
 
 
     <!-- =====================================================
          PROBLEMA
     ====================================================== -->
 
-    <section class="section-alt">
+    <section id="problema">
 
         <div class="container">
 
-            <div class="section-heading">
-
-                <h2>
-                    La documentación no debería llevarte horas.
-                </h2>
-
-                <p class="section-lead">
-                    Buscar información, hacer preguntas, completar datos,
-                    revisar documentos y volver a empezar cuando falta algo
-                    consume tiempo que podrías dedicar a tareas de mayor valor.
-                </p>
-
+            <div class="section-label">
+                El problema
             </div>
 
+            <h2 class="section-title">
+                Menos tiempo buscando información.
+                <span class="highlight">
+                    Más tiempo haciendo lo importante.
+                </span>
+            </h2>
 
-            <div class="problem-grid">
+            <p class="section-intro">
+                Muchas gestiones documentales todavía requieren
+                buscar información, completar datos, revisar
+                documentos y volver a empezar cuando falta algo.
+            </p>
 
-                <div class="problem-card">
+
+            <div class="cards">
+
+                <div class="card">
 
                     <h3>
-                        Preguntas repetitivas
+                        Buscar información
                     </h3>
 
                     <p>
-                        La misma información se solicita una y otra vez
-                        antes de poder avanzar.
+                        Consultar requisitos, antecedentes,
+                        datos y documentación antes de poder avanzar.
                     </p>
 
                 </div>
 
 
-                <div class="problem-card">
+                <div class="card">
 
                     <h3>
-                        Información dispersa
+                        Completar documentación
                     </h3>
 
                     <p>
-                        Datos, antecedentes y requisitos repartidos
-                        entre correos, archivos y formularios.
+                        Repetir datos y completar formularios
+                        o documentos de manera manual.
                     </p>
 
                 </div>
 
 
-                <div class="problem-card">
+                <div class="card">
 
                     <h3>
-                        Documentación manual
+                        Revisar y corregir
                     </h3>
 
                     <p>
-                        Horas dedicadas a completar, adaptar y revisar
-                        documentos que siguen patrones conocidos.
+                        Detectar información faltante,
+                        inconsistencias o errores antes de entregar.
                     </p>
 
                 </div>
@@ -1914,176 +1180,55 @@
         </div>
 
     </section>
-
 
 
     <!-- =====================================================
          COMO FUNCIONA
     ====================================================== -->
 
-    <section id="como-funciona">
+    <section
+        id="como-funciona"
+        class="conversation-section"
+    >
 
         <div class="container">
 
-            <div class="how-grid">
+            <div class="conversation-box">
 
 
-                <div>
+                <!-- TEXTO IZQUIERDA -->
 
-                    <div class="section-heading">
+                <div class="conversation-copy">
 
-                        <h2>
-                            Vos conversás.
-                            NEO se encarga del resto.
-                        </h2>
-
-                        <p class="section-lead">
-                            Una experiencia simple para resolver gestiones
-                            que antes requerían múltiples pasos y mucho tiempo.
-                        </p>
-
+                    <div class="section-label">
+                        Así de simple
                     </div>
 
+                    <h2>
+                        Una conversación.
+                        <span class="highlight">
+                            Un documento listo.
+                        </span>
+                    </h2>
 
-                    <div class="steps">
-
-                        <div class="step">
-
-                            <div class="number">
-                                1
-                            </div>
-
-                            <div>
-                                <h3>
-                                    Contá qué necesitás
-                                </h3>
-
-                                <p>
-                                    Explicalo con tus propias palabras.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="step">
-
-                            <div class="number">
-                                2
-                            </div>
-
-                            <div>
-                                <h3>
-                                    Respondé unas preguntas
-                                </h3>
-
-                                <p>
-                                    NEO identifica qué información necesita.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="step">
-
-                            <div class="number">
-                                3
-                            </div>
-
-                            <div>
-                                <h3>
-                                    NEO genera la documentación
-                                </h3>
-
-                                <p>
-                                    La información se transforma en un documento.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="step">
-
-                            <div class="number">
-                                4
-                            </div>
-
-                            <div>
-                                <h3>
-                                    Revisá y utilizá
-                                </h3>
-
-                                <p>
-                                    Recibís el resultado listo para continuar.
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <p>
+                        NEO te hace las preguntas necesarias,
+                        entiende tus respuestas y utiliza esa
+                        información para generar la documentación
+                        que necesitás.
+                    </p>
 
                 </div>
 
 
-                <!-- CONVERSACIÓN -->
+                <!-- IMAGEN DERECHA -->
 
-                <div class="chat-visual">
+                <div class="conversation-image">
 
-                    <div class="chat-header">
-
-                        <div class="chat-dot"></div>
-
-                        <span>
-                            Conversación
-                        </span>
-
-                    </div>
-
-
-                    <div class="message user">
-                        Necesito preparar una autorización
-                        de viaje para mi hijo.
-                    </div>
-
-
-                    <div class="message neo">
-                        Claro. Para preparar la documentación
-                        necesito algunos datos. ¿Quiénes
-                        viajarán y cuál es el destino?
-                    </div>
-
-
-                    <div class="message user">
-                        Viajará con su madre a España
-                        durante las vacaciones.
-                    </div>
-
-
-                    <div class="message neo">
-                        Perfecto. También necesito los datos
-                        del menor, de sus padres y las fechas
-                        del viaje.
-                    </div>
-
-
-                    <div class="document-result">
-
-                        <small>
-                            Resultado
-                        </small>
-
-                        <strong>
-                            Autorización de viaje
-                        </strong>
-
-                        <p>
-                            Documentación generada a partir
-                            de la información de la conversación.
-                        </p>
-
-                    </div>
+                    <img
+                        src="https://raw.githubusercontent.com/CaroMSerrano/neo/main/conversacion.png"
+                        alt="Ejemplo de conversación con NEO"
+                    >
 
                 </div>
 
@@ -2092,7 +1237,6 @@
         </div>
 
     </section>
-
 
 
     <!-- =====================================================
@@ -2100,143 +1244,75 @@
     ====================================================== -->
 
     <section
-        id="ejemplos"
-        class="section-alt"
+        id="documentos"
+        class="documents"
     >
 
         <div class="container">
 
-            <div class="section-heading">
-
-                <h2>
-                    Algunos ejemplos de lo que podés resolver
-                </h2>
-
-                <p class="section-lead">
-                    Desde documentación frecuente hasta gestiones
-                    que requieren reunir información de distintas fuentes.
-                </p>
-
+            <div class="section-label">
+                Ejemplos
             </div>
 
+            <h2 class="section-title">
+                Generá la documentación que necesitás,
+                <span class="highlight">
+                    desde una conversación.
+                </span>
+            </h2>
 
-            <div class="examples-grid">
+            <p class="section-intro">
+                Desde documentos habituales hasta gestiones
+                específicas que requieren recopilar información
+                y transformarla en documentación.
+            </p>
 
 
-                <div class="example">
+            <div class="document-grid">
 
-                    <div class="example-icon">
-                        ⚖
-                    </div>
-
-                    <h3>
-                        Poderes
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Poderes
                 </div>
 
-
-                <div class="example">
-
-                    <div class="example-icon">
-                        🏠
-                    </div>
-
-                    <h3>
-                        Compraventas
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Compraventas
                 </div>
 
-
-                <div class="example">
-
-                    <div class="example-icon">
-                        ✈
-                    </div>
-
-                    <h3>
-                        Autorizaciones de viaje
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Autorizaciones de viaje
                 </div>
 
-
-                <div class="example">
-
-                    <div class="example-icon">
-                        ✓
-                    </div>
-
-                    <h3>
-                        Certificaciones
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Formularios
                 </div>
 
-
-                <div class="example">
-
-                    <div class="example-icon">
-                        ▤
-                    </div>
-
-                    <h3>
-                        Contratos
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Autorizaciones
                 </div>
 
-
-                <div class="example">
-
-                    <div class="example-icon">
-                        □
-                    </div>
-
-                    <h3>
-                        Formularios
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Documentación jurídica
                 </div>
 
-
-                <div class="example">
-
-                    <div class="example-icon">
-                        ▥
-                    </div>
-
-                    <h3>
-                        Actas
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Documentación notarial
                 </div>
 
-
-                <div class="example">
-
-                    <div class="example-icon">
-                        ✎
-                    </div>
-
-                    <h3>
-                        Declaraciones
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Solicitudes y declaraciones
                 </div>
 
-
-                <div class="example">
-
-                    <div class="example-icon">
-                        +
-                    </div>
-
-                    <h3>
-                        Y muchas más
-                    </h3>
-
+                <div class="document-item">
+                    <span>✓</span>
+                    Otras gestiones documentales
                 </div>
 
             </div>
@@ -2244,161 +1320,149 @@
         </div>
 
     </section>
-
 
 
     <!-- =====================================================
          INDUSTRIAS
     ====================================================== -->
 
-    <section id="industrias">
+    <section
+        id="industrias"
+        class="industries"
+    >
 
         <div class="container">
 
-            <div class="section-heading">
-
-                <h2>
-                    Diseñado para el trabajo real.
-                </h2>
-
-                <p class="section-lead">
-                    NEO se adapta a las necesidades de organizaciones
-                    que trabajan diariamente con información y documentación.
-                </p>
-
+            <div class="section-label">
+                Para quién
             </div>
+
+            <h2 class="section-title">
+                NEO se adapta a la forma en que
+                <span class="highlight">
+                    trabaja tu organización.
+                </span>
+            </h2>
+
+            <p class="section-intro">
+                Una experiencia simple para equipos que necesitan
+                generar documentación de forma rápida, ordenada
+                y consistente.
+            </p>
 
 
             <div class="industry-grid">
 
 
-                <div class="industry">
+                <!-- LEGAL -->
 
-                    <div class="industry-top">
+                <div class="industry-card">
 
-                        <div class="industry-icon">
-                            ⚖
-                        </div>
-
-                        <h3>
-                            Legal
-                        </h3>
-
+                    <div class="industry-icon">
+                        ⚖️
                     </div>
 
+                    <h3>
+                        Estudios Jurídicos
+                    </h3>
+
                     <p>
-                        Generación y preparación de documentación
-                        jurídica a partir de una conversación.
+                        Documentación y gestiones legales.
                     </p>
 
                 </div>
 
 
-                <div class="industry">
+                <!-- NOTARÍAS -->
 
-                    <div class="industry-top">
+                <div class="industry-card">
 
-                        <div class="industry-icon">
-                            🏛
-                        </div>
-
-                        <h3>
-                            Notarial
-                        </h3>
-
+                    <div class="industry-icon">
+                        🏛️
                     </div>
 
+                    <h3>
+                        Notarías
+                    </h3>
+
                     <p>
-                        Simplificá la preparación de documentación
-                        y la recopilación de información.
+                        Documentación y gestiones notariales.
                     </p>
 
                 </div>
 
 
-                <div class="industry">
+                <!-- FINANCIERAS -->
 
-                    <div class="industry-top">
+                <div class="industry-card">
 
-                        <div class="industry-icon">
-                            ◈
-                        </div>
-
-                        <h3>
-                            Financiero
-                        </h3>
-
+                    <div class="industry-icon">
+                        ◈
                     </div>
 
+                    <h3>
+                        Empresas Financieras
+                    </h3>
+
                     <p>
-                        Convertí información dispersa en documentación
-                        preparada para continuar la gestión.
+                        Documentación y solicitudes de clientes.
                     </p>
 
                 </div>
 
 
-                <div class="industry">
+                <!-- GESTORÍAS -->
 
-                    <div class="industry-top">
+                <div class="industry-card">
 
-                        <div class="industry-icon">
-                            ▤
-                        </div>
-
-                        <h3>
-                            Gestorías
-                        </h3>
-
+                    <div class="industry-icon">
+                        ▣
                     </div>
 
+                    <h3>
+                        Gestorías
+                    </h3>
+
                     <p>
-                        Menos carga manual y más capacidad para
-                        gestionar solicitudes de clientes.
+                        Generación de documentación para clientes.
                     </p>
 
                 </div>
 
 
-                <div class="industry">
+                <!-- EMPRESAS -->
 
-                    <div class="industry-top">
+                <div class="industry-card">
 
-                        <div class="industry-icon">
-                            ▦
-                        </div>
-
-                        <h3>
-                            Administración
-                        </h3>
-
+                    <div class="industry-icon">
+                        ◫
                     </div>
 
+                    <h3>
+                        Empresas
+                    </h3>
+
                     <p>
-                        Automatizá tareas documentales que consumen
-                        tiempo de tu equipo.
+                        Documentación para distintas áreas.
                     </p>
 
                 </div>
 
 
-                <div class="industry">
+                <!-- ADMINISTRACIÓN -->
 
-                    <div class="industry-top">
+                <div class="industry-card">
 
-                        <div class="industry-icon">
-                            ◎
-                        </div>
-
-                        <h3>
-                            Recursos Humanos
-                        </h3>
-
+                    <div class="industry-icon">
+                        ▤
                     </div>
 
+                    <h3>
+                        Áreas Administrativas
+                    </h3>
+
                     <p>
-                        Simplificá la preparación de documentación
-                        y solicitudes internas.
+                        Formularios, solicitudes y documentación.
                     </p>
 
                 </div>
@@ -2410,38 +1474,48 @@
     </section>
 
 
-
     <!-- =====================================================
-         CTA FINAL
+         CTA
     ====================================================== -->
 
     <section class="cta">
 
         <div class="container">
 
-            <h2>
-                Descubrí cuánto podés simplificar.
-            </h2>
+            <div class="cta-box">
 
-            <p>
-                Conocé cómo NEO puede ayudarte a transformar
-                una conversación en documentación lista para usar.
-            </p>
+                <div class="section-label">
+                    Probá NEO
+                </div>
 
-            <a
-                href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
-                class="btn-neo"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Solicitar una demo
-                <span>→</span>
-            </a>
+                <h2>
+                    Convertí horas de trabajo en
+                    <span class="highlight">
+                        una conversación.
+                    </span>
+                </h2>
+
+                <p>
+                    Descubrí cómo NEO puede ayudarte a generar
+                    la documentación que necesitás de una manera
+                    mucho más simple.
+                </p>
+
+                <a
+                    href="https://api.leadconnectorhq.com/widget/booking/SMCCcUsn6LWhstOfftAD"
+                    class="btn-neo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Solicitar una demo
+                    <span>→</span>
+                </a>
+
+            </div>
 
         </div>
 
     </section>
-
 
 
     <!-- =====================================================
@@ -2464,7 +1538,7 @@
             – Future Intelligence, Today.
         </p>
 
-        <p>
+        <p style="margin-top:10px;">
             © 2025 Neomynd. Todos los derechos reservados.
         </p>
 
